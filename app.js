@@ -11,7 +11,7 @@ const navAdmin=[['dashboard','layout-dashboard','Dashboard'],['agents','users-ro
 const navAgent=[['agent','layout-dashboard','Overview'],['stock','boxes','My stock'],['sales','chart-no-axes-combined','My sales'],['balance','wallet','My balance'],['requests','send','My requests'],['investments','chart-pie','My agreement'],['settings','settings-2','Settings']];
 const titles={protocols:'Protocols',requests:'Requests',dashboard:'Admin dashboard',agents:'Agents',agent:'Agent overview',catalogue:'Peptide catalogue',stock:'Stock overview',sales:'Sales',purchases:'Purchase orders',expenses:'Extra expenses',payments:'Transfers',investments:'Agreements',reports:'Reports',audit:'Activity log',settings:'Settings',balance:'Earnings'};
 function btn(label,ico,action,cls=''){label=label.replace(/ preview$/i,'');return `<button type="button" class="btn ${cls}" ${action}>${ico?icon(ico):''}${label}</button>`}
-function info(key){return `<button class="info-btn" data-info="${key}" aria-label="About ${key}">${icon('info')}</button>`}
+function info(key){return `<button class="info-btn measure-info" data-info="${esc(key)}" aria-label="About ${esc(key)}" aria-expanded="false">${icon('info')}</button>`}
 function badge(label,color='purple'){return `<span class="badge ${color}">${label}</span>`}
 function avatar(a){return `<span class="avatar ${a.color}">${a.initials}</span>`}
 const productCategories=[{id:'metabolic',label:'Weight & metabolism',icon:'scale'},{id:'muscle',label:'Muscle & recovery',icon:'dumbbell'},{id:'brain',label:'Brain & sleep',icon:'brain'},{id:'cellular',label:'Cellular research',icon:'atom'},{id:'immune',label:'Immune research',icon:'shield'},{id:'hormones',label:'Hormonal research',icon:'heart-pulse'},{id:'skin',label:'Skin & pigmentation',icon:'sparkles'},{id:'supplies',label:'Supplies',icon:'droplets'},{id:'general',label:'General research',icon:'dna'}];
@@ -43,9 +43,10 @@ function contextInfo(label,copy=''){
  if(!measureExplanations[label]&&copy){const plain=String(copy).replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();if(plain)measureExplanations[label]=plain}
  return measureInfo(label);
 }
+function helpLabel(label,help=measureInfo(label)){return help?`<span class="help-label"><span class="help-label-text">${label}</span>${help}</span>`:label}
 function measureInfo(label){if(label==='Status'&&state.page!=='requests')return '';return measureExplanations[label]?`<button type="button" class="info-btn measure-info" data-help="${esc(label)}" aria-label="About ${esc(label)}" aria-expanded="false">${icon('info')}</button>`:''}
 var activeHelpTrigger;
-function dismissMeasureHelp(){motionDismiss(document.getElementById('measure-help'));activeHelpTrigger?.setAttribute('aria-expanded','false');activeHelpTrigger=null}
+function dismissMeasureHelp(){motionDismiss(document.getElementById('measure-help'));activeHelpTrigger?.setAttribute('aria-expanded','false');activeHelpTrigger?.removeAttribute('aria-controls');activeHelpTrigger=null}
 // Shared interface motion: short, interruptible and presentation-only.
 const uiMotion = { route: '', exits: new Set(), disclosures: new WeakMap(), visibility: new WeakMap() };
 const motionReduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -125,18 +126,39 @@ document.addEventListener('click',e=>{
 window.addEventListener('resize',motionSyncControls);
 // End shared interface motion.
 
-function showMeasureHelp(trigger,label){const same=activeHelpTrigger===trigger;dismissMeasureHelp();if(same)return;motionClearExits();const copy=measureExplanations[label]||(typeof explanations!=='undefined'?explanations[label]:null);if(!copy)return;const el=document.createElement('div');el.id='measure-help';el.className='measure-popover';el.setAttribute('role','dialog');el.setAttribute('aria-label',label);el.innerHTML=`<div class="measure-popover-head"><strong>${esc(label)}</strong><button type="button" class="info-btn" data-help-close aria-label="Close explanation">${icon('x')}</button></div><p>${esc(copy)}</p>`;(trigger.closest('.modal')||document.body).append(el);activeHelpTrigger=trigger;trigger.setAttribute('aria-expanded','true');icons();const box=trigger.getBoundingClientRect(),w=el.getBoundingClientRect().width,h=el.getBoundingClientRect().height;el.style.left=Math.max(12,Math.min(box.left,innerWidth-w-12))+'px';el.style.top=Math.max(12,Math.min(box.bottom+10,innerHeight-h-12))+'px'}
-function metric(label,value,ico,color,foot,unit='',spark=false){const chars=String(value).replace(/<[^>]*>/g,'').length;return `<article class="metric"><div class="metric-top"><span class="metric-label">${label}${contextInfo(label,foot)}</span><span class="metric-icon ${color}">${icon(ico)}</span></div><div class="metric-value" style="--metric-characters:${chars}">${value}${unit?`<small>${unit}</small>`:''}</div>${spark?`<svg class="spark" viewBox="0 0 80 28"><path d="M0 25 9 20 17 23 25 13 34 16 43 7 52 10 63 3 72 7 80 1" fill="none" stroke="var(--${color||'purple'})" stroke-width="1.5"/></svg>`:''}</article>`}
-function panelHead(title,sub='',right=''){return `<div class="panel-head"><div><h2>${title}${right.includes('data-info="'+esc(title)+'"')||right.includes('data-help="'+esc(title)+'"')?'':contextInfo(title,sub)}</h2></div>${right}</div>`}
+function showMeasureHelp(trigger,label){
+ const same=activeHelpTrigger===trigger;dismissMeasureHelp();if(same)return;motionClearExits();
+ const copy=measureExplanations[label]||(typeof explanations!=='undefined'?explanations[label]:null);if(!copy)return;
+ const el=document.createElement('div');el.id='measure-help';el.className='measure-popover';
+ el.setAttribute('role','dialog');el.setAttribute('aria-label',label);
+ el.innerHTML=`<div class="measure-popover-head"><strong>${esc(label)}</strong><button type="button" class="info-btn" data-help-close aria-label="Close explanation">${icon('x')}</button></div><p>${esc(copy)}</p>`;
+ // A sibling of the dialog avoids its animated transform changing fixed coordinates.
+ (trigger.closest('.modal-overlay')||document.body).append(el);
+ activeHelpTrigger=trigger;trigger.setAttribute('aria-expanded','true');trigger.setAttribute('aria-controls','measure-help');icons();
+ const box=trigger.getBoundingClientRect(),w=el.offsetWidth,h=el.offsetHeight,gap=10,edge=12;
+ const left=Math.max(edge,Math.min(box.left+box.width/2-w/2,innerWidth-w-edge));
+ const above=innerHeight-box.bottom-gap<h&&box.top-gap>=h;
+ const top=Math.max(edge,Math.min(above?box.top-h-gap:box.bottom+gap,innerHeight-h-edge));
+ el.style.left=left+'px';el.style.top=top+'px';
+}
+function metric(label,value,ico,color,foot,unit='',spark=false){const chars=String(value).replace(/<[^>]*>/g,'').length;return `<article class="metric"><div class="metric-top"><span class="metric-label">${label}</span>${contextInfo(label,foot)||`<span class="metric-icon ${color}">${icon(ico)}</span>`}</div><div class="metric-value" style="--metric-characters:${chars}">${value}${unit?`<small>${unit}</small>`:''}</div>${spark?`<svg class="spark" viewBox="0 0 80 28"><path d="M0 25 9 20 17 23 25 13 34 16 43 7 52 10 63 3 72 7 80 1" fill="none" stroke="var(--${color||'purple'})" stroke-width="1.5"/></svg>`:''}</article>`}
+function panelHead(title,sub='',right=''){
+ const help=contextInfo(title,sub);
+ // Prefer the section-specific explanation over a second generic help button.
+ const helpOnly=/^<button\b[^>]*data-(?:info|help)=/.test(right)&&right.endsWith('</button>')&&(right.match(/<button\b/g)||[]).length===1;
+ if(helpOnly&&help)right='';
+ const rightExplainsTitle=right.includes('data-info="'+esc(title)+'"')||right.includes('data-help="'+esc(title)+'"');
+ return `<div class="panel-head"><div><h2>${helpLabel(title,rightExplainsTitle?'':help)}</h2></div>${right}</div>`;
+}
 function period(){return ''}
 function pageHead(title,sub,actions=''){if(agents.some(a=>a.name===title))return `<div class="page-head"><h1>${title}</h1><div class="flex">${actions}</div></div>`;return `<h1 class="sr-only">${title}</h1>${actions?`<div class="page-head page-actions"><div class="flex">${actions}</div></div>`:''}`}
 function search(placeholder='Search peptides…'){return `<div class="search">${icon('search')}<input type="search" placeholder="${placeholder}" aria-label="${placeholder}" data-search></div>`}
-function table(headers,rows,cls=''){return `<div class="table-wrap"><table class="${cls}"><thead><tr>${headers.map(h=>`<th><span class="table-heading">${h}${measureInfo(h)}</span></th>`).join('')}</tr></thead><tbody>${rows.length?rows.join(''):`<tr><td colspan="${headers.length}"><div class="empty">No records for this view.</div></td></tr>`}</tbody></table></div>`}
+function table(headers,rows,cls=''){return `<div class="table-wrap"><table class="${cls}"><thead><tr>${headers.map(h=>`<th><span class="table-heading">${helpLabel(h)}</span></th>`).join('')}</tr></thead><tbody>${rows.length?rows.join(''):`<tr><td colspan="${headers.length}"><div class="empty">No records for this view.</div></td></tr>`}</tbody></table></div>`}
 function row(cells,attrs=''){return `<tr ${attrs}>${cells.map(c=>`<td>${c}</td>`).join('')}</tr>`}
 function footer(count,label='records'){return `<div class="table-footer"><span>${count} ${label}</span><div class="flex">${btn('Previous','chevron-left','data-demo="Pagination"','ghost small')}${btn('1','','data-demo="Page 1"','small')}${btn('Next','chevron-right','data-demo="Pagination"','ghost small')}</div></div>`}
-function keyRows(items){return `<div class="key-rows">${items.map(x=>`<div class="key-row"><span>${x[0]}${measureInfo(x[0])}</span><strong class="${x[2]||''}">${x[1]}</strong></div>`).join('')}</div>`}
-function field(label,value='',type='text',extra=''){const id='f-'+label.toLowerCase().replace(/[^a-z0-9]/g,'-');return `<div class="field ${extra}"><label for="${id}">${label}${measureInfo(label)}</label><input id="${id}" type="${type}" value="${esc(value)}" ${type==='number'?'min="0" step="0.01"':''}></div>`}
-function selectField(label,options,extra=''){const id='f-'+label.toLowerCase().replace(/[^a-z0-9]/g,'-');return `<div class="field ${extra}"><label for="${id}">${label}${measureInfo(label)}</label><select id="${id}">${options.map(o=>`<option>${o}</option>`).join('')}</select></div>`}
+function keyRows(items){return `<div class="key-rows">${items.map(x=>`<div class="key-row"><span>${helpLabel(x[0])}</span><strong class="${x[2]||''}">${x[1]}</strong></div>`).join('')}</div>`}
+function field(label,value='',type='text',extra=''){const id='f-'+label.toLowerCase().replace(/[^a-z0-9]/g,'-');return `<div class="field ${extra}"><label for="${id}">${helpLabel(label)}</label><input id="${id}" type="${type}" value="${esc(value)}" ${type==='number'?'min="0" step="0.01"':''}></div>`}
+function selectField(label,options,extra=''){const id='f-'+label.toLowerCase().replace(/[^a-z0-9]/g,'-');return `<div class="field ${extra}"><label for="${id}">${helpLabel(label)}</label><select id="${id}">${options.map(o=>`<option>${o}</option>`).join('')}</select></div>`}
 function notes(label='Notes',placeholder='Add a note…'){return `<div class="field full note-field"><label>${label}<textarea placeholder="${placeholder}"></textarea></label></div>`}
 function themeSwitch(labeled=false){return `<div class="theme-switch" aria-label="Appearance">${[['light','sun','Light'],['dark','moon','Dark']].map(([t,i,l])=>`<button data-theme="${t}" class="${state.theme===t?'active':''}" aria-label="${l} theme" aria-pressed="${state.theme===t}" title="${l}">${icon(i)}${labeled?`<span>${l}</span>`:''}</button>`).join('')}</div>`}
 function shell(){const nav=state.role==='admin'?navAdmin:workflowNav(); const title=state.role==='agent'&&state.page==='agent'?'Record sale':state.role==='agent'&&state.page==='stock'?'My stock':titles[state.page]||'Dashboard';return `<aside class="sidebar" id="workspace-navigation"><button class="sidebar-toggle" data-action="collapse" aria-controls="workspace-navigation" aria-expanded="${!state.collapsed}" aria-label="${state.collapsed?'Expand navigation':'Collapse navigation'}" title="${state.collapsed?'Expand navigation':'Collapse navigation'}">${icon('chevron-left')}</button><div class="brand"><div class="brand-mark">${icon('dna')}</div><div class="brand-copy">Peptide Stock</div></div><div class="nav-label">WORKSPACE</div><nav aria-label="Main navigation">${nav.map(([p,i,l],n)=>`${p==='purchases'?'<div class="nav-label">FINANCE</div>':''}${p==='audit'?'<div class="nav-label">WORKSPACE TOOLS</div>':''}<button class="nav-item ${state.page===p?'active':''}" data-page="${p}" aria-label="${l}" ${state.page===p?'aria-current="page"':''} title="${l}">${icon(i)}<span>${l}</span>${p==='agents'?'<span class="nav-count">4</span>':''}</button>`).join('')}</nav><div class="sidebar-bottom"><div class="user-block">${state.role==='admin'?'<span class="avatar">AO</span>':avatar(accountPerson())}<div class="user-copy grow">${state.role==='admin'?'Admin O':accountPerson().name}<small>${state.role==='admin'?'Administrator':accountType().label}</small></div><button class="link-btn" data-page="login" aria-label="View login screen">${icon('log-out')}</button></div></div></aside><div class="mobile-scrim" data-action="menu" aria-label="Close navigation" role="button" tabindex="-1"></div><main class="main"><header class="topbar"><button class="icon-btn mobile-menu" data-action="menu" aria-label="Open navigation" aria-controls="workspace-navigation" aria-expanded="false">${icon('menu')}</button>${state.page==='dashboard'?'':`<div class="breadcrumb"><strong>${title}</strong></div>`}<div class="top-actions">${themeSwitch()}<button class="icon-btn" data-modal="notifications" aria-label="Notifications">${icon('bell')}${notificationUnread()?'<span class="dot" aria-label="Unread notifications"></span>':''}</button><span class="avatar ${state.role==='agent'?'coral':''}">${state.role==='admin'?'AO':accountPerson().initials}</span></div></header>${workflowSupportBanner()}<div class="content" id="view"></div></main>`}
@@ -355,7 +377,7 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mobileNavigationScr
 window.addEventListener('resize',()=>{if(window.innerWidth>700)closeMobileNavigation()});
 
 // Shared explanations dismiss on a second tap, outside tap, Escape or navigation.
-document.addEventListener('click',e=>{const b=e.target.closest('[data-help]');if(b){showMeasureHelp(b,b.dataset.help);return}if(e.target.closest('[data-help-close]')){dismissMeasureHelp();return}if(!e.target.closest('#measure-help'))dismissMeasureHelp();if(e.target.classList.contains('modal-overlay'))closeModal()});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-help]');if(b){showMeasureHelp(b,b.dataset.help);return}if(e.target.closest('[data-help-close]')){const trigger=activeHelpTrigger;dismissMeasureHelp();trigger?.focus({preventScroll:true});return}if(!e.target.closest('#measure-help'))dismissMeasureHelp();if(e.target.classList.contains('modal-overlay'))closeModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')dismissMeasureHelp()});
 window.addEventListener('resize',dismissMeasureHelp);
 window.addEventListener('scroll',()=>{if(activeHelpTrigger)dismissMeasureHelp()},{passive:true});

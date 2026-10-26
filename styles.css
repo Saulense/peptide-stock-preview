@@ -507,3 +507,32 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 @media(prefers-reduced-motion:reduce){
  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 }
+
+/* Help controls stay attached to labels; financial cards use one consistent corner. */
+.help-label{display:inline-flex;align-items:flex-start;gap:5px;max-width:100%;min-width:0;vertical-align:middle}
+.help-label-text{min-width:0;overflow-wrap:normal}
+.help-label>.measure-info{flex:0 0 26px;margin:0;margin-top:-3px}
+.measure-info{width:26px;height:26px;flex:0 0 26px;margin:0 0 0 4px;padding:5px;color:var(--muted);border-radius:8px;line-height:1}
+.measure-info .icon{width:15px;height:15px;stroke-width:1.7}
+.measure-info:focus-visible{outline:2px solid var(--purple);outline-offset:2px}
+.metric-top{gap:10px;align-items:flex-start}
+.metric-top .metric-label,.supply-metrics .metric-top .metric-label{display:block;min-width:0;flex:1;line-height:1.5;padding-top:3px}
+.metric-top>.measure-info{flex:0 0 28px;width:28px;height:28px;margin:0;background:rgba(var(--purple-rgb),.1);color:var(--purple);border:1px solid rgba(var(--purple-rgb),.15)}
+.metric-top>.measure-info:hover,.metric-top>.measure-info[aria-expanded=true]{background:var(--selected-fill);color:#fff;border-color:var(--selected-border)}
+.dashboard-metrics .metric-top>.measure-info{width:28px;height:28px;margin:0}
+.panel-head>div:first-child,.modal-head h2{min-width:0}
+.panel-head h2{line-height:1.5}
+:is(.field>label,.setting-row h3,.team-access-heading h3,.trend-totals small,.agent-stats small,.earnings-hero>.eyebrow):has(>.measure-info){display:inline-flex;align-items:flex-start;gap:5px;min-width:0}
+:is(.field>label,.setting-row h3,.team-access-heading h3,.trend-totals small,.agent-stats small,.earnings-hero>.eyebrow)>.measure-info{margin:0;position:relative;top:-3px}
+.table-heading{display:inline-flex;align-items:flex-start;gap:4px;white-space:normal}
+.key-row>.help-label,.key-row>span:has(.help-label){min-width:0}
+.breakdown{position:relative}.breakdown>summary{padding-right:32px}.breakdown>.breakdown-help{position:absolute;right:10px;top:10px;margin:0}
+.measure-popover{width:min(320px,calc(100vw - 24px));padding:14px 16px;max-height:calc(100dvh - 32px);overflow-y:auto;border-radius:14px;border-color:rgba(var(--purple-rgb),.28);box-shadow:0 12px 36px #0003;font-size:13px;line-height:1.65}
+.measure-popover-head{align-items:flex-start;gap:12px;margin-bottom:6px}
+.measure-popover-head strong{padding-top:3px;font-size:14px;line-height:1.4;min-width:0}
+.measure-popover-head .info-btn{flex:0 0 28px;width:28px;height:28px;border-radius:7px;background:var(--hover);margin:-2px -4px 0 0}
+.measure-popover-head .info-btn:hover{color:var(--purple)}
+@media(max-width:700px){.help-label{gap:4px}.metric-top{gap:7px}.panel-head h2{line-height:1.5}}
+
+:is(.modal-head h2,.cost-total>span,.flex>span,.panel-head>span,.section-label,.grow):has(>.measure-info){display:inline-flex;align-items:flex-start;gap:5px;min-width:0}
+:is(.modal-head h2,.cost-total>span,.flex>span,.panel-head>span,.section-label,.grow)>.measure-info{margin:0;flex-shrink:0}
