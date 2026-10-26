@@ -200,6 +200,51 @@ const explanations={
 let lastFocus=null, loginRole=state.role;
 // One fixed dialog shell; preserve page position across nested dialog steps.
 let modalPageLock=null;
+// Keep the dialog inside the visible viewport, including the mobile keyboard.
+let modalTouchPoint=null,modalViewportFrame=0;
+function syncModalViewport(){
+ if(!modalPageLock)return;
+ const root=document.getElementById('modal-root'),v=window.visualViewport;
+ if(!root)return;
+ const box={top:v?.offsetTop||0,left:v?.offsetLeft||0,width:v?.width||window.innerWidth,height:v?.height||window.innerHeight};
+ Object.entries(box).forEach(([k,value])=>root.style[k]=value+'px');
+}
+function queueModalViewport(){
+ if(!modalPageLock||modalViewportFrame)return;
+ modalViewportFrame=requestAnimationFrame(()=>{modalViewportFrame=0;syncModalViewport()});
+}
+function modalScrollAllows(position,client,extent,delta){
+ const max=Math.max(0,extent-client);
+ return max>1&&((delta>0&&position>1)||(delta<0&&position<max-1));
+}
+function modalTouchCanScroll(target,dx,dy){
+ const horizontal=Math.abs(dx)>Math.abs(dy),axis=horizontal?'X':'Y',delta=horizontal?dx:dy;
+ const dialog=target.closest('.modal,.measure-popover');if(!dialog)return false;
+ for(let el=target;el&&dialog.contains(el);el=el.parentElement){
+  const style=getComputedStyle(el),overflow=style['overflow'+axis];
+  if(/auto|scroll/.test(overflow)&&modalScrollAllows(horizontal?el.scrollLeft:el.scrollTop,horizontal?el.clientWidth:el.clientHeight,horizontal?el.scrollWidth:el.scrollHeight,delta))return true;
+  if(el===dialog)break;
+ }
+ return false;
+}
+document.addEventListener('touchstart',e=>{
+ modalTouchPoint=modalPageLock&&e.touches.length===1?{x:e.touches[0].clientX,y:e.touches[0].clientY}:null;
+},{passive:true});
+document.addEventListener('touchmove',e=>{
+ if(!modalPageLock||!modalTouchPoint||e.touches.length!==1)return;
+ const t=e.touches[0],dx=t.clientX-modalTouchPoint.x,dy=t.clientY-modalTouchPoint.y;
+ modalTouchPoint={x:t.clientX,y:t.clientY};
+ if(Math.abs(dx)+Math.abs(dy)<1)return;
+ const target=e.target instanceof Element?e.target:e.target.parentElement;
+ // Allow a genuine inner scroller; stop sideways panning and rubber-band at its edges.
+ if(!target||!modalTouchCanScroll(target,dx,dy)){if(e.cancelable)e.preventDefault()}
+},{passive:false});
+document.addEventListener('touchend',()=>{modalTouchPoint=null},{passive:true});
+document.addEventListener('touchcancel',()=>{modalTouchPoint=null},{passive:true});
+window.addEventListener('resize',queueModalViewport);
+window.visualViewport?.addEventListener('resize',queueModalViewport);
+window.visualViewport?.addEventListener('scroll',queueModalViewport);
+
 function lockModalPage(){
  if(modalPageLock)return;
  closeMobileNavigation();
@@ -209,11 +254,14 @@ function lockModalPage(){
  if(gutter)body.style.paddingRight=`${parseFloat(getComputedStyle(body).paddingRight)+gutter}px`;
  body.style.position='fixed';body.style.top=`-${modalPageLock.y}px`;body.style.left=`-${modalPageLock.x}px`;body.style.width='100%';body.style.overflow='hidden';
  document.documentElement.classList.add('dialog-open');
+ syncModalViewport();
  ['app','preview-toolbar'].forEach(id=>{const el=document.getElementById(id);if(el){modalPageLock.inert.push([el,el.inert]);el.inert=true}});
 }
 function unlockModalPage(){
  if(!modalPageLock)return;
  const saved=modalPageLock;modalPageLock=null;
+ modalTouchPoint=null;cancelAnimationFrame(modalViewportFrame);modalViewportFrame=0;
+ const root=document.getElementById('modal-root');if(root)root.removeAttribute('style');
  Object.entries(saved.styles).forEach(([k,v])=>document.body.style[k]=v);
  saved.inert.forEach(([el,value])=>el.inert=value);
  document.documentElement.classList.remove('dialog-open');

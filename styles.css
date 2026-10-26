@@ -719,3 +719,14 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 .sale-dragging,.sale-dragging *{cursor:grabbing!important;user-select:none!important;-webkit-user-select:none!important}
 @media(max-width:700px){.sale-layout-tools{padding:12px 12px 0;justify-content:space-between}.sale-layout-tools select{flex:1;max-width:none;min-width:0}.sale-layout-tools .btn{min-height:42px}.sale-arrange-hint{width:100%}.sale-layout-actions{width:100%;justify-content:flex-end}.is-arranging .sale-product{padding-left:68px;min-height:100px;display:flex;align-items:center}.is-arranging .sale-drag-handle{position:absolute;left:12px;top:50%;transform:translateY(-50%);margin:0}.is-arranging .sale-product>.flex{width:100%;gap:9px}.is-arranging .product-glyph{display:none}.sale-drag-ghost{padding-left:68px;display:flex;align-items:center}.sale-drag-ghost .sale-drag-handle{position:absolute;left:12px;top:50%;transform:translateY(-50%);margin:0}.sale-drag-ghost .product-glyph{display:none}}
 @media(min-width:701px){.is-arranging .sale-product,.sale-drag-ghost{padding-left:72px;min-height:110px;display:flex;align-items:center}.is-arranging .sale-drag-handle,.sale-drag-ghost .sale-drag-handle{position:absolute;left:14px;top:50%;transform:translateY(-50%);margin:0}.is-arranging .sale-product>.flex{width:100%;gap:10px}.is-arranging .product-glyph,.sale-drag-ghost .product-glyph{display:none}}
+
+/* Anchored modal viewport: only inner scroll regions may move, never the shell. */
+html.dialog-open,html.dialog-open body{overscroll-behavior:none;overflow:hidden}
+html.dialog-open #modal-root{position:fixed;inset:auto;top:0;left:0;width:100%;height:100dvh;z-index:100;overflow:hidden;overscroll-behavior:none;isolation:isolate}
+#modal-root>.modal-overlay{position:absolute;inset:0;width:100%;height:100%;min-width:0;min-height:0;box-sizing:border-box;overflow:hidden;overscroll-behavior:none}
+#modal-root .modal{flex:0 1 auto;width:min(500px,100%);max-width:100%;max-height:100%;min-height:0;overflow:hidden;overscroll-behavior:none}
+#modal-root .modal.wide{width:min(750px,100%)}
+#modal-root .modal-head{flex-shrink:0;overflow:hidden}
+#modal-root .modal-body{flex:1 1 auto;width:100%;min-width:0;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:none;-webkit-overflow-scrolling:touch}
+#modal-root :is(.table-wrap,textarea,.protocol-canvas-wrap){overscroll-behavior:none}
+@media(max-width:700px){#modal-root .modal-overlay{padding:12px max(10px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}#modal-root .modal{margin:0;max-height:100%}#modal-root .modal-body{scroll-padding-bottom:20px}#modal-root :is(input,select,textarea){font-size:16px!important}}
