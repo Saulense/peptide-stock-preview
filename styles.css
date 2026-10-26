@@ -350,3 +350,8 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .agent-card-bottom .btn{width:100%;min-width:0;min-height:42px;padding:10px 8px;gap:6px;border-radius:9px;white-space:normal;line-height:1.3;text-align:center}
 .agent-card-bottom .btn.primary{grid-column:1/-1;min-height:44px}
 @media(max-width:360px){.agent-card{padding:16px}.agent-card-bottom .btn{font-size:12px}}
+
+/* Infrequent support access stays visually secondary to daily card actions. */
+.agent-card-bottom .agent-support-link{grid-column:1/-1;justify-self:end;width:auto;min-height:32px;padding:6px 4px;border-color:transparent;background:transparent;box-shadow:none;color:var(--muted);font-size:12px;gap:6px}
+.agent-card-bottom .agent-support-link:hover{color:var(--purple);background:var(--hover)}
+.agent-card-bottom .agent-support-link .icon{width:14px;height:14px}
