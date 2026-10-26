@@ -154,3 +154,11 @@ select:not([multiple]):not([size]):disabled{opacity:.55;cursor:not-allowed}
 .transfer-check{display:flex;align-items:flex-start;gap:12px;line-height:1.6;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2)}
 .transfer-check input{flex:0 0 auto;width:18px;height:18px;margin-top:3px;accent-color:var(--purple)}
 [data-transfer-sale]{width:18px;height:18px;accent-color:var(--purple)}
+
+@media(max-width:560px){
+.transfer-lines .table-wrap{overflow:visible}.transfer-lines table,.transfer-lines tbody{display:block}.transfer-lines thead{display:none}
+.transfer-lines tr{display:grid;grid-template-columns:1fr 1fr;position:relative;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.transfer-lines td{display:block;white-space:normal;border:0;padding:0;min-width:0}.transfer-lines td:first-child,.transfer-pick td:nth-child(2){grid-column:1/-1;padding-right:28px}
+.transfer-lines td:before{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.transfer-lines td:nth-child(2):before{content:'Collected'}.transfer-lines td:nth-child(3):before{content:'Product cost'}.transfer-lines td:nth-child(4):before{content:'Commission kept'}.transfer-lines td:nth-child(5):before{content:'To business'}
+.transfer-pick td:first-child{position:absolute;right:0;top:16px;padding:0}.transfer-pick td:nth-child(2):before{content:none}.transfer-pick td:nth-child(3):before{content:'Collected'}.transfer-pick td:nth-child(4):before{content:'Product cost'}.transfer-pick td:nth-child(5):before{content:'Commission kept'}.transfer-pick td:nth-child(6):before{content:'To business'}
+}
