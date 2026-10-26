@@ -363,10 +363,13 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 @media(max-width:700px){
  .topbar{position:sticky;top:var(--preview-bar-height);z-index:50;background:var(--bg);box-shadow:0 4px 14px #00000008}
  .content{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
- .mobile-sale-review{bottom:0;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
- .agent-view:has(.mobile-sale-review) .content{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+ .mobile-sale-review{bottom:0;gap:16px;padding:16px max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--panel) 92%,var(--purple));border-top:1px solid color-mix(in srgb,var(--line) 65%,var(--purple));box-shadow:0 -8px 28px #0003}
+ .mobile-sale-review>div{min-width:0;overflow-wrap:anywhere}
+ .mobile-sale-review .btn{min-height:44px;flex-shrink:0}
+ .mobile-sale-review small{margin-top:3px}
+ .agent-view:has(.mobile-sale-review) .content{padding-bottom:calc(140px + env(safe-area-inset-bottom,0px))}
  #toast{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
- body:has(.mobile-sale-review) #toast{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+ body:has(.mobile-sale-review) #toast{bottom:calc(116px + env(safe-area-inset-bottom,0px))}
 }
 
 /* Compact financial cards with optional plain-language explanations. */
