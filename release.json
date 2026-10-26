@@ -1,15 +1,19 @@
 {
-  "builtAt": "2026-10-26T12:23:55.288641+00:00",
+  "builtAt": "2026-10-26T12:43:49.753755+00:00",
   "files": {
-    "index.html": "897efc1404fdacc56eeb41e937692eedf113883955562da99d0ce489dc3ad371",
-    "styles.css": "9e9d8072adf204b3959f998c6597ad43f5863ebdbb965b84d6b7c60261a02211",
-    "app.js": "4b5497a0475e8f03a6c8f2f3e0e54173b7ef2cbbdcf36f2f71531396b220e046",
-    "workflows.js": "37ab42cf14d079046eed81d4cd98a1cf16e8c1c8a05a7bfdb9f995db27ff34cb",
+    "index.html": "45fddbb80597dbef4bf54106dbddf451bd033b87e696aad03600e7a719d1525f",
+    "styles.css": "0daa7974c0e43e6a252c5fe3ab2ec4a220a49302070298c9b7ffb66c9e977c73",
+    "app.js": "68d7da4da6340b0240a11f64fe5036812b15e8a49d0df230867549f0d7ea9a59",
+    "workflows.js": "1322c489181b493499e6312b682bfa8a8d216e353d54c3ab578c55673f88c5c8",
     "progress.js": "666ff06af4d44225ac6d3c70a641141adbc0ad2943462b9cc74d91d93c169ec0",
     "requests.js": "6e0af36b9eedd3deea7bad08bf4ef1934de1e0d88d20c4f337dca25349a383a8",
-    "remittances.js": "c4f6424028b20a94a3b037cee8bf1047c83c8b4a28e9d409e75b11d2d573b927",
+    "remittances.js": "91b2d6899e03dfc66a0317759a4a0f8910a72d12c0fdf7fa37a4193bbb165a97",
+    "protocols.js": "e2ef3936c8a2b0bf5f9d319d9df04c925a83f51ec913683de466e1710dcb9e7f",
     "reporting.js": "b349d0cfe1d49d4dda572ebf6e08c207692c2b20c348f7f4433cf293ce18fb4f",
     "trend.js": "8e07a4d7cbb4acea23cc8d616292420be514bab37a8dc8df421e2e46785cf4be",
+    "assets/pdf.min.mjs": "57456c8e0c81e46be31174b499ef77f2b9f5ee46d04412ba627320a36755d4c2",
+    "assets/pdf.worker.min.mjs": "9536359f1b8367850d485731ca1d5e45c159a7b7a0912325e539937aa21ceb18",
+    "assets/PDFJS-LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
     "assets/lucide.min.js": "3411692820cb8d47543f69496aa25fd603a358f4498046f41c508a5a3342210e",
     "assets/LUCIDE-LICENSE.txt": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
   }
