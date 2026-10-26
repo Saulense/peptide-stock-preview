@@ -1,9 +1,9 @@
 {
-  "builtAt": "2026-10-26T17:49:18.306488+00:00",
+  "builtAt": "2026-10-26T17:55:57.947952+00:00",
   "files": {
-    "index.html": "97f819bf44f9e065b0c2845e14471449d09543c48cfb668fcfec4bbd34a3bbe2",
-    "styles.css": "647cdb2c8a69e191e956bb33fd5b034895b3394ba6524370b1b1f5cc4cff912c",
-    "app.js": "6e0cd7699197b02566761618f3e847bfabd81590011fcadc47ff875ccaddd39a",
+    "index.html": "af5fa5ac0dd9960d086611ee54352d626bbbc93e550cf17c3b03858b55f1708a",
+    "styles.css": "40a3f02e6600df461133208ed58d42dae461cce3a0d14f6e9c461db3bcb179e7",
+    "app.js": "bcebdce79e8119d577928eb81ce5ef26c2df91ecd661a754fd1e38a7a4d2c39b",
     "messages.js": "6fc804f7b0462adc24aaf82d667fab1b266ede8ff6fe7ad2c33d3c31e2f1e44c",
     "admin-team.js": "41d076d7d28c1a349d6f3d02875dc76fe664d2521dd34a829ba74cd38d629702",
     "workflows.js": "181863bff9e3481c4e99948ab90834b499edb8f80cefcb7c0b637a322d46bf1d",
