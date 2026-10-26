@@ -1,4 +1,4 @@
-# Peptide Stock — Design Preview
+# PeptiStock — Design Preview
 
 Public, interactive UI prototype with fictional sample data. No real accounts, payments or inventory. Demo changes reset on reload.
 

@@ -1,9 +1,12 @@
 {
-  "builtAt": "2026-10-26T18:25:59.548440+00:00",
+  "builtAt": "2026-10-26T18:29:09.387615+00:00",
   "files": {
-    "index.html": "71e7860ea6b470e9f08ec01de5d9ab930dd0249a83a2587d82332e1399a2e134",
+    "assets/peptistock-icon.svg": "08e09f3c3a8a47981288d2527c156e097d131fe835a2be517cd777d166428d30",
+    "assets/peptistock-icon-32.png": "c9d276e13eca26b59acd9b948bca312999625b37f10e5eb4ef50c4f8a6c5cca9",
+    "assets/peptistock-apple-touch-icon.png": "72c8eacb3ba4b1e710cd05fcdaa7712bbd15a1ac8e47f6ea07c6066972808656",
+    "index.html": "3810281b01d57dd7941ac1ed5e5017d428cbd0c6c7bd6ddc7c5c5306a2b8fcca",
     "styles.css": "8d9efbe9f708fa61d6afc30c607eb28ca291da9a8ca679a69d071cc140b43815",
-    "app.js": "7de41478cd05d0de67d2eacb17aab6d876201086604deb0d71e2d85cced8dc2d",
+    "app.js": "f3e4b8cc353ba765b1c6035a4535205cf8876de8f7c88bb5f6e39743a25a4436",
     "messages.js": "6fc804f7b0462adc24aaf82d667fab1b266ede8ff6fe7ad2c33d3c31e2f1e44c",
     "admin-team.js": "41d076d7d28c1a349d6f3d02875dc76fe664d2521dd34a829ba74cd38d629702",
     "workflows.js": "4827b84e3a0ae6e8fac2956acd0bb0b23bc3d489dddd2061cef452ae7bfa4e1e",
