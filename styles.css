@@ -1016,3 +1016,27 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .mobile-records .mobile-catalogue-records td[data-column="Category"]{grid-column:1/-1}
  .mobile-records .mobile-catalogue-records td[data-column="Category"]::before{display:none}
 }
+
+/* Selected-account stock: a compact desktop ledger, mobile record layout retained. */
+.account-stock-panel .toolbar{gap:12px;flex-wrap:wrap}
+.stock-account-select{width:min(100%,260px);min-width:0}
+.stock-account-select select{width:100%;min-width:0}
+.stock-account-count{font-weight:650;white-space:nowrap}
+.stock-account-count small{font-weight:400;color:var(--muted)}
+.stock-account-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+@media(min-width:701px){
+ .account-stock-panel table{table-layout:fixed;width:100%;min-width:0!important}
+ .account-stock-panel th,.account-stock-panel td{min-width:0!important;padding:13px 16px;overflow-wrap:anywhere}
+ .account-stock-panel th:nth-child(1){width:37%}
+ .account-stock-panel th:nth-child(2){width:13%}
+ .account-stock-panel th:nth-child(3){width:22%}
+ .account-stock-panel th:nth-child(4){width:20%}
+ .account-stock-panel th:nth-child(5){width:8%}
+ .account-stock-panel td:last-child{text-align:right}
+}
+@media(max-width:700px){
+ .account-stock-panel .toolbar{padding:14px;gap:12px}
+ .stock-account-select{flex:1;width:auto}
+ .stock-account-actions{width:100%;margin:0;justify-content:flex-end}
+ .stock-account-actions .btn{flex:1;justify-content:center}
+}
