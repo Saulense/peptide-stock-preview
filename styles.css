@@ -701,3 +701,21 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 .request-product-list-row{border-top:1px solid var(--line);font-size:13px}.request-product-list-row>div{min-width:0;overflow-wrap:anywhere}.request-product-list-row small{display:block;color:var(--muted);font-size:12px;margin-top:3px}.request-product-quantity{text-align:right;font-variant-numeric:tabular-nums}
 .request-product-pagination{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:14px;font-size:12px;color:var(--muted)}.request-product-pagination>div{display:flex;align-items:center;gap:10px}.request-product-pagination .icon-btn{width:34px;height:34px}
 @media(max-width:700px){.request-product-preview{width:180px}.request-product-more{min-height:32px}.request-product-list-head,.request-product-list-row{padding:10px;gap:10px}.request-product-pagination{justify-content:center}.request-product-pagination>span{flex-basis:100%;text-align:center}}
+
+/* Personal quick-sale layout. Touch scrolling stays native outside dedicated handles. */
+.sale-layout-tools{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:12px 16px 0;flex-wrap:wrap}
+.sale-layout-tools select{width:auto;min-width:140px;max-width:190px}
+.sale-layout-actions{display:flex;gap:8px;align-items:center}
+.sale-arrange-hint{display:flex;align-items:center;gap:7px;margin-right:auto;color:var(--muted);font-size:13px}
+.sale-arrange-hint .icon{width:16px;height:16px}
+.sale-product{position:relative;min-width:0}
+.sale-drag-handle{display:grid;place-items:center;touch-action:none;cursor:grab;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--purple);margin-bottom:12px;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.sale-drag-handle:focus-visible{outline:2px solid var(--purple);outline-offset:3px}
+.is-arranging .sale-product{border-style:dashed}
+.is-arranging .sale-product-bottom{display:none}
+.sale-product.is-dragging{opacity:.3;border:2px dashed var(--purple)}
+.sale-drag-ghost{position:fixed!important;left:0;top:0;margin:0!important;z-index:500;pointer-events:none;opacity:.96;box-shadow:0 14px 40px #0004;border:2px solid var(--purple)!important;will-change:transform;transition:none!important}
+.sale-drag-ghost .sale-product-bottom{display:none}
+.sale-dragging,.sale-dragging *{cursor:grabbing!important;user-select:none!important;-webkit-user-select:none!important}
+@media(max-width:700px){.sale-layout-tools{padding:12px 12px 0;justify-content:space-between}.sale-layout-tools select{flex:1;max-width:none;min-width:0}.sale-layout-tools .btn{min-height:42px}.sale-arrange-hint{width:100%}.sale-layout-actions{width:100%;justify-content:flex-end}.is-arranging .sale-product{padding-left:68px;min-height:100px;display:flex;align-items:center}.is-arranging .sale-drag-handle{position:absolute;left:12px;top:50%;transform:translateY(-50%);margin:0}.is-arranging .sale-product>.flex{width:100%;gap:9px}.is-arranging .product-glyph{display:none}.sale-drag-ghost{padding-left:68px;display:flex;align-items:center}.sale-drag-ghost .sale-drag-handle{position:absolute;left:12px;top:50%;transform:translateY(-50%);margin:0}.sale-drag-ghost .product-glyph{display:none}}
+@media(min-width:701px){.is-arranging .sale-product,.sale-drag-ghost{padding-left:72px;min-height:110px;display:flex;align-items:center}.is-arranging .sale-drag-handle,.sale-drag-ghost .sale-drag-handle{position:absolute;left:14px;top:50%;transform:translateY(-50%);margin:0}.is-arranging .sale-product>.flex{width:100%;gap:10px}.is-arranging .product-glyph,.sale-drag-ghost .product-glyph{display:none}}

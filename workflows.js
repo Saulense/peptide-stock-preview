@@ -13,7 +13,7 @@ function flowProfile(index){return ['commission','partner','wholesale','commissi
 function commissionFor(p,q=1){return isWholesale()?0:Math.round((workflow.type==='partner'?p.price:Math.max(0,p.price-p.cost))*q*accountType().rate)/100}
 function personalStock(){return progressStock()}
 function stockSum(){return personalStock().reduce((n,p)=>n+p.qty,0)}
-function workflowHome(){return `<h1 class="sr-only">Record sale</h1><div class="flow-mini-stats"><span>${icon('boxes')}<strong>${stockSum()}</strong> vials available</span>${!isWholesale()?`<button class="link-btn" data-page="balance">${icon('wallet')} <strong>${transferMoney(transferSnapshot().net)}</strong> to send ${icon('arrow-up-right')}</button>`:`<span>${icon('circle-check')} Your stock is prepaid</span>`}<button class="link-btn" data-page="sales">Orders ${icon('arrow-up-right')}</button></div>${requestRecords().some(r=>r.agent===progressIndex()&&r.status==='dispatched')?`<div class="delivery-nudge">${icon('package-check')}<div class="grow"><strong>Stock is on the way</strong><small>Confirm receipt once it arrives</small></div>${btn('View delivery','arrow-right','data-flow="receive"','small')}</div>`:''}<div class="quick-sale-layout"><section class="panel sale-picker"><div class="toolbar"><div class="search">${icon('search')}<input id="quick-product-search" type="search" placeholder="Find a peptide…" aria-label="Find a peptide" value="${esc(workflow.saleSearch)}"></div><span class="muted">${personalStock().filter(p=>p.qty>0).length} in stock</span></div><div class="sale-product-grid">${personalStock().filter(p=>p.qty>0).map(p=>`<article class="sale-product" data-quick-product="${p.id}" ${workflow.saleSearch&&!(p.name+' '+p.dose).toLowerCase().includes(workflow.saleSearch)?'hidden':''} data-name="${esc((p.name+' '+p.dose).toLowerCase())}"><div class="flex">${productGlyph(p)}<div class="grow"><h3>${esc(p.name)}</h3><small>${doseMarkup(p.dose)}</small></div><span class="stock-pill ${stockIsLow(p)?'low':''}">${p.qty} left</span></div><div class="sale-product-bottom"><strong>${priceLabel(p)} <small>/ vial</small></strong><div class="stepper"><button data-cart-step="${p.id}" data-delta="-1" aria-label="Remove one ${esc(p.name)} ${esc(p.dose)}">${icon('minus')}</button><input aria-label="Quantity of ${esc(p.name)} ${esc(p.dose)}" data-cart-qty="${p.id}" type="number" min="0" max="${p.qty}" step="1" value="${workflow.cart[p.id]||0}"><button data-cart-step="${p.id}" data-delta="1" aria-label="Add one ${esc(p.name)} ${esc(p.dose)}">${icon('plus')}</button></div></div></article>`).join('')}</div><p class="empty" id="quick-empty" ${personalStock().some(p=>p.qty>0&&(p.name+' '+p.dose).toLowerCase().includes(workflow.saleSearch))?'hidden':''}>No matching products.</p></section><aside class="panel sale-basket"><div id="sale-basket-content">${basketMarkup()}</div></aside></div><div id="mobile-sale-review-root">${mobileBasket()}</div>`}
+function workflowHome(){return `<h1 class="sr-only">Record sale</h1><div class="flow-mini-stats"><span>${icon('boxes')}<strong>${stockSum()}</strong> vials available</span>${!isWholesale()?`<button class="link-btn" data-page="balance">${icon('wallet')} <strong>${transferMoney(transferSnapshot().net)}</strong> to send ${icon('arrow-up-right')}</button>`:`<span>${icon('circle-check')} Your stock is prepaid</span>`}<button class="link-btn" data-page="sales">Orders ${icon('arrow-up-right')}</button></div>${requestRecords().some(r=>r.agent===progressIndex()&&r.status==='dispatched')?`<div class="delivery-nudge">${icon('package-check')}<div class="grow"><strong>Stock is on the way</strong><small>Confirm receipt once it arrives</small></div>${btn('View delivery','arrow-right','data-flow="receive"','small')}</div>`:''}<div class="quick-sale-layout"><section class="panel sale-picker"><div class="toolbar"><div class="search">${icon('search')}<input id="quick-product-search" ${saleLayoutEditing()?'disabled':''} type="search" placeholder="Find a peptide…" aria-label="Find a peptide" value="${esc(workflow.saleSearch)}"></div><span class="muted">${personalStock().filter(p=>p.qty>0).length} in stock</span></div>${saleLayoutToolbar()}<div class="sale-product-grid ${saleLayoutEditing()?'is-arranging':''}">${saleLayoutProducts().map(p=>`<article class="sale-product" data-quick-product="${p.id}" ${workflow.saleSearch&&!(p.name+' '+p.dose).toLowerCase().includes(workflow.saleSearch)?'hidden':''} data-name="${esc((p.name+' '+p.dose).toLowerCase())}">${saleLayoutHandle(p)}<div class="flex">${productGlyph(p)}<div class="grow"><h3>${esc(p.name)}</h3><small>${doseMarkup(p.dose)}</small></div><span class="stock-pill ${stockIsLow(p)?'low':''}">${p.qty} left</span></div><div class="sale-product-bottom"><strong>${priceLabel(p)} <small>/ vial</small></strong><div class="stepper"><button data-cart-step="${p.id}" data-delta="-1" aria-label="Remove one ${esc(p.name)} ${esc(p.dose)}">${icon('minus')}</button><input aria-label="Quantity of ${esc(p.name)} ${esc(p.dose)}" data-cart-qty="${p.id}" type="number" min="0" max="${p.qty}" step="1" value="${workflow.cart[p.id]||0}"><button data-cart-step="${p.id}" data-delta="1" aria-label="Add one ${esc(p.name)} ${esc(p.dose)}">${icon('plus')}</button></div></div></article>`).join('')}</div><p class="empty" id="quick-empty" ${personalStock().some(p=>p.qty>0&&(p.name+' '+p.dose).toLowerCase().includes(workflow.saleSearch))?'hidden':''}>No matching products.</p></section><aside class="panel sale-basket"><div id="sale-basket-content">${basketMarkup()}</div></aside></div><div id="mobile-sale-review-root">${mobileBasket()}</div>`}
 function cartEntries(){return Object.entries(workflow.cart).filter(([id,q])=>q>0).flatMap(([id,q])=>{const p=personalStock().find(p=>p.id===+id);return (priceQuote(progressIndex(),+id,q)||[]).map(l=>({p:{...p,...l},q:l.q}))})}
 function cartCommission(entries=cartEntries()){return saleCommissionAllocations(entries.map(({p,q})=>({...p,q}))).reduce((n,c)=>n+c,0)/100}
 function basketMarkup(){const entries=cartEntries(),q=entries.reduce((s,x)=>s+x.q,0),total=entries.reduce((s,x)=>s+x.p.price*x.q,0);return `<div class="panel-head"><h2>Your sale</h2>${badge(q+' vials','purple')}</div><div class="basket-body">${entries.length?entries.map(({p,q})=>`<div class="basket-line"><div><strong>${esc(p.name)}</strong><small>${doseMarkup(p.dose)} · ${esc(p.source||'')} · ${q} × ${euro(p.price)}</small></div><span>${euro(p.price*q,2)}</span></div>`).join(''):`<div class="basket-empty">${icon('shopping-basket')}<h3>Start with a product</h3><p>Add quantities using the + buttons.</p></div>`}<div class="basket-total"><span>Sale total</span><strong>${euro(total,2)}</strong></div>${!isWholesale()?`<div class="flex between muted"><span>Estimated commission ${measureInfo('Estimated commission')}</span><strong class="green">${euro(cartCommission(entries),2)}</strong></div>`:''}<button class="btn primary full mt" data-flow="review-sale" ${!entries.length?'disabled':''}>${icon('check')}Review sale</button></div>`}
@@ -156,4 +156,97 @@ document.addEventListener('click',e=>{
  if(b.dataset.orderEdit)return editOrder(b.dataset.orderEdit);
  if(b.dataset.orderSave){const id=b.dataset.orderSave;if(saveOrderMetadata(id,{customerName:$('#order-customer').value,customerContact:$('#order-contact').value,note:$('#order-note').value})){refreshOrders();openOrder(id);toast('Order details updated.')}return}
  orderView().page=+b.dataset.ordersPage;refreshOrders();$('#orders-results')?.scrollIntoView({block:'start',behavior:'instant'});
+});
+
+/* Personal product layout: presentation preferences only; never inventory or prices. */
+const saleLayouts=new Map();
+let saleLayoutEdit=null, saleLayoutDrag=null;
+function saleLayoutKey(){return 'peptistock.product-layout.v1.agent-'+progressIndex()}
+function saleLayoutPreference(){
+ const key=saleLayoutKey();
+ if(!saleLayouts.has(key)){
+  let saved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')||{}}catch{}
+  saleLayouts.set(key,{mode:['custom','popular','name'].includes(saved.mode)?saved.mode:'custom',order:Array.isArray(saved.order)?[...new Set(saved.order.filter(Number.isInteger))]:[]});
+ }
+ return saleLayouts.get(key);
+}
+function saleLayoutSave(){
+ try{localStorage.setItem(saleLayoutKey(),JSON.stringify(saleLayoutPreference()));return true}catch{toast('Order kept for this visit. Browser storage is unavailable.');return false}
+}
+function saleLayoutEditing(){return saleLayoutEdit?.key===saleLayoutKey()&&!workflow.support}
+function saleLayoutProducts(){
+ const list=personalStock().filter(p=>p.qty>0),pref=saleLayoutPreference(),editing=saleLayoutEditing();
+ const order=editing?saleLayoutEdit.order:pref.order,mode=editing?'custom':pref.mode,rank=new Map(order.map((id,i)=>[id,i]));
+ const sold=new Map();if(mode==='popular')progressSales().forEach(s=>sold.set(s.product,(sold.get(s.product)||0)+s.q));
+ return list.sort((a,b)=>mode==='name'?a.name.localeCompare(b.name)||a.dose.localeCompare(b.dose)||a.id-b.id:mode==='popular'?(sold.get(b.id)||0)-(sold.get(a.id)||0)||a.id-b.id:(rank.get(a.id)??Infinity)-(rank.get(b.id)??Infinity)||a.id-b.id);
+}
+function saleLayoutToolbar(){
+ const editing=saleLayoutEditing(),disabled=workflow.support?'disabled':'';
+ return `<div class="sale-layout-tools">${editing?`<span class="sale-arrange-hint">${icon('grip-vertical')} Drag to arrange</span><div class="sale-layout-actions"><button class="btn small" data-sale-layout="reset">Reset</button><button class="btn small" data-sale-layout="cancel">Cancel</button><button class="btn small primary" data-sale-layout="done">${icon('check')}Done</button></div>`:`<label class="sr-only" for="sale-product-sort">Product order</label><select id="sale-product-sort" title="Top sellers sorts by your recorded units sold across all dates." ${disabled}>${[['custom','My order'],['popular','Top sellers'],['name','Name A–Z']].map(([value,label])=>`<option value="${value}" ${saleLayoutPreference().mode===value?'selected':''}>${label}</option>`).join('')}</select><button class="btn small" data-sale-layout="start" ${disabled}>${icon('grip-vertical')}Arrange</button>`}</div><span class="sr-only" id="sale-layout-announcement" role="status" aria-live="polite"></span>`;
+}
+function saleLayoutHandle(p){return saleLayoutEditing()?`<button class="sale-drag-handle" data-sale-drag="${p.id}" aria-label="Move ${esc(p.name)} ${esc(p.dose)}. Use arrow keys to reorder." title="Drag to move">${icon('grip-vertical')}</button>`:''}
+function saleLayoutAnnounce(text){const el=document.getElementById('sale-layout-announcement');if(el)el.textContent=text}
+function saleLayoutReadGrid(){return [...document.querySelectorAll('.sale-product-grid > [data-quick-product]')].map(el=>Number(el.dataset.quickProduct))}
+function saleLayoutMove(card,target,after){
+ if(!target||target===card)return;
+ const grid=card.parentElement,items=[...grid.children],positions=new Map(items.map(el=>[el,el.getBoundingClientRect()]));
+ if(after)target.after(card);else target.before(card);
+ if(items.every((el,i)=>grid.children[i]===el))return;
+ if(!matchMedia('(prefers-reduced-motion: reduce)').matches)items.forEach(el=>{if(el===card)return;const a=positions.get(el),b=el.getBoundingClientRect();el.getAnimations().forEach(x=>x.cancel());el.animate([{transform:`translate(${a.left-b.left}px,${a.top-b.top}px)`},{transform:'translate(0,0)'}],{duration:150,easing:'ease-out'})});
+ saleLayoutEdit.order=saleLayoutReadGrid();
+}
+function saleLayoutFinishDrag(cancel=false){
+ const d=saleLayoutDrag;if(!d)return;saleLayoutDrag=null;cancelAnimationFrame(d.frame);d.ghost.remove();d.card.classList.remove('is-dragging');document.body.classList.remove('sale-dragging');
+ if(d.capture.hasPointerCapture(d.pointer))d.capture.releasePointerCapture(d.pointer);
+ if(cancel){const grid=d.card.parentElement;d.before.forEach(id=>{const el=grid.querySelector(`[data-quick-product="${id}"]`);if(el)grid.append(el)});saleLayoutEdit.order=d.before}
+ d.handle.focus({preventScroll:true});saleLayoutAnnounce(cancel?'Move cancelled.':`Moved to position ${saleLayoutReadGrid().indexOf(Number(d.card.dataset.quickProduct))+1}.`);
+}
+function saleLayoutDragFrame(){
+ const d=saleLayoutDrag;if(!d)return;
+ const header=document.querySelector('.topbar')?.getBoundingClientRect(),top=Math.max(0,header?.bottom||0)+50,bottom=innerHeight-75;
+ const speed=d.y<top?-Math.min(14,(top-d.y)*.24):d.y>bottom?Math.min(14,(d.y-bottom)*.24):0;
+ if(speed)window.scrollBy(0,speed);
+ d.ghost.style.transform=`translate3d(${d.x-d.offsetX}px,${d.y-d.offsetY}px,0)`;
+ const target=document.elementFromPoint(d.x,d.y)?.closest('[data-quick-product]');
+ if(target&&target!==d.card&&target.parentElement===d.card.parentElement){
+  const rect=target.getBoundingClientRect(),current=d.card.getBoundingClientRect();
+  const sameRow=Math.abs(current.top-rect.top)<rect.height/2;
+  const after=sameRow?d.x>rect.left+rect.width/2:d.y>rect.top+rect.height/2;
+  // Cross the target midpoint before moving; avoids jitter at grid boundaries.
+  const ahead=saleLayoutReadGrid().indexOf(Number(target.dataset.quickProduct))>saleLayoutReadGrid().indexOf(Number(d.card.dataset.quickProduct));
+  if(after===ahead)saleLayoutMove(d.card,target,after);
+ }
+ d.frame=requestAnimationFrame(saleLayoutDragFrame);
+}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-sale-layout]');if(!b)return;e.preventDefault();if(workflow.support)return;
+ const action=b.dataset.saleLayout;
+ if(action==='start'){saleLayoutEdit={key:saleLayoutKey(),order:saleLayoutProducts().map(p=>p.id)};workflow.saleSearch=''}
+ if(action==='reset')saleLayoutEdit.order=[];
+ if(action==='done'){
+  const pref=saleLayoutPreference(),visible=saleLayoutReadGrid();
+  // Keep absent/out-of-stock products in the preference so they return to a known position.
+  const slots=[...pref.order];let next=0;
+  const merged=slots.map(id=>visible.includes(id)?visible[next++]:id);
+  pref.order=[...new Set([...merged,...visible.slice(next)])];pref.mode='custom';saleLayoutSave();saleLayoutEdit=null;
+ }
+ if(action==='cancel')saleLayoutEdit=null;
+ render();document.querySelector(action==='start'?'[data-sale-drag]':'[data-sale-layout="start"]')?.focus({preventScroll:true});
+},true);
+document.addEventListener('change',e=>{if(e.target.id==='sale-product-sort'&&!workflow.support){saleLayoutPreference().mode=e.target.value;saleLayoutSave();render();document.getElementById('sale-product-sort')?.focus({preventScroll:true})}});
+document.addEventListener('pointerdown',e=>{
+ const handle=e.target.closest('[data-sale-drag]');if(!handle||!saleLayoutEditing()||e.button!==0||saleLayoutDrag)return;
+ e.preventDefault();const card=handle.closest('[data-quick-product]'),r=card.getBoundingClientRect(),ghost=card.cloneNode(true);
+ ghost.classList.add('sale-drag-ghost');ghost.setAttribute('aria-hidden','true');ghost.inert=true;ghost.style.width=r.width+'px';ghost.style.height=r.height+'px';document.body.append(ghost);
+ saleLayoutDrag={handle,card,ghost,capture:card.parentElement,pointer:e.pointerId,x:e.clientX,y:e.clientY,offsetX:e.clientX-r.left,offsetY:e.clientY-r.top,before:saleLayoutReadGrid(),frame:0};card.parentElement.setPointerCapture(e.pointerId);card.classList.add('is-dragging');document.body.classList.add('sale-dragging');saleLayoutDragFrame();
+});
+document.addEventListener('pointermove',e=>{if(saleLayoutDrag&&e.pointerId===saleLayoutDrag.pointer){e.preventDefault();saleLayoutDrag.x=e.clientX;saleLayoutDrag.y=e.clientY}},{passive:false});
+document.addEventListener('pointerup',e=>{if(saleLayoutDrag&&e.pointerId===saleLayoutDrag.pointer)saleLayoutFinishDrag()});
+document.addEventListener('pointercancel',()=>saleLayoutFinishDrag(true));
+document.addEventListener('lostpointercapture',()=>saleLayoutFinishDrag(true));
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&saleLayoutDrag){e.preventDefault();saleLayoutFinishDrag(true);return}
+ const handle=e.target.closest('[data-sale-drag]');if(!handle||!saleLayoutEditing()||!['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
+ e.preventDefault();const card=handle.closest('[data-quick-product]'),cards=[...card.parentElement.children],i=cards.indexOf(card),forward=['ArrowDown','ArrowRight','End'].includes(e.key),index=e.key==='Home'?0:e.key==='End'?cards.length-1:i+(forward?1:-1);
+ saleLayoutMove(card,cards[index],forward);handle.focus({preventScroll:true});card.scrollIntoView({block:'nearest'});saleLayoutAnnounce(`Position ${saleLayoutReadGrid().indexOf(Number(card.dataset.quickProduct))+1} of ${cards.length}.`);
 });
