@@ -1,8 +1,8 @@
 {
-  "builtAt": "2026-10-26T13:27:27.417420+00:00",
+  "builtAt": "2026-10-26T13:30:02.528846+00:00",
   "files": {
-    "index.html": "b887321424726890f84e320591c9ef119ccc9ad327e4010cbf6735e4e167621e",
-    "styles.css": "045c76fdd7700614a2ea1984b54011311bd2ff6a941c697ff2bbc98b0a5a91f6",
+    "index.html": "9c66eb58c5090dd803522bd4a8d9bdb19216eb5fd06283de97b8e1e1b8259e40",
+    "styles.css": "82f9403599f3b775590c99fbe5bf462799ca5fbe0ebd8cf52f0451ac6bdab093",
     "app.js": "9d761050bdb82c0e440300bbc979fa01a2d714d22f80537a974f46d7fc9c2ccc",
     "workflows.js": "17a7f42d06b63a3c6dbfecbad2fb8eede11af2ac2d021ac9a7c9f87253b862dc",
     "progress.js": "12f1fdbbb7ea4735d831c4c8fe83f43c2a9b79c21b1c24af747801066692acce",

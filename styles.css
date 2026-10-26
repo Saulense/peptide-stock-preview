@@ -344,3 +344,9 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .donut-text,.progress-ring-label{inset:19%;gap:4px;min-width:0}
 .donut-text .ring-amount,.agent-cycle-panel .donut-text .ring-amount,.progress-ring-label .ring-amount{font-size:clamp(12px,calc(90cqw / var(--ring-characters)),27px);line-height:1.15;letter-spacing:-.35px;white-space:nowrap;font-variant-numeric:tabular-nums;max-width:100%}
 .donut-text small,.agent-cycle-panel .donut-text small,.progress-ring-label span{font-size:clamp(10px,6cqw,12px);line-height:1.3;max-width:100%;white-space:normal;margin-top:0;text-align:center}
+
+/* Agent card actions: balanced secondary row and a full-width primary action. */
+.agent-card-bottom{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:stretch;padding-top:18px}
+.agent-card-bottom .btn{width:100%;min-width:0;min-height:42px;padding:10px 8px;gap:6px;border-radius:9px;white-space:normal;line-height:1.3;text-align:center}
+.agent-card-bottom .btn.primary{grid-column:1/-1;min-height:44px}
+@media(max-width:360px){.agent-card{padding:16px}.agent-card-bottom .btn{font-size:12px}}
