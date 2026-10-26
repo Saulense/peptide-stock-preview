@@ -1,8 +1,8 @@
 {
-  "builtAt": "2026-10-26T12:48:43.922771+00:00",
+  "builtAt": "2026-10-26T12:53:43.068098+00:00",
   "files": {
-    "index.html": "7ef7069762cc66bdf352967122aee94c4ed53284930f7891928a7a62d733881e",
-    "styles.css": "b2c34acba8b914a51318c648c92ad2afb1bca7ea10fbedfbc317753092c05cd5",
+    "index.html": "3b4e4e91c3b46fdf7befd9ea31dabdb47e5ef6ab6fbd8628e43ba8d495344d81",
+    "styles.css": "d1787567d57f46405d997f4e11a5641df4dd64d290ccd0ef43826b7cfae19359",
     "app.js": "cbca080bfb9df9672972bdd293da6525002f55bb21d79ebe55dd48df7a38012f",
     "workflows.js": "1322c489181b493499e6312b682bfa8a8d216e353d54c3ab578c55673f88c5c8",
     "progress.js": "666ff06af4d44225ac6d3c70a641141adbc0ad2943462b9cc74d91d93c169ec0",
@@ -10,7 +10,7 @@
     "remittances.js": "7a8b3b8e53cbb8aa9fa3c2c1e179e7cc2c3c04910dc11ea654cfa7d568610d39",
     "protocols.js": "e2ef3936c8a2b0bf5f9d319d9df04c925a83f51ec913683de466e1710dcb9e7f",
     "reporting.js": "b349d0cfe1d49d4dda572ebf6e08c207692c2b20c348f7f4433cf293ce18fb4f",
-    "trend.js": "8e07a4d7cbb4acea23cc8d616292420be514bab37a8dc8df421e2e46785cf4be",
+    "trend.js": "1af992c489efaa3ab989d8b285fec7582ca679274d89c0e9d8fddbd6b4d892b5",
     "assets/pdf.min.mjs": "57456c8e0c81e46be31174b499ef77f2b9f5ee46d04412ba627320a36755d4c2",
     "assets/pdf.worker.min.mjs": "9536359f1b8367850d485731ca1d5e45c159a7b7a0912325e539937aa21ceb18",
     "assets/PDFJS-LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
