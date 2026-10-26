@@ -585,3 +585,22 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
  .topbar>.breadcrumb{display:none}
  #view>.supply-actions{margin-bottom:20px}
 }
+
+/* The reporting calendar stays inside one bounded dialog; no native date popover. */
+.custom-range-dialog{width:440px;animation:ui-fade 140ms ease-out}
+.custom-range-dialog .modal-body{padding:16px;scrollbar-gutter:auto;overscroll-behavior-y:contain;touch-action:pan-y}
+.custom-range-content{min-width:0}.range-date-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.range-date-field{min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--input);text-align:left;display:grid;gap:3px}
+.range-date-field span{font-size:12px;color:var(--muted)}.range-date-field strong{font-size:14px;font-weight:600;white-space:nowrap}
+.range-date-field[aria-pressed=true]{border-color:var(--purple);background:rgba(var(--purple-rgb),.12);box-shadow:0 0 0 1px var(--purple)}
+.range-calendar{margin-top:16px;min-width:0}.range-calendar-nav{display:grid;grid-template-columns:34px minmax(0,1fr) 88px 34px;gap:6px;align-items:center;margin-bottom:12px}
+.range-calendar-nav>.btn{width:34px;height:38px;min-width:0;padding:7px}.range-calendar-nav select{width:100%;min-width:0;padding:8px 26px 8px 8px;background-position:right 7px center;font-size:14px;height:38px}
+.range-calendar-week,.range-calendar-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px;text-align:center}
+.range-calendar-week{font-size:11px;color:var(--muted);margin-bottom:6px}.range-calendar-days>button{min-width:0;height:38px;padding:0;border:1px solid transparent;border-radius:8px;background:transparent;font-size:14px;touch-action:manipulation}
+.range-calendar-days>button:hover:not(:disabled){background:rgba(var(--purple-rgb),.15)}.range-calendar-days>button.in-range{background:rgba(var(--purple-rgb),.09);border-radius:4px}.range-calendar-days>button.range-edge{background:var(--selected-fill);color:white;border-color:var(--selected-border)}.range-calendar-days>button:focus-visible{outline:2px solid var(--purple);outline-offset:0}
+.custom-range-dialog .range-selection-summary{margin-top:12px;padding:10px;font-size:12px;overflow-wrap:anywhere}.custom-range-dialog .error:empty{display:none}
+.custom-range-dialog .range-calendar-actions{position:sticky;bottom:-16px;padding:12px 0 16px;margin:12px 0 -16px;background:var(--panel);display:grid;grid-template-columns:1fr 1.5fr;gap:10px;z-index:2}
+.range-calendar-actions>.btn{min-width:0;justify-content:center;min-height:42px}
+@media(max-width:480px){.custom-range-dialog .modal-head{padding:14px 16px}.custom-range-dialog .modal-head h2{font-size:16px}.range-calendar-nav{grid-template-columns:30px minmax(0,1fr) 82px 30px;gap:4px}.range-calendar-nav>.btn{width:30px}.range-calendar-nav select{font-size:16px}.range-date-field{padding:9px}.range-date-field strong{font-size:13px}.range-calendar-days{gap:3px}.range-calendar-days>button{height:36px}.range-calendar{margin-top:12px}}
+
+.custom-range-dialog .range-calendar-nav select{padding-right:26px!important;background-position:right 7px center!important}
