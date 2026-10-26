@@ -1,5 +1,6 @@
 /* Admin team design preview. Tab-memory only; never sends invitations or grants real access. */
 const teamAreas=[
+ {id:'messages',label:'Messages',icon:'messages-square',help:'View all agent conversations, or reply, attach files and resolve conversations. Read state is personal to each admin. Protocol sharing also requires Protocols access.'},
  {id:'dashboard',label:'Dashboard',icon:'layout-dashboard',readOnly:true,help:'View business totals and sales trends.'},
  {id:'agents',label:'Agents',icon:'users-round',help:'View agent profiles, or manage their accounts and agreements. This does not grant access to the admin team.'},
  {id:'catalogue',label:'Catalogue & pricing',icon:'dna',help:'View products and landed costs, or edit categories, default costs and selling prices.'},
@@ -14,7 +15,8 @@ const teamAreas=[
  {id:'audit',label:'Activity log',icon:'history',readOnly:true,help:'View business-wide changes and who made them. Entries may include financial details.'},
  {id:'settings',label:'Workspace settings',icon:'settings-2',help:'View shared preferences, or edit workspace and stock settings. Only the owner can manage the admin team.'}
 ];
-const teamState={next:3,members:[
+const teamState={next:4,members:[
+ {id:'admin-3',name:'Support admin',email:'support@example.test',status:'Active',mode:'custom',permissions:{messages:'manage',protocols:'view'}},
  {id:'owner',name:'Admin O',email:'',status:'Active',owner:true,mode:'full',permissions:{}},
  {id:'admin-1',name:'Stock manager',email:'stock@example.test',status:'Active',mode:'custom',permissions:{catalogue:'view',stock:'manage',requests:'manage'}},
  {id:'admin-2',name:'Finance reviewer',email:'finance@example.test',status:'Invited',mode:'custom',permissions:{sales:'view',transfers:'view',reports:'view'}}

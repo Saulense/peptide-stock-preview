@@ -6,7 +6,7 @@ function accountType(){return accountTypes[workflow.type]}
 function accountPerson(){return agents[progressIndex()]}
 function isWholesale(){return workflow.type==='wholesale'}
 function flowButton(label,ico,action,cls=''){return btn(label,ico,`data-flow="${action}"`,cls)}
-function workflowNav(){return [['agent','scan-line','Record sale'],['stock','boxes','My stock'],['sales','history','Sales history'],['requests','send','Requests'],['protocols','book-open','Protocols'],...(!isWholesale()?[['balance','wallet','Earnings']]:[]),['settings','settings-2','Settings']]}
+function workflowNav(){return [['agent','scan-line','Record sale'],['stock','boxes','My stock'],['sales','history','Sales history'],['requests','send','Requests'],['protocols','book-open','Protocols'],['messages','messages-square','Messages'],...(!isWholesale()?[['balance','wallet','Earnings']]:[]),['settings','settings-2','Settings']]}
 function workflowPreviewSelect(){return `<select ${workflow.support?'disabled':''} class="preview-account-type" aria-label="Preview account type" id="preview-account-type">${Object.entries(accountTypes).map(([k,t])=>`<option value="${k}" ${k===workflow.type?'selected':''}>${t.label}</option>`).join('')}</select>`}
 function workflowSupportBanner(){return workflow.support?`<div class="support-banner">${icon('eye')}<span>Viewing <strong>${accountPerson().name}</strong> · Read-only support preview</span>${flowButton('Return to admin','arrow-left','exit-support','small')}</div>`:''}
 function flowProfile(index){return ['commission','partner','wholesale','commission'][index]||'commission'}
