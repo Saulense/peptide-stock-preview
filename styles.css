@@ -198,3 +198,32 @@ select:not([multiple]):not([size]):disabled{opacity:.55;cursor:not-allowed}
 .stock-table-foot{flex-wrap:wrap;gap:12px;align-items:flex-start}.stock-table-foot>small{flex:1 1 180px}.stock-table-foot>.btn{min-height:40px}
 }
 @media(max-width:360px){.agent-stock-panel th,.agent-stock-panel td{padding-inline:6px}.agent-stock-panel .toolbar{padding:10px}}
+
+/* Shared table language: tinted headers, compact products and visible overflow navigation. */
+thead th{background:linear-gradient(110deg,color-mix(in srgb,var(--purple) 20%,var(--panel)),color-mix(in srgb,var(--blue) 13%,var(--panel)));color:var(--text);font-weight:650;border-top-color:color-mix(in srgb,var(--purple) 28%,var(--line));border-bottom-color:color-mix(in srgb,var(--purple) 35%,var(--line))}
+thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,transparent)}
+.table-wrap{scrollbar-color:var(--purple) var(--panel2);overscroll-behavior-x:contain}
+.table-wrap:focus-visible{outline:2px solid var(--purple);outline-offset:-2px}
+.table-scroll-cue{display:flex;align-items:center;gap:9px;padding:9px 13px;background:color-mix(in srgb,var(--purple) 8%,var(--panel));border-block:1px solid var(--line);color:var(--muted);font-size:12px}
+.table-scroll-cue[hidden]{display:none}
+.table-scroll-label{flex:1;white-space:nowrap}
+.table-scroll-cue button{display:grid;place-items:center;width:32px;height:32px;padding:0;border:1px solid color-mix(in srgb,var(--purple) 35%,var(--line));border-radius:8px;background:color-mix(in srgb,var(--purple) 15%,var(--panel));color:var(--text);font-size:23px;line-height:1;cursor:pointer}
+.table-scroll-cue button:disabled{opacity:.3;cursor:default}
+.table-scroll-cue button:focus-visible{outline:2px solid var(--purple);outline-offset:2px}
+.table-scroll-track{width:42px;height:4px;background:color-mix(in srgb,var(--purple) 20%,var(--line));border-radius:5px;position:relative;margin-right:3px}
+.table-scroll-track i{position:absolute;left:calc(var(--table-position,0%) * .72);width:28%;height:100%;border-radius:5px;background:var(--purple)}
+.reporting-icon,.metric .metric-icon{background:linear-gradient(135deg,color-mix(in srgb,var(--purple) 24%,var(--panel)),color-mix(in srgb,var(--blue) 14%,var(--panel)));color:color-mix(in srgb,var(--purple) 75%,var(--text));border:1px solid color-mix(in srgb,var(--purple) 24%,transparent)}
+.range-chip.active,.range-month.selected,.tabs button.active,.trend-group button.active{background:linear-gradient(120deg,#7452ed,#6546d5);border-color:#9478ff;color:#fff;box-shadow:inset 0 1px 0 #ffffff20,0 2px 8px #603ce21a}
+@media(max-width:760px){
+ .table-wrap table{font-size:12.5px}
+ .table-wrap th,.table-wrap td{padding:12px 10px;font-size:12.5px}
+ .table-wrap td{line-height:1.5;font-variant-numeric:tabular-nums}
+ .table-wrap .table-product-cell{white-space:normal;min-width:135px;max-width:170px;overflow-wrap:break-word}
+ .table-wrap .table-product-cell small{font-size:11.5px}
+ .table-scroll-cue{padding:8px 11px}
+ .table-scroll-cue button{width:36px;height:36px}
+ .agent-stock-panel .table-product-cell{min-width:0;max-width:none}
+ .agent-stock-panel th,.agent-stock-panel td{padding:12px 8px}
+ .request-edit-lines .table-product-cell,.transfer-lines .table-product-cell{min-width:0;max-width:none}
+}
+@media(max-width:360px){.agent-stock-panel th,.agent-stock-panel td{padding-inline:6px}}

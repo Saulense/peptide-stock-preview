@@ -105,3 +105,46 @@ document.addEventListener('change',e=>{if(e.target.id==='role-select'){state.rol
 document.addEventListener('submit',e=>{e.preventDefault();if(e.target.id==='login-form')demoAction('Login — use Explore sample workspace to preview')});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='Tab'&&$('.modal')){const focusable=[...$('.modal').querySelectorAll('button:not(:disabled),input:not(:disabled),select,textarea,a[href]')].filter(el=>!el.closest('[hidden]'));const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
 window.addEventListener('hashchange',()=>{if(location.hash.slice(1)!==state.page){state.page=location.hash.slice(1)||'dashboard';render()}});render();
+
+// Shared table affordances also cover tables inserted into dialogs or re-rendered views.
+(()=>{
+ const tables=new Map();let scheduled=false,serial=0;
+ const schedule=()=>{if(!scheduled){scheduled=true;requestAnimationFrame(refresh)}};
+ const resize=new ResizeObserver(schedule);
+ function update(w,entry){
+  const max=w.scrollWidth-w.clientWidth,overflow=max>2;
+  entry.cue.hidden=!overflow;
+  w.classList.toggle('has-horizontal-overflow',overflow);
+  if(overflow){
+   w.tabIndex=0;w.setAttribute('role','region');w.setAttribute('aria-label','Scrollable table');
+   const start=w.scrollLeft<2,end=w.scrollLeft>=max-2;
+   entry.left.disabled=start;entry.right.disabled=end;
+   const label=end?'End of table':matchMedia('(max-width:760px)').matches?'Swipe for more columns':'Scroll for more columns';
+   if(entry.label.textContent!==label)entry.label.textContent=label;
+   entry.cue.style.setProperty('--table-position',`${Math.min(100,Math.max(0,w.scrollLeft/max*100))}%`);
+  }else{w.removeAttribute('tabindex');w.removeAttribute('role');w.removeAttribute('aria-label')}
+ }
+ function refresh(){
+  scheduled=false;
+  for(const [w,entry] of tables){if(!w.isConnected){resize.unobserve(w);resize.unobserve(entry.table);entry.cue.remove();tables.delete(w)}}
+  document.querySelectorAll('.table-wrap').forEach(w=>{
+   const table=w.querySelector('table');if(!table)return;
+   let entry=tables.get(w);
+   if(!entry){
+    const cue=document.createElement('div');cue.className='table-scroll-cue';cue.hidden=true;
+    const id=w.id||(w.id=`scroll-table-${++serial}`);
+    cue.innerHTML=`<span class="table-scroll-label"></span><div class="table-scroll-track" aria-hidden="true"><i></i></div><button type="button" aria-label="Scroll table left" aria-controls="${id}">‹</button><button type="button" aria-label="Scroll table right" aria-controls="${id}">›</button>`;
+    w.before(cue);const [left,right]=cue.querySelectorAll('button');
+    entry={cue,left,right,label:cue.querySelector('span'),table};tables.set(w,entry);
+    for(const [button,direction] of [[left,-1],[right,1]])button.addEventListener('click',()=>w.scrollBy({left:direction*w.clientWidth*.75,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'}));
+    w.addEventListener('scroll',()=>update(w,entry),{passive:true});resize.observe(w);resize.observe(table);
+    [...table.querySelectorAll('thead th')].forEach((th,i)=>{
+     if(/^(product|products|peptide)$/i.test(th.textContent.trim()))table.querySelectorAll('tr').forEach(row=>row.children[i]?.classList.add('table-product-cell'));
+    });
+   }
+   update(w,entry);
+  });
+ }
+ new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true});
+ window.addEventListener('resize',schedule);schedule();
+})();
