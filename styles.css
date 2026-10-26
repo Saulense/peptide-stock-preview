@@ -13,9 +13,9 @@
 .sidebar-toggle{display:none}
 @media(min-width:701px){
   body:has(.sidebar){background:var(--sidebar)}
-  #app:has(>.sidebar){margin:0 12px 12px;min-height:calc(100dvh - 24px);background:var(--sidebar);border-radius:28px}
-  .sidebar{inset:12px auto 12px 12px;border:0;border-radius:26px 0 0 26px;padding:27px 15px 14px;transition:width 360ms cubic-bezier(.22,1,.36,1)}
-  .main{min-height:calc(100dvh - 24px);background:var(--bg);border-radius:26px;margin-left:var(--sidebarw);transition:margin-left 360ms cubic-bezier(.22,1,.36,1)}
+  #app:has(>.sidebar){margin:0 12px 0 0;min-height:calc(100dvh - var(--preview-bar-height));background:var(--sidebar);border-radius:0}
+  .sidebar{inset:12px auto 0 0;border:0;border-radius:0;padding:27px 15px 14px;transition:width 360ms cubic-bezier(.22,1,.36,1)}
+  .main{min-height:calc(100dvh - var(--preview-bar-height));background:var(--bg);border-radius:26px 26px 0 0;box-shadow:0 0 0 1px rgba(235,240,255,.12),-5px 0 20px rgba(235,240,255,.035);margin-left:var(--sidebarw);transition:margin-left 360ms cubic-bezier(.22,1,.36,1)}
   .topbar{top:auto;border-radius:26px 26px 0 0;padding-left:36px}
   .sidebar-toggle{display:grid;place-items:center;position:absolute;right:-17px;top:20px;width:34px;height:34px;padding:0;border-radius:50%;border:3px solid var(--sidebar);background:linear-gradient(145deg,#769eff,#6253dc);color:#fff;box-shadow:0 3px 12px #30237745;z-index:35;transition:box-shadow 180ms,filter 180ms,scale 180ms}
   .sidebar-toggle:hover{filter:brightness(1.14);box-shadow:0 0 0 5px #7e83ff15,0 4px 16px #30237760;scale:1.07}
@@ -59,7 +59,8 @@ body{padding-top:var(--preview-bar-height)}
 .preview-role-switch .icon{width:13px;height:13px}
 .login-layout,.login-form-wrap{min-height:calc(100dvh - var(--preview-bar-height))}
 @media(min-width:701px){
- #app:has(>.sidebar),.main{min-height:calc(100dvh - 12px - var(--preview-bar-height))}
+ #app:has(>.sidebar),.main{min-height:calc(100dvh - var(--preview-bar-height))}
+ [data-theme=light] .main{box-shadow:0 0 0 1px rgba(29,39,70,.06),-4px 0 18px rgba(29,39,70,.025)}
  .sidebar{top:var(--preview-bar-height)}
  .topbar{top:auto}
 }
