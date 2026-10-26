@@ -355,3 +355,13 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .agent-card-bottom .agent-support-link{grid-column:1/-1;justify-self:end;width:auto;min-height:32px;padding:6px 4px;border-color:transparent;background:transparent;box-shadow:none;color:var(--muted);font-size:12px;gap:6px}
 .agent-card-bottom .agent-support-link:hover{color:var(--purple);background:var(--hover)}
 .agent-card-bottom .agent-support-link .icon{width:14px;height:14px}
+
+/* Mobile navigation lives in the sticky header; no bottom navigation rail. */
+@media(max-width:700px){
+ .topbar{position:sticky;top:var(--preview-bar-height);z-index:50;background:var(--bg);box-shadow:0 4px 14px #00000008}
+ .content{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+ .mobile-sale-review{bottom:0;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
+ .agent-view:has(.mobile-sale-review) .content{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}
+ #toast{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+ body:has(.mobile-sale-review) #toast{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+}
