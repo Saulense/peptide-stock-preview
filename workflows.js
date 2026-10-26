@@ -65,7 +65,22 @@ document.addEventListener('input',e=>{if(e.target.id==='setup-name')e.target.set
 
 
 function agreementsPage(){return `<h1 class="sr-only">Agreements</h1><section class="panel">${panelHead('Current account terms','Sample agreements · effective dates preserve history.',flowButton('Invite agent','user-plus','setup-account','primary'))}${table(['Account','Type','Basis','Rate',''],agents.map((a,i)=>{const type=accountTypes[flowProfile(i)];return row([a.name,type.label,type.basis,type.rate?type.rate+'%':'—',btn('Edit future terms','pencil',`data-account-terms="${i}"`,'small')])}))}</section>`}
-function adminAgents(){return pageHead('Your team','Accounts, stock and support access.',flowButton('Invite agent','user-plus','setup-account','primary'))+`<div class="agent-cards">${agents.map((a,i)=>{const t=accountTypes[flowProfile(i)];return `<article class="panel agent-card"><div class="flex">${avatar(a)}<div class="grow"><h3>${a.name}</h3><small>${t.label}</small></div>${badge('Active','green')}</div><div class="agent-stats"><div><small>Available ${measureInfo('Available stock')}</small><strong>${progressTotals(i).units} <small>vials</small></strong></div><div><small>${t.rate?'Rate':'Stock payment'}</small><strong>${t.rate?t.rate+'%':'Prepaid'}</strong></div></div><p class="muted">${t.basis}</p><div class="agent-card-bottom mt">${btn('Performance','chart-pie',`data-progress-open="${i}"`,'small')}${btn('Manage access','','data-modal="manage-agent" data-agent-index="'+i+'"','small')}${btn('View as agent','eye','data-support-agent="'+i+'"','small agent-support-link')}</div></article>`}).join('')}</div>`}
+function agentDirectoryDetails(i){
+ const a=agents[i],t=accountTypes[flowProfile(i)];
+ return `<div class="flex agent-directory-identity">${avatar(a)}<div class="grow"><h3>${esc(a.name)}</h3><small>${t.label}</small></div>${badge('Active','green')}</div><div class="agent-stats"><div><small>Available ${measureInfo('Available stock')}</small><strong>${progressTotals(i).units} <small>vials</small></strong></div><div><small>${t.rate?'Rate':'Stock payment'}</small><strong>${t.rate?t.rate+'%':'Prepaid'}</strong></div></div><p class="muted">${t.basis}</p><div class="agent-card-bottom mt">${btn('Performance','chart-pie',`data-progress-open="${i}"`,'small')}${btn('Manage access','','data-modal="manage-agent" data-agent-index="'+i+'"','small')}${btn('View as agent','eye','data-support-agent="'+i+'"','small agent-support-link')}</div>`;
+}
+function adminAgents(){return pageHead('Your team','Accounts, stock and support access.',flowButton('Invite agent','user-plus','setup-account','primary'))+`<div class="agent-directory-search search">${icon('search')}<input id="agent-directory-search" type="search" placeholder="Search agents…" aria-label="Search agents by name or account type"></div><div class="agent-cards agent-directory">${agents.map((a,i)=>{const t=accountTypes[flowProfile(i)];return `<article class="panel agent-card" data-agent-match="${esc((a.name+' '+t.label).toLowerCase())}"><button type="button" class="agent-compact-row" data-agent-summary="${i}" aria-label="Open ${esc(a.name)} details">${avatar(a)}<span class="agent-compact-copy"><strong>${esc(a.name)}</strong><small>${t.label}</small><span class="agent-compact-stock">${progressTotals(i).units} vials</span></span><span class="agent-compact-end">${badge('Active','green')}${icon('chevron-right')}</span></button><div class="agent-desktop-details">${agentDirectoryDetails(i)}</div></article>`}).join('')}</div><div id="agent-directory-empty" class="empty" hidden>No agents found.</div>`}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('[data-agent-summary]');if(!b||state.role!=='admin')return;
+ const i=Number(b.dataset.agentSummary);if(!agents[i])return;
+ openModal('Agent details',`<div class="agent-directory-detail">${agentDirectoryDetails(i)}</div>`);
+});
+document.addEventListener('input',e=>{
+ if(e.target.id!=='agent-directory-search')return;
+ const q=e.target.value.trim().toLowerCase();let matches=0;
+ document.querySelectorAll('.agent-directory [data-agent-match]').forEach(card=>{card.hidden=!card.dataset.agentMatch.includes(q);if(!card.hidden)matches++});
+ $('#agent-directory-empty').hidden=matches>0;
+});
 function adminAgentDetail(){return progressAdminDetail()}
 function workflowAction(action,productId){
  if(workflow.support&&!['exit-support','track','my-terms','unpaid-breakdown','settlement-example','request-detail','request-partial','received-detail','delivery-difference','delivery-older','request-delivery','remittance-breakdown'].includes(action)){toast('Read-only support preview · return to admin to manage records.');return}
