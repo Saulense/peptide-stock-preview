@@ -679,3 +679,8 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 @media(min-width:701px) and (max-width:1050px){
  .orders-wholesale .orders-list-head,.orders-wholesale .order-list-row{grid-template-columns:90px minmax(0,1fr) 90px 90px}
 }
+
+/* Shared page-title spacing and size, clear of the sidebar toggle. */
+@media(min-width:701px){.topbar{padding-left:36px}.topbar>.breadcrumb{min-width:0}.topbar>.breadcrumb>strong{font-size:17px;font-weight:600;line-height:1.4}}
+@media(max-width:700px){.topbar>.mobile-page-title{font-size:16px}}
+.transfer-instruction{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.5}
