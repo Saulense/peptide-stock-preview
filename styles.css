@@ -248,3 +248,18 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .mini-product .grow{min-width:0}.mini-product .product-label+small{margin-top:3px}
 .reporting-icon,.metric-icon,.metric-icon:is(.blue,.green,.orange),.metric .metric-icon,.product-glyph,.timeline-icon,.icon-btn{background:var(--selected-fill);color:#fff;border-color:var(--selected-border)}
 @media(max-width:480px){.low-stock-list{grid-template-columns:1fr}.low-stock-list .mini-product{gap:12px}.mini-product .product-title{font-size:14px}}
+
+/* Category icons use the existing Lucide family and the shared purple tile. */
+.category-glyph{width:34px;height:36px;flex-shrink:0}.category-glyph .icon{width:19px;height:19px;stroke-width:1.65}
+.category-glyph.compact{display:inline-grid;width:21px;height:21px;border-radius:6px;vertical-align:middle}.category-glyph.compact .icon{width:13px;height:13px}
+.stock-category-dose{display:flex!important;align-items:center;gap:5px;flex-wrap:wrap}
+.category-picker{padding:0;margin:22px 0 0;border:0;min-width:0}.category-picker legend{font-size:14px;font-weight:650;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.category-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.category-option{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-height:110px;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--input);font-size:12px;line-height:1.4;cursor:pointer;transition:background .15s,border-color .15s}
+.category-option input{position:absolute;opacity:0;width:1px;height:1px}
+.category-option>.icon{position:absolute;right:10px;top:10px;width:14px;height:14px;opacity:0;color:var(--purple)}
+.category-option:has(:checked){border-color:var(--purple);background:color-mix(in srgb,var(--purple) 13%,var(--panel))}.category-option:has(:checked)>.icon{opacity:1}
+.category-option:has(:focus-visible){outline:2px solid var(--purple);outline-offset:3px}
+.category-option .product-glyph{width:32px;height:32px}.category-option .product-glyph .icon{width:18px;height:18px}
+@media(max-width:480px){.category-options{grid-template-columns:repeat(2,minmax(0,1fr))}.category-option{min-height:105px}.agent-stock-panel .stock-category-dose .product-dose{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.category-option{transition:none}}
