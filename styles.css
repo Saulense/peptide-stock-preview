@@ -536,3 +536,15 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 
 :is(.modal-head h2,.cost-total>span,.flex>span,.panel-head>span,.section-label,.grow):has(>.measure-info){display:inline-flex;align-items:flex-start;gap:5px;min-width:0}
 :is(.modal-head h2,.cost-total>span,.flex>span,.panel-head>span,.section-label,.grow)>.measure-info{margin:0;flex-shrink:0}
+
+/* Keep controls within their panel at intermediate widths, including sidebar layouts. */
+@media(min-width:701px) and (max-width:1100px){
+ .team-member{grid-template-columns:38px minmax(0,1fr) auto;gap:12px}
+ .team-member-scope{grid-column:2;grid-row:2}
+ .team-member>.badge{grid-column:3;grid-row:1}
+ .team-member-action{grid-column:3;grid-row:2}
+}
+@media(min-width:701px) and (max-width:1200px){.low-stock-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.mini-product,.mini-product .grow,.team-member-identity,.team-member-scope{min-width:0}
+.team-member-identity strong,.team-member-identity small,.team-member-scope{overflow-wrap:anywhere}
+.modal-head h2{min-width:0;overflow-wrap:anywhere}
