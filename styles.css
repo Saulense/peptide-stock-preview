@@ -769,3 +769,26 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 }
 @keyframes orderFiltersIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.orders-filters.is-open{animation:none}.mobile-order{transition:none}}
+
+/* Dashboard agent overview: all figures visible on phones. */
+.agent-overview-mobile{display:none}
+@media(max-width:700px){
+ .agent-overview-desktop{display:none}
+ .agent-overview-mobile{display:grid;gap:10px;padding:12px;min-width:0}
+ .agent-overview-card{display:block;width:100%;min-width:0;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--text);text-align:left;transition:background .15s ease,border-color .15s ease}
+ .agent-overview-card:hover,.agent-overview-card:focus-visible{background:color-mix(in srgb,var(--purple) 6%,var(--panel));border-color:var(--purple);outline-offset:2px}
+ .agent-overview-identity{display:flex;align-items:center;gap:10px;min-width:0}
+ .agent-overview-identity>.avatar{flex:0 0 36px;width:36px;height:36px}
+ .agent-overview-name{display:grid;gap:3px;flex:1;min-width:0}
+ .agent-overview-name strong{font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+ .agent-overview-name small{font-size:12px;color:var(--muted);line-height:1.4}
+ .agent-overview-identity>.icon{flex:0 0 16px;width:16px;height:16px;color:var(--muted)}
+ .agent-overview-figures{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr) minmax(0,1.1fr);gap:8px;margin-top:13px;padding-top:12px;border-top:1px solid var(--line)}
+ .agent-overview-figures>span{display:grid;align-content:start;gap:5px;min-width:0}
+ .agent-overview-figures small{font-size:11px;line-height:1.4;color:var(--muted)}
+ .agent-overview-figures strong{font-size:14px;line-height:1.4;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+ .agent-overview-unit{font-size:11px;font-weight:400;color:var(--muted)}
+ .agent-overview-panel>.table-footer{display:flex;align-items:flex-start;flex-direction:column;gap:10px;padding:14px 16px}
+ .agent-overview-panel>.table-footer>span{font-size:12px;line-height:1.5}
+}
+@media(prefers-reduced-motion:reduce){.agent-overview-card{transition:none}}
