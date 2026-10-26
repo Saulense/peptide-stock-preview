@@ -892,3 +892,14 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .dashboard-stock-summary .panel-body{padding:8px 16px 12px;grid-template-columns:112px minmax(0,1fr)}
  .dashboard-stock-summary .table-footer{padding:8px 16px 12px}
 }
+
+/* Agent invitation: consistent section rhythm and field alignment. */
+.account-setup-modal .modal-body{padding:24px}
+#setup-account-form{display:grid;gap:22px;min-width:0}
+#setup-account-form .form-grid{gap:18px}
+#setup-account-form .setup-section{padding-top:22px;border-top:1px solid var(--line)}
+#setup-account-form .form-actions{margin-top:0;padding-top:20px}
+#setup-account-form .field{gap:9px}
+#setup-account-form .setup-settlement{font-size:13px;line-height:1.6}
+#setup-account-form [hidden]{display:none!important}
+@media(max-width:700px){.account-setup-modal .modal-body{padding:22px 20px}.account-setup-modal .modal-head{padding:20px}#setup-account-form .form-actions{gap:10px}}
