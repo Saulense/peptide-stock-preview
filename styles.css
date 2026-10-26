@@ -387,3 +387,18 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
  .dashboard-metrics .metric-label{font-size:12px;gap:2px;line-height:1.35}
  .dashboard-metrics .measure-info{margin-left:0;width:21px;height:21px}
 }
+
+/* Purchase and dispatch controls share the compact workspace rhythm. */
+.supply-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.supply-metrics{grid-template-columns:repeat(3,minmax(0,1fr));margin-bottom:20px}
+.supply-metrics .metric{min-width:0;container-type:inline-size}
+.supply-metrics .metric-value{font-size:clamp(18px,calc(160cqw / var(--metric-characters,10)),30px)}
+.tracking-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:14px 0}
+.tracking-reference{overflow-wrap:anywhere}
+.supply-attention{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:16px;background:var(--panel)}
+.supply-attention>span{flex:1}
+#po-agent-field[hidden]{display:none}
+@media(max-width:700px){.supply-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.supply-metrics .metric:last-child{grid-column:1/-1}.supply-metrics .metric{padding:13px}.supply-actions>.primary{min-height:44px}.tracking-row .btn{min-height:44px}.supply-attention{font-size:13px;gap:8px}}
+.supply-metrics .metric-label{display:block;line-height:1.5}
+.supply-metrics .measure-info{display:inline-flex;vertical-align:middle;margin-left:3px}
+@media(max-width:700px){.supply-orders>.panel-head{flex-direction:column;align-items:flex-start;gap:8px}.supply-metrics .metric-top{align-items:flex-start}}
