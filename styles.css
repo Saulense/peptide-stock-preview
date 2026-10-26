@@ -32,6 +32,8 @@
   .sidebar .user-copy{min-width:90px}
   .collapsed .brand-copy,.collapsed .nav-item span,.collapsed .nav-label,.collapsed .user-copy,.collapsed .user-block .link-btn{opacity:0;visibility:hidden;pointer-events:none}
   .collapsed .sidebar{padding-inline:8px}
+  .collapsed .sidebar .nav-item{width:44px;height:44px;min-height:44px;aspect-ratio:1;padding:0;margin:3px auto;gap:0;justify-content:center}
+  .collapsed .sidebar .nav-item span{display:none}
   .sidebar{transition:width 360ms cubic-bezier(.22,1,.36,1),padding 360ms cubic-bezier(.22,1,.36,1)}
 }
 @media(min-width:701px) and (max-width:1200px){:root{--sidebarw:195px}}
