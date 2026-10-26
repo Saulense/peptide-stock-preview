@@ -376,6 +376,40 @@ document.addEventListener('keydown',e=>{
 },true);
 window.addEventListener('hashchange',()=>{if(location.hash.slice(1)!==state.page){closeModal();state.page=location.hash.slice(1)||'dashboard';render()}});render();
 
+
+// Reflow existing table records on phones; never clone editable controls or ledger rows.
+function prepareMobileRecords(w,table){
+ if(w.closest('.agent-stock-panel,.orders-desktop-list,.agent-overview-desktop,.transfer-lines'))return;
+ w.classList.add('mobile-records');
+ const heads=[...table.querySelectorAll('thead th')];
+ const labels=heads.map(h=>{const c=h.cloneNode(true);c.querySelectorAll('button').forEach(b=>b.remove());return c.textContent.trim()});
+ if(labels.includes('To business')&&labels.includes('Agent'))table.classList.add('mobile-sales-records');
+ if(labels.includes('Default selling price'))table.classList.add('mobile-catalogue-records');
+ const editable=!!table.querySelector('tbody input,tbody select,tbody textarea');
+ table.querySelectorAll('tbody > tr').forEach((r,ri)=>{
+  if(r.dataset.mobileRecord)return;
+  r.dataset.mobileRecord='true';
+  const cells=[...r.children];
+  if(cells.length===1&&cells[0].colSpan>1){r.classList.add('record-empty');return}
+  let secondary=0;
+  cells.forEach((c,i)=>{
+   const label=labels[i]||'';c.dataset.column=label;c.dataset.label=label;
+   if(i===0){c.classList.add('record-identity');return}
+   if(!label||/^action$/i.test(label)){c.classList.add('record-actions');c.dataset.label='';return}
+   if(/^(status|settlement|payment)$/i.test(label)){c.classList.add('record-status');return}
+   if(/^(product|products|movement|event|change|basis|allocation)$/i.test(label))c.classList.add('record-wide');
+   if(!editable&&cells.length>5&&/^(commission|to business|paid|received|damaged|landed \/ vial|allocation|paid by)$/i.test(label)){c.classList.add('record-extra');secondary++}
+  });
+  if(secondary){
+   const cell=document.createElement('td');cell.className='record-disclosure';
+   const button=document.createElement('button');button.type='button';button.className='record-details-toggle';button.setAttribute('aria-expanded','false');
+   const name=cells[0].textContent.trim().split('\n')[0];button.setAttribute('aria-label','More details for '+name);button.textContent='More details';
+   button.addEventListener('click',()=>{const expanded=r.classList.toggle('record-expanded');button.setAttribute('aria-expanded',String(expanded));button.textContent=expanded?'Less details':'More details'});
+   cell.append(button);r.append(cell);
+  }
+ });
+}
+
 // Shared table affordances also cover tables inserted into dialogs or re-rendered views.
 (()=>{
  const tables=new Map();let scheduled=false,serial=0;
@@ -412,6 +446,7 @@ window.addEventListener('hashchange',()=>{if(location.hash.slice(1)!==state.page
      if(/^(product|products|peptide)$/i.test(th.textContent.trim()))table.querySelectorAll('tr').forEach(row=>row.children[i]?.classList.add('table-product-cell'));
     });
    }
+   prepareMobileRecords(w,table);
    update(w,entry);
   });
  }

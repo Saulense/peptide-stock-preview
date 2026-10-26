@@ -928,3 +928,91 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .agent-compact-end .badge{font-size:11px;padding:3px 7px}
  .agent-compact-end>.icon{width:15px;height:15px;color:var(--muted)}
 }
+
+/* Phone records: one vertical flow, shared labels and original interactive controls. */
+.record-disclosure{display:none}
+.stock-price-pencil{width:38px;height:38px;padding:0;display:inline-flex;justify-content:center;align-items:center}
+@media(max-width:700px){
+ .table-wrap.mobile-records{width:100%;max-width:100%;overflow:visible;min-width:0}
+ .table-scroll-cue:has(+.mobile-records){display:none}
+ .mobile-records>table{display:block;width:100%;min-width:0!important;table-layout:fixed}
+ .mobile-records>table>thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .mobile-records>table>tbody{display:grid;gap:0;min-width:0;width:100%}
+ .mobile-records>table>tbody>tr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px;padding:15px 16px;border-bottom:1px solid var(--line);min-width:0;background:var(--panel);align-items:start}
+ .mobile-records>table>tbody>tr:last-child{border-bottom:0}
+ .mobile-records>table>tbody>tr[hidden]{display:none}
+ .mobile-records>table>tbody>tr>td{display:block;min-width:0!important;max-width:none!important;width:auto!important;padding:0;border:0;white-space:normal;overflow-wrap:anywhere;line-height:1.45;font-size:13px}
+ .mobile-records td[data-label]:not([data-label=""])::before{content:attr(data-label);display:block;font-size:11px;line-height:1.4;color:var(--muted);font-weight:450;margin-bottom:3px}
+ .mobile-records>table>tbody>tr>.record-identity{grid-column:1/-1;font-weight:650;font-size:14px}
+ .mobile-records>table>tbody>tr>.record-identity::before{display:none}
+ .mobile-records .record-identity small{font-weight:400;font-size:12px;color:var(--muted)}
+ .mobile-records>table>tbody>tr>.record-wide{grid-column:1/-1}
+ .mobile-records>table>tbody>tr>.record-actions{grid-column:1/-1;display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+ .mobile-records>table>tbody>tr>.record-actions:empty{display:none}
+ .mobile-records .record-actions .btn{min-height:36px;max-width:100%;white-space:normal}
+ .mobile-records .badge{max-width:100%;white-space:normal;font-size:11px}
+ .mobile-records input,.mobile-records select,.mobile-records textarea{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+ .mobile-records .agent-cell{min-width:0;gap:9px}.mobile-records .agent-cell>div{min-width:0}
+ .mobile-records>table>tbody>tr>.record-extra{display:none}
+ .mobile-records>table>tbody>tr.record-expanded>.record-extra{display:block;animation:recordReveal .15s ease-out}
+ .mobile-records>table>tbody>tr>.record-disclosure{display:block;grid-column:1/-1;border-top:1px solid var(--line);padding-top:6px}
+ .record-details-toggle{display:inline-flex;align-items:center;gap:8px;background:none;color:var(--purple);border:0;padding:6px 0;min-height:32px;font-size:12px;cursor:pointer}
+ .record-details-toggle::after{content:'⌄';font-size:16px}.record-details-toggle[aria-expanded=true]::after{transform:rotate(180deg)}
+ .record-empty td{grid-column:1/-1}.record-empty .empty{padding:20px 8px}
+ .request-desk .mobile-records>table>tbody>tr{position:relative;padding-right:16px;gap:8px 12px}
+ .request-desk .mobile-records .record-identity{padding-right:105px}
+ .request-desk .mobile-records>table>tbody>tr>.record-status{position:absolute;right:16px;top:15px;max-width:100px}
+ .request-desk .mobile-records .record-status::before{display:none}
+ .request-desk .mobile-records td[data-column="Products"]{grid-column:1/-1}
+ .request-desk .mobile-records td[data-column="Units"]{grid-column:1;grid-row:auto}
+ .request-desk .mobile-records>table>tbody>tr>.record-actions{grid-column:2;align-self:end}
+ .modal .mobile-records>table>tbody>tr{padding:14px 0}
+ .mobile-records>table>tbody>tr:has(.stock-price-pencil){position:relative}
+ .mobile-records>table>tbody>tr:has(.stock-price-pencil)>.record-identity{padding-right:42px}
+ .mobile-records>table>tbody>tr:has(.stock-price-pencil)>.record-actions{position:absolute;right:14px;top:14px}
+ .mobile-records>table>tbody>tr:has(.stock-price-pencil){grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px}
+ .mobile-records>table>tbody>tr:has(.stock-price-pencil)>.record-identity{grid-column:1/-1}
+}
+@keyframes recordReveal{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.mobile-records>table>tbody>tr.record-expanded>.record-extra{animation:none}}
+@media(max-width:700px){
+ .mobile-records td.record-identity[data-label]::before,.request-desk .mobile-records td.record-status[data-label]::before{display:none}
+ .request-desk .mobile-records td[data-column="Agent"]{grid-column:1;grid-row:2;color:var(--muted)}
+ .request-desk .mobile-records td[data-column="Agent"]::before,.request-desk .mobile-records td[data-column="Products"]::before{display:none}
+ .request-desk .mobile-records td[data-column="Units"]{grid-column:2;grid-row:2;text-align:right;color:var(--muted)}
+ .request-desk .mobile-records td[data-column="Units"]::before{display:none}
+ .request-desk .mobile-records td[data-column="Units"]::after{content:' units'}
+ .request-desk .mobile-records td[data-column="Products"]{grid-column:1;grid-row:3;align-self:center}
+ .request-desk .mobile-records>table>tbody>tr>.record-actions{grid-column:2;grid-row:3;align-self:center}
+ .request-desk .request-product-snippet{flex-wrap:wrap;gap:2px 5px}
+ .request-desk .request-product-snippet strong{font-size:12px}
+ .request-desk .request-product-snippet small{max-width:100%;font-size:11px}
+ .request-desk .mobile-records>table>tbody>tr{gap:9px 12px}
+ .request-desk .mobile-records tr:not(:has(td[data-column="Agent"])) td[data-column="Units"]{grid-column:1;text-align:left}
+}
+
+@media(max-width:700px){
+ .stock-overview-panel .mobile-records>table>tbody>tr{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 8px}
+ .stock-overview-panel .mobile-records>table>tbody>tr>.record-identity{grid-column:1/-1}
+ .mobile-records td[data-column="Movement"],.mobile-records td[data-column="Event"],.mobile-records td[data-column="Change"]{grid-column:1/-1}
+}
+
+@media(max-width:700px){
+ .mobile-records>table.mobile-sales-records>tbody>tr{gap:8px 12px}
+ .mobile-records>table.mobile-sales-records>tbody>tr>.record-identity{grid-column:1;grid-row:1}
+ .mobile-records .mobile-sales-records td[data-column="Revenue"]{grid-column:2;grid-row:1;text-align:right;font-size:15px;font-weight:650}
+ .mobile-records .mobile-sales-records td[data-column="Revenue"]::before,.mobile-records .mobile-sales-records td[data-column="Agent"]::before,.mobile-records .mobile-sales-records td[data-column="Product"]::before,.mobile-records .mobile-sales-records td[data-column="Settlement"]::before{display:none}
+ .mobile-records .mobile-sales-records td[data-column="Agent"]{grid-column:1/-1;grid-row:2;color:var(--muted);font-size:12px}
+ .mobile-records .mobile-sales-records td[data-column="Product"]{grid-column:1;grid-row:3}
+ .mobile-records .mobile-sales-records td[data-column="Units"]{grid-column:2;grid-row:3;text-align:right;align-self:center}
+ .mobile-records .mobile-sales-records td[data-column="Units"]::before{display:none}
+ .mobile-records .mobile-sales-records td[data-column="Units"]::after{content:' units';color:var(--muted);font-size:12px}
+ .mobile-records .mobile-sales-records td[data-column="Settlement"]{grid-column:1;grid-row:4;align-self:center}
+ .mobile-records>table.mobile-sales-records>tbody>tr>.record-disclosure{grid-column:2;grid-row:4;text-align:right;border:0;padding:0}
+ .mobile-records .mobile-sales-records td[data-column="Commission"],.mobile-records .mobile-sales-records td[data-column="To business"]{grid-row:5;padding-top:8px;border-top:1px solid var(--line)}
+ .mobile-records>table.mobile-catalogue-records>tbody>tr{position:relative;gap:10px 12px}
+ .mobile-records>table.mobile-catalogue-records>tbody>tr>.record-identity{padding-right:65px}
+ .mobile-records>table.mobile-catalogue-records>tbody>tr>.record-actions{position:absolute;right:14px;top:14px}
+ .mobile-records .mobile-catalogue-records td[data-column="Category"]{grid-column:1/-1}
+ .mobile-records .mobile-catalogue-records td[data-column="Category"]::before{display:none}
+}
