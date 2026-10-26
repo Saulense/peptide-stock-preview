@@ -433,3 +433,10 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
  .modal .form-actions .btn { white-space: normal; min-height: 42px; text-align: center; }
  .modal .cost-total, .modal .sale-total { flex-wrap: wrap; gap: 8px 16px; }
 }
+
+/* Guidance is on demand; cards no longer reserve space for captions. */
+.metric-value{margin-bottom:0}
+.panel-head h2 .measure-info{vertical-align:middle}
+.modal-head h2 .measure-info{margin-left:6px}
+.breakdown-help{display:flex;justify-content:flex-end;margin-top:4px}
+@media(max-width:600px){.supply-metrics .metric-value{margin-top:10px;margin-bottom:0}.supply-orders .empty{padding:30px 16px}}
