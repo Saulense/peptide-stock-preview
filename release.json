@@ -1,9 +1,9 @@
 {
-  "builtAt": "2026-10-26T15:47:52.148445+00:00",
+  "builtAt": "2026-10-26T15:56:21.171943+00:00",
   "files": {
-    "index.html": "c655daa24c7892a92fe7138d5ccc21533fec6c215637cc8c203efc9a2ed3c50e",
-    "styles.css": "3fc4cca0e4f1a8e0551c1e034613f112f05d0156d3adfae93c53fcb28e1dffaf",
-    "app.js": "d49cb2e68b0bd7be44ebe7254076f9bcf732c0e8db0f4fb5b546b2f0d23a4bf9",
+    "index.html": "83a98982e588bdc4b22208ddad4684c3cbfcd5238238ddeb0a079ca695d23626",
+    "styles.css": "660b542d73e5ba1dc6d885f933f6a38a3e10bbd91046673402f79aa73920ed40",
+    "app.js": "752ec79eadb8eb9a72786a4dd385a4754a979f6519b454f3d5087ad17d32f10a",
     "admin-team.js": "28dbb01a03f86a296e978a03b272b7bf9772ed352fa8256d7ec9a82c401f4d44",
     "workflows.js": "11b390716b617b09584c58f493a66a05aeffa955ca257ac52c625006fa1cc221",
     "progress.js": "df592cdcab845e8dc70dee8287a7694ea24f919559558e58d76ec241920c24d2",
