@@ -238,3 +238,13 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 /* Two appearance choices; mobile workspace header is notification-only. */
 .setting-row .theme-switch button{display:flex;align-items:center;justify-content:center;gap:7px;width:auto;min-width:76px;min-height:40px;padding:8px 12px;font-size:13px}
 @media(max-width:700px){.topbar .theme-switch,.topbar .top-actions>.avatar,.login-form>.theme-switch{display:none}.setting-row:has(.theme-switch){flex-wrap:wrap;gap:12px}}
+
+/* Product doses stay intact on their own line; icon tiles share a white-on-purple treatment. */
+.product-label{display:block;min-width:0;line-height:1.45;white-space:normal}
+.product-title{display:block;font-weight:600;overflow-wrap:normal;word-break:normal}
+.product-label>small{display:block;margin-top:2px;font-weight:400;color:var(--muted);font-size:12px}
+.product-dose{display:inline-block;white-space:nowrap;word-break:normal;overflow-wrap:normal}
+.product-label+.product-label{margin-top:8px}
+.mini-product .grow{min-width:0}.mini-product .product-label+small{margin-top:3px}
+.reporting-icon,.metric-icon,.metric-icon:is(.blue,.green,.orange),.metric .metric-icon,.product-glyph,.timeline-icon,.icon-btn{background:var(--selected-fill);color:#fff;border-color:var(--selected-border)}
+@media(max-width:480px){.low-stock-list{grid-template-columns:1fr}.low-stock-list .mini-product{gap:12px}.mini-product .product-title{font-size:14px}}
