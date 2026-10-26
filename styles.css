@@ -574,3 +574,14 @@ html.dialog-open { overflow: hidden; overscroll-behavior: none; }
 
 .transfer-check{overflow-wrap:anywhere;min-width:0}
 @media(max-width:360px){.transfer-inbox .toolbar select{width:100%;max-width:none}}
+
+/* Mobile route identity stays centered between equal-width controls. */
+.mobile-page-title{display:none}
+#view>.supply-actions{margin-bottom:24px}
+@media(max-width:700px){
+ .topbar{display:grid;grid-template-columns:40px minmax(0,1fr) 40px;gap:12px;align-items:center;flex-wrap:nowrap}
+ .topbar>.mobile-page-title{display:block;min-width:0;text-align:center;font-size:15px;font-weight:600;line-height:1.3;overflow-wrap:normal}
+ .topbar>.top-actions{margin-left:0;justify-content:flex-end}
+ .topbar>.breadcrumb{display:none}
+ #view>.supply-actions{margin-bottom:20px}
+}
