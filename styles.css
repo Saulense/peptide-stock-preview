@@ -162,3 +162,16 @@ select:not([multiple]):not([size]):disabled{opacity:.55;cursor:not-allowed}
 .transfer-lines td:before{display:block;color:var(--muted);font-size:12px;margin-bottom:5px}.transfer-lines td:nth-child(2):before{content:'Collected'}.transfer-lines td:nth-child(3):before{content:'Product cost'}.transfer-lines td:nth-child(4):before{content:'Commission kept'}.transfer-lines td:nth-child(5):before{content:'To business'}
 .transfer-pick td:first-child{position:absolute;right:0;top:16px;padding:0}.transfer-pick td:nth-child(2):before{content:none}.transfer-pick td:nth-child(3):before{content:'Collected'}.transfer-pick td:nth-child(4):before{content:'Product cost'}.transfer-pick td:nth-child(5):before{content:'Commission kept'}.transfer-pick td:nth-child(6):before{content:'To business'}
 }
+
+/* Compact date disclosure on mobile; desktop keeps its visible shortcuts. */
+.reporting-toggle{display:none}
+@media(max-width:760px){
+.reporting-window{position:relative;padding:0;border-radius:14px;margin-bottom:18px}
+.reporting-window .reporting-top{display:none}
+.reporting-toggle{display:flex;align-items:center;gap:12px;width:100%;padding:14px;border:0;border-radius:inherit;background:transparent;color:var(--text);text-align:left;cursor:pointer}
+.reporting-toggle .grow{min-width:0}.reporting-toggle strong{display:block;font-size:14px;font-weight:650}.reporting-toggle small{display:block;font-size:12px;color:var(--muted);margin-top:4px;line-height:1.5}.reporting-toggle>.icon{width:18px;flex-shrink:0;color:var(--muted);transition:transform 180ms}
+.reporting-toggle[aria-expanded="true"]>.icon{transform:rotate(180deg)}.reporting-toggle:focus-visible{outline:2px solid var(--purple);outline-offset:3px}
+.reporting-window .reporting-shortcuts{display:none}
+.reporting-window.is-open .reporting-shortcuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:55;padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px #0005}
+.reporting-window .range-chip{min-height:42px;font-size:13px;padding:10px;justify-content:flex-start;text-align:left}.reporting-window .range-chip[data-range-preset="year"]{grid-column:1/-1}.reporting-window .range-chip[data-range-action="months"]{grid-column:auto}.reporting-window .reporting-icon{flex-shrink:0}
+}
