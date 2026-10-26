@@ -314,3 +314,10 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 /* Dispatch pricing and remaining-stock price controls. */
 .dispatch-price-lines{display:grid;gap:14px}.dispatch-price-line,.pricing-lot{padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}.dispatch-price-fields{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:12px;margin-top:14px}.dispatch-price-line .field,.pricing-lot .field{display:flex;flex-direction:column;align-items:stretch;gap:7px}.dispatch-price-line label,.pricing-lot label{font-size:12px;color:var(--muted)}.dispatch-price-line input,.dispatch-price-line select,.pricing-lot input{width:100%;min-width:0}.pricing-dispatch-total{display:flex;justify-content:space-between;gap:14px;padding:15px;background:color-mix(in srgb,var(--purple) 10%,var(--panel));border:1px solid var(--line);border-radius:10px}.pricing-dispatch-total span{display:flex;flex-direction:column;gap:5px;color:var(--muted);font-size:12px}.pricing-dispatch-total strong{font-size:19px;color:var(--text)}.pricing-caption{font-size:12px;line-height:1.6}.pricing-context{display:flex;justify-content:space-between;gap:12px;margin-bottom:18px}.pricing-lot+.pricing-lot{margin-top:12px}
 @media(max-width:480px){.dispatch-price-line{padding:13px}.dispatch-price-fields{grid-template-columns:1fr 1fr;gap:12px}.dispatch-price-fields>.field:first-child{grid-column:1/-1}.dispatch-price-fields>.field:first-child input{max-width:100px}.pricing-context{flex-direction:column}.pricing-dispatch-total strong{font-size:18px}}
+
+/* Shared workspace gutters: reclaim space on every admin and agent page. */
+:root{--workspace-gutter:20px}
+.content{padding-inline:var(--workspace-gutter);padding-top:20px;max-width:none}
+.topbar{padding-inline:var(--workspace-gutter)}
+@media(max-width:1200px){:root{--workspace-gutter:16px}}
+@media(max-width:700px){:root{--workspace-gutter:12px}.content{padding-top:16px}}

@@ -1,8 +1,8 @@
 {
-  "builtAt": "2026-10-26T13:11:03.600744+00:00",
+  "builtAt": "2026-10-26T13:15:59.374252+00:00",
   "files": {
-    "index.html": "803366e6083fe87d7e50855f70aaa0cc275d6103aff360d47f0c0a7a9ff84eeb",
-    "styles.css": "f2f71e9c7399f203e744f6332fd53a9b0678ffea5b6591f836e937fedf6474e7",
+    "index.html": "0163667ba68062728e398c88f166dd1a5d9b44742c49389186e7fb3053ef9ac2",
+    "styles.css": "5db906167ada0dc9c11ad7553e47204810effdac8f6cd08644209ea97c129bc8",
     "app.js": "21eccf331d6abc6142bac452d30401c579875d5762d86737a9dedd20a0dc8139",
     "workflows.js": "17a7f42d06b63a3c6dbfecbad2fb8eede11af2ac2d021ac9a7c9f87253b862dc",
     "progress.js": "b658854d3b0703293ea39e709b8bbb8de7ff71c10dd99c45dc447309337de487",
