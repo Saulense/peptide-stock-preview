@@ -730,3 +730,10 @@ html.dialog-open #modal-root{position:fixed;inset:auto;top:0;left:0;width:100%;h
 #modal-root .modal-body{flex:1 1 auto;width:100%;min-width:0;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior:none;-webkit-overflow-scrolling:touch}
 #modal-root :is(.table-wrap,textarea,.protocol-canvas-wrap){overscroll-behavior:none}
 @media(max-width:700px){#modal-root .modal-overlay{padding:12px max(10px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}#modal-root .modal{margin:0;max-height:100%}#modal-root .modal-body{scroll-padding-bottom:20px}#modal-root :is(input,select,textarea){font-size:16px!important}}
+
+/* Native date controls must shrink with their field, including iOS Safari's internal date value. */
+input:is([type="date"],[type="datetime-local"]){display:block;box-sizing:border-box;min-width:0;min-inline-size:0;max-width:100%;max-inline-size:100%;appearance:none;-webkit-appearance:none;}
+.field>input:is([type="date"],[type="datetime-local"]){width:100%;inline-size:100%;min-height:44px;}
+input:is([type="date"],[type="datetime-local"])::-webkit-date-and-time-value{min-width:0;text-align:left;}
+input:is([type="date"],[type="datetime-local"])::-webkit-datetime-edit{min-width:0;padding:0;}
+input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicator{flex-shrink:0;margin-left:8px;margin-right:0;}
