@@ -181,3 +181,20 @@ select:not([multiple]):not([size]):disabled{opacity:.55;cursor:not-allowed}
 .stock-request-button{min-height:44px;padding:11px 18px;font-size:14px;font-weight:650;gap:9px;border-radius:11px;white-space:nowrap}
 .stock-request-button .icon{width:18px;height:18px;flex-shrink:0}
 @media(max-width:700px){.stock-page-actions{margin-bottom:16px}.stock-request-button{width:100%;min-height:48px;justify-content:center;font-size:15px;padding:12px 18px;border-radius:12px}}
+
+/* Agent stock table fits phones without hiding its action labels. */
+@media(max-width:700px){
+.agent-stock-panel table{table-layout:fixed;width:100%;white-space:normal}
+.agent-stock-panel th,.agent-stock-panel td{padding:12px 8px;vertical-align:middle}
+.agent-stock-panel th:nth-child(1){width:38%}.agent-stock-panel th:nth-child(2){width:14%}.agent-stock-panel th:nth-child(3){width:20%}.agent-stock-panel th:nth-child(4){width:28%}
+.agent-stock-panel th:nth-child(2),.agent-stock-panel td:nth-child(2){text-align:center}
+.agent-stock-panel .product-name{min-width:0;max-width:none;overflow-wrap:anywhere;line-height:1.45}
+.agent-stock-panel .product-name strong{font-size:13px}.agent-stock-panel .product-name small{font-size:12px;margin-top:2px}
+.agent-stock-panel td:nth-child(3){white-space:nowrap;font-variant-numeric:tabular-nums;font-size:13px}
+.agent-stock-panel td:last-child .btn{width:100%;min-width:0;min-height:40px;justify-content:center;padding:8px 6px;font-size:13px;border-radius:8px;white-space:nowrap}
+.agent-stock-panel td:last-child .btn .icon{display:none}
+.agent-stock-panel .toolbar .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;gap:2px}
+.agent-stock-panel .toolbar .tabs button{padding:7px 3px;min-width:0;font-size:12px;white-space:normal;line-height:1.35}
+.stock-table-foot{flex-wrap:wrap;gap:12px;align-items:flex-start}.stock-table-foot>small{flex:1 1 180px}.stock-table-foot>.btn{min-height:40px}
+}
+@media(max-width:360px){.agent-stock-panel th,.agent-stock-panel td{padding-inline:6px}.agent-stock-panel .toolbar{padding:10px}}

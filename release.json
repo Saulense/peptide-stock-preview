@@ -1,10 +1,10 @@
 {
-  "builtAt": "2026-10-26T11:55:08.292643+00:00",
+  "builtAt": "2026-10-26T12:00:44.025889+00:00",
   "files": {
-    "index.html": "dbf03e73b409c19ce9c4394d4805c218fd694463c0a8551a80976cdf9f1f4b31",
-    "styles.css": "554cfb0e4588830451cd1d2b6de100b643fdb2a8c7db80cabdf1f964f7687d15",
+    "index.html": "2e259d682481acfa4fc6b351c9394ef8fc1b9c5ba8fc12f33ad59ed4c7b9420c",
+    "styles.css": "2bb80a9a86b9e42d9b99baf76e702220af764b5946c83d8fc03fae0f76075db4",
     "app.js": "321aa964f010007e4d1c1a977f83abc97347978e968e11e9c44482d21833979e",
-    "workflows.js": "6de01f26ce6954245d6c03d5b59147ba43cf7b1c2f2efa19a35fe3f7522afc8f",
+    "workflows.js": "8f40f88da85cc482183567f7d54338544f4229a209e11b85b7319ffcb419ef05",
     "progress.js": "ac03ff0a0755688fcc86d61f05c76a8665cadc23b984fe594f9e23f9cbf2c7f3",
     "requests.js": "ff4e01a3072f4f6fb381d5bdee7b82a3a2e37e9dc85d1627a1ce66d5f2242606",
     "remittances.js": "704205b7f9dc004e7b20724a595f72ee6f5dba845bcd0b87e433ebbcc6dd3868",
