@@ -45,8 +45,87 @@ function contextInfo(label,copy=''){
 }
 function measureInfo(label){if(label==='Status'&&state.page!=='requests')return '';return measureExplanations[label]?`<button type="button" class="info-btn measure-info" data-help="${esc(label)}" aria-label="About ${esc(label)}" aria-expanded="false">${icon('info')}</button>`:''}
 var activeHelpTrigger;
-function dismissMeasureHelp(){document.getElementById('measure-help')?.remove();activeHelpTrigger?.setAttribute('aria-expanded','false');activeHelpTrigger=null}
-function showMeasureHelp(trigger,label){const same=activeHelpTrigger===trigger;dismissMeasureHelp();if(same)return;const copy=measureExplanations[label]||(typeof explanations!=='undefined'?explanations[label]:null);if(!copy)return;const el=document.createElement('div');el.id='measure-help';el.className='measure-popover';el.setAttribute('role','dialog');el.setAttribute('aria-label',label);el.innerHTML=`<div class="measure-popover-head"><strong>${esc(label)}</strong><button type="button" class="info-btn" data-help-close aria-label="Close explanation">${icon('x')}</button></div><p>${esc(copy)}</p>`;(trigger.closest('.modal')||document.body).append(el);activeHelpTrigger=trigger;trigger.setAttribute('aria-expanded','true');icons();const box=trigger.getBoundingClientRect(),w=el.getBoundingClientRect().width,h=el.getBoundingClientRect().height;el.style.left=Math.max(12,Math.min(box.left,innerWidth-w-12))+'px';el.style.top=Math.max(12,Math.min(box.bottom+10,innerHeight-h-12))+'px'}
+function dismissMeasureHelp(){motionDismiss(document.getElementById('measure-help'));activeHelpTrigger?.setAttribute('aria-expanded','false');activeHelpTrigger=null}
+// Shared interface motion: short, interruptible and presentation-only.
+const uiMotion = { route: '', exits: new Set(), disclosures: new WeakMap(), visibility: new WeakMap() };
+const motionReduced = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function motionClearExits() {
+ for (const el of uiMotion.exits) { el.getAnimations({subtree:true}).forEach(a=>a.cancel()); el.remove(); }
+ uiMotion.exits.clear();
+}
+function motionDismiss(el) {
+ if (!el) return;
+ if (motionReduced() || !el.animate) { el.remove(); return; }
+ // Retire the real node immediately. The inert visual tail owns no IDs/actions,
+ // so close→render→open remains synchronous and cannot close a newer dialog.
+ motionClearExits();
+ const dialog=el.querySelector('.modal');
+ if(dialog) dialog.classList.replace('modal','motion-dialog-exit');
+ for(const node of [el,...el.querySelectorAll('*')]) {
+  for(const attr of [...node.attributes]) {
+   if(attr.name==='id'||attr.name==='name'||attr.name.startsWith('data-'))node.removeAttribute(attr.name);
+  }
+ }
+ el.inert=true;el.setAttribute('aria-hidden','true');el.classList.add('motion-exit');
+ document.body.append(el);uiMotion.exits.add(el);
+ const animation=el.animate([{opacity:1},{opacity:0}],{duration:130,easing:'ease-out'});
+ if(dialog)dialog.animate([{transform:'translateY(0)'},{transform:'translateY(6px)'}],{duration:130,easing:'ease-out'});
+ const remove=()=>{el.remove();uiMotion.exits.delete(el)};
+ animation.finished.then(remove,remove);
+}
+function motionMount() {
+ const key=state.role+':'+state.page;
+ if(key!==uiMotion.route&&!motionReduced())($('#view')||$('.login-card'))?.classList.add('motion-page-enter');
+ uiMotion.route=key;
+ motionSyncControls();
+}
+function motionSyncControls() {
+ const options=$('#reporting-options');
+ if(options)options.inert=window.matchMedia('(max-width:760px)').matches&&!$('#reporting-window').classList.contains('is-open');
+ const sidebar=$('.sidebar');
+ if(sidebar)sidebar.inert=window.matchMedia('(max-width:700px)').matches&&!sidebar.classList.contains('open');
+}
+function motionSetVisible(el,visible) {
+ if(!el)return;
+ const previous=uiMotion.visibility.get(el);
+ if(previous?.visible===visible||!previous&&el.hidden===!visible)return;
+ previous?.animation.cancel();
+ el.inert=!visible;
+ if(visible)el.removeAttribute('aria-hidden');else el.setAttribute('aria-hidden','true');
+ if(motionReduced()||!el.animate){el.hidden=!visible;uiMotion.visibility.delete(el);return}
+ el.hidden=false;
+ const animation=el.animate(visible?[{opacity:0},{opacity:1}]:[{opacity:1},{opacity:0}],{duration:140,easing:'ease-out'});
+ const entry={animation,visible};uiMotion.visibility.set(el,entry);
+ animation.finished.then(()=>{
+  if(uiMotion.visibility.get(el)!==entry)return;
+  el.hidden=!visible;uiMotion.visibility.delete(el);
+ },()=>{});
+}
+function motionToggleDetails(details) {
+ const previous=uiMotion.disclosures.get(details),open=previous?!previous.open:!details.open;
+ const from=details.getBoundingClientRect().height;
+ previous?.animation.cancel();
+ if(motionReduced()||!details.animate){details.open=open;details.style.overflow='';uiMotion.disclosures.delete(details);return}
+ details.style.overflow='hidden';
+ details.open=open;
+ const to=details.getBoundingClientRect().height;
+ details.open=true;
+ const animation=details.animate([{height:from+'px'},{height:to+'px'}],{duration:180,easing:'cubic-bezier(.2,.8,.2,1)'});
+ const entry={animation,open};uiMotion.disclosures.set(details,entry);
+ animation.finished.then(()=>{
+  if(uiMotion.disclosures.get(details)!==entry)return;
+  details.open=open;details.style.overflow='';uiMotion.disclosures.delete(details);
+ },()=>{});
+}
+document.addEventListener('click',e=>{
+ const summary=e.target.closest('summary');
+ if(!summary||summary.parentElement.tagName!=='DETAILS'||e.target.closest('a,button,input,select,textarea'))return;
+ e.preventDefault();motionToggleDetails(summary.parentElement);
+});
+window.addEventListener('resize',motionSyncControls);
+// End shared interface motion.
+
+function showMeasureHelp(trigger,label){const same=activeHelpTrigger===trigger;dismissMeasureHelp();if(same)return;motionClearExits();const copy=measureExplanations[label]||(typeof explanations!=='undefined'?explanations[label]:null);if(!copy)return;const el=document.createElement('div');el.id='measure-help';el.className='measure-popover';el.setAttribute('role','dialog');el.setAttribute('aria-label',label);el.innerHTML=`<div class="measure-popover-head"><strong>${esc(label)}</strong><button type="button" class="info-btn" data-help-close aria-label="Close explanation">${icon('x')}</button></div><p>${esc(copy)}</p>`;(trigger.closest('.modal')||document.body).append(el);activeHelpTrigger=trigger;trigger.setAttribute('aria-expanded','true');icons();const box=trigger.getBoundingClientRect(),w=el.getBoundingClientRect().width,h=el.getBoundingClientRect().height;el.style.left=Math.max(12,Math.min(box.left,innerWidth-w-12))+'px';el.style.top=Math.max(12,Math.min(box.bottom+10,innerHeight-h-12))+'px'}
 function metric(label,value,ico,color,foot,unit='',spark=false){const chars=String(value).replace(/<[^>]*>/g,'').length;return `<article class="metric"><div class="metric-top"><span class="metric-label">${label}${contextInfo(label,foot)}</span><span class="metric-icon ${color}">${icon(ico)}</span></div><div class="metric-value" style="--metric-characters:${chars}">${value}${unit?`<small>${unit}</small>`:''}</div>${spark?`<svg class="spark" viewBox="0 0 80 28"><path d="M0 25 9 20 17 23 25 13 34 16 43 7 52 10 63 3 72 7 80 1" fill="none" stroke="var(--${color||'purple'})" stroke-width="1.5"/></svg>`:''}</article>`}
 function panelHead(title,sub='',right=''){return `<div class="panel-head"><div><h2>${title}${right.includes('data-info="'+esc(title)+'"')||right.includes('data-help="'+esc(title)+'"')?'':contextInfo(title,sub)}</h2></div>${right}</div>`}
 function period(){return ''}
@@ -118,14 +197,14 @@ function unlockModalPage(){
  window.scrollTo({left:saved.x,top:saved.y,behavior:'instant'});
 }
 function openModal(title,body,wide=false){
- dismissMeasureHelp();protocolCloseViewer();
+ dismissMeasureHelp();motionClearExits();protocolCloseViewer();
  if(!modalPageLock){lastFocus=document.activeElement;lockModalPage()}
  $('#modal-root').innerHTML=`<div class="modal-overlay"><section class="modal ${wide?'wide':''}" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><div class="modal-head"><h2 id="modal-title">${title}${/data-(?:info|help)/.test(title)?'':measureInfo(title)}</h2><button class="icon-btn" data-close aria-label="Close dialog">${icon('x')}</button></div><div class="modal-body">${body}</div></section></div>`;
  icons();$('.modal [data-close]').focus({preventScroll:true});
 }
 function closeModal(){
  if(!$('.modal'))return;
- dismissMeasureHelp();protocolCloseViewer();$('#modal-root').innerHTML='';unlockModalPage();
+ dismissMeasureHelp();protocolCloseViewer();motionDismiss($('#modal-root > .modal-overlay'));$('#modal-root').innerHTML='';unlockModalPage();
  const target=lastFocus?.isConnected&&!lastFocus.closest('[inert]')?lastFocus:$$('.topbar button').find(el=>el.getClientRects().length&&!el.disabled);target?.focus({preventScroll:true});
  lastFocus=null;
 }
@@ -133,7 +212,7 @@ function demoAction(label='Action'){toast(`${label}: design preview only. Nothin
 function toast(message){const t=$('#toast');t.textContent=message;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),4200)}
 function actions(label='Save',name=label){return `<div class="form-actions">${btn('Cancel','','data-close')}${btn(label,'check',`data-demo="${name}"`,'primary')}</div>`}
 function saleModal(id){if(state.role==='agent'){workflow.cart[id]=1;go('agent');return}const p=products[id];const discount=$(`[data-discount="${id}"]`)?.value||0;openModal('Record sale',`<div class="modal-product"><div class="vial"></div><div class="grow"><h3>${productLabel(p)}</h3><small>Current stock: ${p.qty} vials · ${p.batch}</small></div></div><div class="sale-row"><label for="sale-qty">Quantity</label><div class="quantity"><button data-qty="-1" aria-label="Decrease quantity">${icon('minus')}</button><input type="number" id="sale-qty" min="1" max="${p.qty}" value="1" step="1"><button data-qty="1" aria-label="Increase quantity">${icon('plus')}</button></div></div><div class="sale-row"><label for="sale-price">Selling price (€ / vial)</label><input type="number" id="sale-price" value="${p.price}" min="0" step="0.01" ${state.role==='agent'?'readonly':''}></div><div class="sale-row"><label for="sale-discount">Discount <small>· max 10%</small></label><div class="flex"><select id="sale-discount-type" aria-label="Discount unit" style="width:65px"><option value="percent">%</option><option value="amount">€</option></select><input type="number" id="sale-discount" value="${discount}" min="0" max="10" step="0.1"></div></div><div class="field"><label for="sale-payment">Payment status</label><select id="sale-payment"><option>Collected by me</option><option>Not collected yet</option><option>Paid directly to business</option><option>Part-paid</option></select></div><div class="field mt" id="partial-field" hidden><label for="sale-partial">Amount collected (€)</label><input id="sale-partial" type="number" min="0" value="0" step="0.01"></div><div class="error" id="sale-error" role="alert"></div><div class="sale-total"><span>Total sale amount</span><strong id="sale-total"></strong></div><button class="btn primary full" id="confirm-sale" data-demo="Confirm sale">${icon('check')}Confirm sale</button><div class="after-sale"><strong>After this sale</strong><div><span>Stock remaining</span><strong id="sale-stock"></strong></div><div><span>Recorded sales increase</span><strong id="sale-increase"></strong></div><div><span>Cash collected increases</span><strong id="sale-cash"></strong></div></div><p class="notice">Design preview · this does not create a transaction.</p>`);$('.modal').dataset.product=id;updateSale()}
-function updateSale(){const id=$('.modal')?.dataset.product;if(id===undefined)return;const p=products[+id],q=+$('#sale-qty').value,price=+$('#sale-price').value,d=+$('#sale-discount').value,isPercent=$('#sale-discount-type').value==='percent',maxDiscount=isPercent?10:price*.1,total=q*(price-(isPercent?price*d/100:d)),payment=$('#sale-payment').value;const partial=payment==='Part-paid';$('#partial-field').hidden=!partial;const collected=partial?+$('#sale-partial').value:payment==='Collected by me'?total:0;let error=!Number.isInteger(q)||q<1?'Enter a whole quantity of at least 1.':q>p.qty?'Quantity exceeds available stock.':price<0||!Number.isFinite(price)?'Enter a valid selling price.':d<0||d>maxDiscount?'Discount exceeds the permitted 10% limit.':partial&&(collected<0||collected>total)?'Collected amount must be between zero and the sale total.':'';$('#sale-error').textContent=error;$('#confirm-sale').disabled=!!error;$('#sale-total').textContent=euro(Math.max(0,total),2);$('#sale-stock').textContent=`${Math.max(0,p.qty-q)} vials`;$('#sale-increase').textContent=euro(Math.max(0,total),2);$('#sale-cash').textContent=euro(Math.max(0,collected),2)}
+function updateSale(){const id=$('.modal')?.dataset.product;if(id===undefined)return;const p=products[+id],q=+$('#sale-qty').value,price=+$('#sale-price').value,d=+$('#sale-discount').value,isPercent=$('#sale-discount-type').value==='percent',maxDiscount=isPercent?10:price*.1,total=q*(price-(isPercent?price*d/100:d)),payment=$('#sale-payment').value;const partial=payment==='Part-paid';motionSetVisible($('#partial-field'),partial);const collected=partial?+$('#sale-partial').value:payment==='Collected by me'?total:0;let error=!Number.isInteger(q)||q<1?'Enter a whole quantity of at least 1.':q>p.qty?'Quantity exceeds available stock.':price<0||!Number.isFinite(price)?'Enter a valid selling price.':d<0||d>maxDiscount?'Discount exceeds the permitted 10% limit.':partial&&(collected<0||collected>total)?'Collected amount must be between zero and the sale total.':'';$('#sale-error').textContent=error;$('#confirm-sale').disabled=!!error;$('#sale-total').textContent=euro(Math.max(0,total),2);$('#sale-stock').textContent=`${Math.max(0,p.qty-q)} vials`;$('#sale-increase').textContent=euro(Math.max(0,total),2);$('#sale-cash').textContent=euro(Math.max(0,collected),2)}
 function shipmentModal(){if(typeof supplyNew==='function')return supplyNew();openModal('New stock shipment',`<div class="form-grid">${field('Order date','2026-10-26','date')}${selectField('Supplier',['Decode Peptides','Add a supplier…'])}${selectField('Purchase currency',['USD — US dollar','EUR — Euro'])}${field('Exchange rate · EUR per USD','0.86','number')}</div><div class="section-label">Products in this shipment ${btn('Add product','plus','data-demo="Add shipment line"','small')}</div>${table(['Peptide','Qty','Unit cost (USD)','Line total'],[row(['Retatrutide 10 mg','10','$36.00','$360.00']),row(['BPC-157 / TB-500','20','$23.50','$470.00']),row(['GHK-Cu 50 mg','10','$17.00','$170.00'])])}<div class="section-label">Shared costs <span class="muted">EUR</span></div><div class="form-grid">${field('Shipping','120','number')}${field('Labeling & boxes','60','number')}${selectField('Transfer fee type',['Percentage of converted goods','Fixed amount in EUR'])}${field('Transfer fee (%)','3','number')}${field('Customs / other fees','40','number')}${field('Unexpected expenses','62.40','number')}${selectField('Allocate shared costs',['By quantity','By purchase value','Manual'], 'full')}</div><div class="mt">${btn('Add custom expense','plus','data-demo="Add custom shipment expense"','small')}</div><div class="section-label">Allocation preview · by quantity ${info('Landed cost')}</div>${table(['Product','Base cost / vial','Shared / vial','Landed / vial'],[row(['Retatrutide','$36 × 0.86','€7.705','€38.665']),row(['BPC-157 / TB-500','$23.50 × 0.86','€7.705','€27.915']),row(['GHK-Cu','$17 × 0.86','€7.705','€22.325'])])}<div class="cost-total"><div><small>Total landed cost · sample</small><strong>€1,168.20</strong></div><div class="text-right"><small>Average per vial</small><strong>€29.205</strong></div></div><p class="muted" style="font-size:13px;margin-top:10px">$1,000 × 0.86 + €120 + €60 + €25.80 + €40 + €62.40. Preview totals are a fixed design scenario.</p><div class="form-actions">${btn('Save draft','','data-demo="Save shipment draft"')}${btn('Receive stock','package-check','data-demo="Receive stock"','primary')}</div><p class="notice">Design preview · costs and stock are not saved.</p>`,true)}
 function productModal(id=0){if(state.role!=='admin'||workflow.support)return;const p=products[id];productEditor=id;openModal(id===-1?'Add peptide':'Edit peptide',`<div class="form-grid">${field('Peptide name',p?.name||'')}${field('Strength',p?.dose||'')}${field('Selling price (EUR)',p?.price??'','number')}${field('Landed cost (EUR)',p?.cost??'','number')}${field('Low-stock threshold',p?.lowStockThreshold??5,'number')}</div><p class="muted mt">Defaults for new dispatches. Existing stock and completed sales keep their prices; use Stock overview to reprice remaining units.</p>${categoryPicker(p?categoryFor(p).id:'general')}<p id="category-help" class="muted" hidden>Editable catalogue groupings for navigation. They describe research areas, not proven benefits or approved uses.</p><div class="error" id="product-editor-error" role="alert"></div><div class="form-actions">${btn('Cancel','','data-close')}${btn('Save preview','check','data-save-product-preview','primary')}</div>`)}
 function saveProductPreview(){if(state.role!=='admin'||workflow.support||productEditor===null)return;const name=$('#f-peptide-name').value.trim(),dose=$('#f-strength').value.trim(),priceInput=$('#f-selling-price--eur-'),price=Number(priceInput.value),category=$('input[name="product-category"]:checked')?.value;
@@ -176,7 +255,7 @@ function reviewRequest(id){const r=requestSamples.find(x=>x.id===id);if(!r||stat
 // Temporary design-review toolbar. Remove before production implementation.
 function previewToolbar(){return `<nav class="preview-bar" aria-label="Temporary design preview"><div class="preview-role-switch" role="group" aria-label="Preview role">${[['admin','shield-check','Admin'],['agent','user-round','Agent']].map(([role,i,label])=>`<button type="button" data-preview-role="${role}" aria-pressed="${state.role===role}" aria-label="Preview ${label} view">${icon(i)}${label}</button>`).join('')}</div>${state.role==='agent'?workflowPreviewSelect():''}</nav>`}
 function switchPreviewRole(role){if(!['admin','agent'].includes(role)||role===state.role)return;closeModal();workflow.support=false;workflow.cart={};state.role=role;state.agent=0;const url=new URL(location.href);url.searchParams.set('view',role);url.hash=role==='admin'?'dashboard':'agent';history.replaceState(null,'',url);go(role==='admin'?'dashboard':'agent');$(`[data-preview-role="${role}"]`).focus({preventScroll:true})}
-function render(){dismissMeasureHelp();closeMobileNavigation();if(state.page==='deliveries'){state.page='requests';history.replaceState(null,'','#requests')}if(state.role==='agent'&&isWholesale()&&state.page==='balance')state.page='stock';if(state.role==='agent'&&!['agent','stock','sales','balance','requests','protocols','settings','login'].includes(state.page)){state.page='agent';history.replaceState(null,'','#agent')}$('#preview-toolbar').innerHTML=previewToolbar();document.documentElement.dataset.theme=state.theme;document.body.classList.toggle('collapsed',state.collapsed);document.title=`${state.role==='admin'?'Admin':'Agent'} · ${state.page==='login'?'Welcome':titles[state.page]||'Dashboard'} · Peptide Stock`;if(state.page==='login'){$('#app').innerHTML=login();icons();return}if(!titles[state.page])state.page='dashboard';$('#app').innerHTML=shell();const views={protocols:protocolsPage,requests:requestsPage,dashboard,agents:adminAgents,agent:state.role==='agent'?workflowHome:adminAgentDetail,catalogue,stock:state.role==='agent'?workflowStock:requestStockOverview,sales:state.role==='agent'?workflowSalesPage:financeSalesPage,purchases:supplyPurchases,expenses,payments:settlementsPage,balance:earningsPage,investments:agreementsPage,reports:financeReports,audit:financeAudit,settings};$('#view').innerHTML=views[state.page]();mountReportingWindow();icons();applyWorkflowPresentation();applyProtocolFilter()}
+function render(){dismissMeasureHelp();motionClearExits();closeMobileNavigation();if(state.page==='deliveries'){state.page='requests';history.replaceState(null,'','#requests')}if(state.role==='agent'&&isWholesale()&&state.page==='balance')state.page='stock';if(state.role==='agent'&&!['agent','stock','sales','balance','requests','protocols','settings','login'].includes(state.page)){state.page='agent';history.replaceState(null,'','#agent')}$('#preview-toolbar').innerHTML=previewToolbar();document.documentElement.dataset.theme=state.theme;document.body.classList.toggle('collapsed',state.collapsed);document.title=`${state.role==='admin'?'Admin':'Agent'} · ${state.page==='login'?'Welcome':titles[state.page]||'Dashboard'} · Peptide Stock`;if(state.page==='login'){$('#app').innerHTML=login();icons();motionMount();return}if(!titles[state.page])state.page='dashboard';$('#app').innerHTML=shell();const views={protocols:protocolsPage,requests:requestsPage,dashboard,agents:adminAgents,agent:state.role==='agent'?workflowHome:adminAgentDetail,catalogue,stock:state.role==='agent'?workflowStock:requestStockOverview,sales:state.role==='agent'?workflowSalesPage:financeSalesPage,purchases:supplyPurchases,expenses,payments:settlementsPage,balance:earningsPage,investments:agreementsPage,reports:financeReports,audit:financeAudit,settings};$('#view').innerHTML=views[state.page]();mountReportingWindow();icons();applyWorkflowPresentation();applyProtocolFilter();motionMount()}
 function go(page){closeModal();state.page=page;state.search='';state.stockFilter='All';location.hash=page;render();window.scrollTo({top:0,behavior:'instant'})}
 document.addEventListener('click',e=>{const b=e.target.closest('button,[data-action]');if(!b)return;if(b.dataset.previewRole){switchPreviewRole(b.dataset.previewRole);return}if(b.dataset.page)go(b.dataset.page);if(b.dataset.theme){state.theme=b.dataset.theme;localStorage.setItem('ps-theme',state.theme);document.documentElement.dataset.theme=state.theme;$$('[data-theme]').filter(n=>n.tagName==='BUTTON').forEach(n=>{n.classList.toggle('active',n.dataset.theme===state.theme);n.setAttribute('aria-pressed',String(n.dataset.theme===state.theme))})}if(b.dataset.action==='collapse'){state.collapsed=!state.collapsed;document.body.classList.toggle('collapsed',state.collapsed);b.setAttribute('aria-expanded',String(!state.collapsed));b.setAttribute('aria-label',state.collapsed?'Expand navigation':'Collapse navigation');b.title=state.collapsed?'Expand navigation':'Collapse navigation'}if(b.dataset.action==='menu')toggleMobileNavigation();if(b.dataset.agent!==undefined){state.agent=+b.dataset.agent;go('agent')}if(b.dataset.agentIndex!==undefined)state.agent=+b.dataset.agentIndex;if(b.dataset.modal)modal(b.dataset.modal);if(b.dataset.expenseDetail!==undefined)expenseDetails(Number(b.dataset.expenseDetail));if(b.dataset.request)requestModal(b.dataset.request);if(b.dataset.reviewRequest)reviewRequest(b.dataset.reviewRequest);if(b.hasAttribute('data-close'))closeModal();if(b.dataset.sell!==undefined)saleModal(+b.dataset.sell);if(b.dataset.product!==undefined)productModal(+b.dataset.product);if(b.dataset.demo)demoAction(b.dataset.demo);if(b.dataset.info)openModal(b.dataset.info,`<p class="muted" style="font-size:13px;line-height:1.8">${b.dataset.info==='Matched comparison'?'Calendar weeks compare the same elapsed weekdays; month and year ranges compare corresponding calendar dates. Rolling and custom ranges compare the immediately preceding equal-length period. Both endpoints stop at the same sample time when today is included. Complete calendar months may have different day counts; the exact compared dates are shown. Demo activity only.':explanations[b.dataset.info]||'This figure is shown with sample data for design review.'}</p>`);if(b.dataset.stockfilter){state.stockFilter=b.dataset.stockfilter;$$('[data-stockfilter]').forEach(n=>n.classList.toggle('active',n===b));applyStockFilter()}if(b.dataset.listfilter){$$('[data-listfilter]').forEach(n=>n.classList.toggle('active',n===b));$$('[data-model]').forEach(n=>n.hidden=b.dataset.listfilter!=='all'&&n.dataset.model!==b.dataset.listfilter)}if(b.dataset.qty){$('#sale-qty').value=Math.max(1,+$('#sale-qty').value+ +b.dataset.qty);updateSale()}if(b.hasAttribute('data-toggle')){b.classList.toggle('on');b.setAttribute('aria-checked',b.classList.contains('on'))}if(b.dataset.report)financeReport();if(b.dataset.loginRole){loginRole=b.dataset.loginRole;$$('[data-login-role]').forEach(n=>{n.classList.toggle('active',n===b);n.setAttribute('aria-pressed',String(n===b))})}if(b.hasAttribute('data-enter-demo')){state.role=loginRole;const roleUrl=new URL(location.href);roleUrl.searchParams.set('view',state.role);history.replaceState(null,'',roleUrl);go(state.role==='admin'?'dashboard':'agent')}if(b.dataset.valueTab){$$('[data-value-tab]').forEach(n=>n.classList.toggle('active',n===b));$('#value-label').textContent=b.dataset.valueTab==='cost'?'Remaining inventory cost':'Remaining sales potential';$('#value-amount').textContent=euro(b.dataset.valueTab==='cost'?products.reduce((s,p)=>s+p.qty*p.cost,0):5455,2)}});
 document.addEventListener('input',e=>{if(e.target.hasAttribute('data-search')){state.search=e.target.value.toLowerCase();if(state.page==='agents')$$('.agent-card[data-searchable]').forEach(n=>n.hidden=!n.dataset.searchable.includes(state.search));else applyStockFilter()}if(e.target.id.startsWith('sale-'))updateSale()});
@@ -248,7 +327,7 @@ window.addEventListener('hashchange',()=>{if(location.hash.slice(1)!==state.page
 
 // Category selections affect presentation only; this remains an in-memory design preview.
 document.addEventListener('change',e=>{if(e.target.id==='catalogue-category'){catalogueCategory=e.target.value;applyStockFilter()}});
-document.addEventListener('click',e=>{if(e.target.closest('[data-save-product-preview]'))saveProductPreview();if(e.target.closest('[data-category-help]')){const help=$('#category-help');help.hidden=!help.hidden}});
+document.addEventListener('click',e=>{if(e.target.closest('[data-save-product-preview]'))saveProductPreview();if(e.target.closest('[data-category-help]')){const help=$('#category-help');motionSetVisible(help,!(uiMotion.visibility.get(help)?.visible??!help.hidden))}});
 
 // Mobile drawer owns scrolling while open; preserve the underlying page position.
 var mobileNavigationScroll;
@@ -257,7 +336,7 @@ function closeMobileNavigation(){
  const y=mobileNavigationScroll;mobileNavigationScroll=undefined;
  document.documentElement.classList.remove('navigation-open');
  document.body.style.removeProperty('position');document.body.style.removeProperty('top');document.body.style.removeProperty('width');
- $('.sidebar')?.classList.remove('open');
+ $('.sidebar')?.classList.remove('open');motionSyncControls();
  $$('.main,.mobile-nav,#preview-toolbar').forEach(el=>el.inert=false);
  const trigger=$('[aria-controls="workspace-navigation"].mobile-menu');trigger?.setAttribute('aria-expanded','false');
  window.scrollTo({top:y,behavior:'instant'});trigger?.focus({preventScroll:true});
@@ -267,7 +346,7 @@ function toggleMobileNavigation(){
  if(!window.matchMedia('(max-width:700px)').matches)return;
  mobileNavigationScroll=window.scrollY;
  document.body.style.position='fixed';document.body.style.top=`-${mobileNavigationScroll}px`;document.body.style.width='100%';
- document.documentElement.classList.add('navigation-open');$('.sidebar')?.classList.add('open');
+ document.documentElement.classList.add('navigation-open');$('.sidebar')?.classList.add('open');motionSyncControls();
  $('[aria-controls="workspace-navigation"].mobile-menu')?.setAttribute('aria-expanded','true');
  $$('.main,.mobile-nav,#preview-toolbar').forEach(el=>el.inert=true);
  $('.sidebar nav button')?.focus({preventScroll:true});
