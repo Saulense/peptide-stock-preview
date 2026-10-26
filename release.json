@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-10-26T15:21:17.087761+00:00",
+  "builtAt": "2026-10-26T15:22:09.324350+00:00",
   "files": {
-    "index.html": "a1f8b9bdbb39297a8b7a677e442ad10f32c50887b954a54d03d1da6ee3d1a365",
+    "index.html": "e184d1fca306e40141eab02151cef9eff370e5de1030b2c63b5e120756a54344",
     "styles.css": "8e2a783e20dfb252c92485ef4cf06d15b88fb741cf58196d05e54f24e1d596bb",
     "app.js": "7f79b0eeea56505af78d5b70657a11c07cc45eeef7c76616ed4d0b9b106c840f",
     "workflows.js": "94d34da690f33a4f205d0b48a02f904e5c1e8fd7683adcf2404b3915ad05bee9",
@@ -9,7 +9,7 @@
     "pricing.js": "bdf53a0fa02f135a8a57e4858a91de3050d4eb170875430ca88249e222cfb083",
     "supply.js": "7cb9fdb0195050384d75d2c20dea9236f93fac1c981a53d4c3788a20b00524f1",
     "requests.js": "ce66b8ae2f5a0e3999cd00ddd4be7fbb74ab3845bdc7242f081c94fdb31bf019",
-    "remittances.js": "fd4c303748576c2dd256e86337ab843a9418e515fb531b0c414771a45175e917",
+    "remittances.js": "d741cc68b0ebe18e0e3079b07318a62bf23c55a4458ad2dc4f7a1d3c136cb8e2",
     "protocols.js": "e2ef3936c8a2b0bf5f9d319d9df04c925a83f51ec913683de466e1710dcb9e7f",
     "reporting.js": "b349d0cfe1d49d4dda572ebf6e08c207692c2b20c348f7f4433cf293ce18fb4f",
     "trend.js": "09b27660fc69b9ae1b7b11a471f92e43bb8cde1ff22b0e51b8c6ceaf8613ce53",

@@ -2,7 +2,7 @@
 const transfers={records:[],serial:1,revision:0,events:[],selection:[],filter:'all'};
 const moneyCents=n=>Math.round(Number(n)*100);
 const transferMoney=n=>euro(n/100,2);
-function saleDate(r){return /^\d{4}-/.test(r.date)?r.date:'2026-10-'+r.date.split(' ')[0].padStart(2,'0')}
+function saleDate(r){const value=String(r.date||'');if(/^\d{4}-\d{2}-\d{2}/.test(value))return value.slice(0,10);const numeric=value.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);if(numeric)return numeric[3]+'-'+numeric[2].padStart(2,'0')+'-'+numeric[1].padStart(2,'0');const named=value.match(/^(\d{1,2})\s+([A-Za-z]+)(?:\s+(\d{4}))?/),months=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];if(named){const month=months.indexOf(named[2].slice(0,3).toLowerCase());if(month>=0)return (named[3]||'2026')+'-'+String(month+1).padStart(2,'0')+'-'+named[1].padStart(2,'0')}return ''}
 function financeSales(){return [0,1,3].flatMap(index=>progressSales(index).map(r=>({...r,index})))}
 function saleAmounts(r,index){const gross=moneyCents(r.price)*r.q,cost=moneyCents(r.cost)*r.q,commission=moneyCents(progressCommission(r,index));return {gross,cost,commission,net:gross-commission}}
 function transferEligible(index){return flowProfile(index)==='wholesale'?[]:progressSales(index).filter(r=>r.paid&&!r.direct&&!r.settled&&!r.transferId)}
