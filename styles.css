@@ -227,3 +227,10 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
  .request-edit-lines .table-product-cell,.transfer-lines .table-product-cell{min-width:0;max-width:none}
 }
 @media(max-width:360px){.agent-stock-panel th,.agent-stock-panel td{padding-inline:6px}}
+
+/* One accent system for every workspace, report, dialog and theme. */
+:root{--selected-fill:linear-gradient(120deg,#7955ef,#6541d6);--selected-border:#9677ff;--accent-tile:linear-gradient(135deg,color-mix(in srgb,var(--purple) 32%,var(--panel)),color-mix(in srgb,var(--purple) 18%,var(--panel)));--accent-ink:color-mix(in srgb,var(--purple) 65%,var(--text))}
+.reporting-icon,.metric-icon,.metric-icon:is(.blue,.green,.orange),.metric .metric-icon,.product-glyph,.timeline-icon,.icon-btn{background:var(--accent-tile);color:var(--accent-ink);border:1px solid color-mix(in srgb,var(--purple) 32%,var(--line))}
+.btn.primary,.nav-item.active,.range-chip.active,.range-month.selected,.tabs button.active,.trend-group button.active,.theme-switch button.active,.preview-role-switch button[aria-pressed=true],.mobile-nav button.active{background:var(--selected-fill);color:#fff;border-color:var(--selected-border);box-shadow:inset 0 1px 0 #ffffff20,0 3px 10px #603ce21a}
+.mobile-nav button.active{border-radius:10px}
+.switch.on{background:var(--selected-fill)}
