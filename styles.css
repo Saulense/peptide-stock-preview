@@ -328,3 +328,13 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
  .topbar .icon-btn{width:40px;height:40px;min-width:40px;min-height:40px;aspect-ratio:1;flex:0 0 40px;padding:0;display:inline-grid;place-items:center;border-radius:10px;line-height:1}
  .topbar .icon-btn>.icon{width:20px;height:20px;display:block;margin:0}
 }
+
+/* Mobile navigation is a contained scrolling drawer over a blurred, locked page. */
+@media(max-width:700px){
+ html.navigation-open{overflow:hidden;overscroll-behavior:none}
+ .sidebar{bottom:0;max-height:calc(100dvh - var(--preview-bar-height));overflow:hidden;z-index:70;padding-bottom:max(14px,env(safe-area-inset-bottom));overscroll-behavior:contain}
+ .sidebar>.brand,.sidebar>.nav-label,.sidebar>.sidebar-bottom{flex-shrink:0}
+ .sidebar nav{flex:1;min-height:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#7760bb transparent}
+ .sidebar-bottom{padding-top:12px}
+ .sidebar.open+.mobile-scrim{z-index:60;background:rgba(5,8,18,.46);backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);touch-action:none}
+}
