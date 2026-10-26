@@ -285,3 +285,13 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 @media(max-width:1200px){.protocol-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.protocol-grid{grid-template-columns:1fr;padding:12px;gap:12px}.protocol-library>.toolbar select{max-width:none;width:100%}.protocol-library>.toolbar .tabs{width:100%;display:flex}.protocol-library>.toolbar .tabs>button{flex:1}.protocol-card{padding:15px}.protocol-page-actions{flex-wrap:wrap}.protocol-page-actions>.btn{min-height:44px}.protocol-card-actions>.btn{min-height:42px}.protocol-view-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.protocol-view-actions>.btn{padding:9px 5px;font-size:12px;justify-content:center}.protocol-pdf{min-height:300px}.protocol-notify{align-items:flex-start}}
 .protocol-reader{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--input)}.protocol-reader-toolbar{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}#protocol-canvas-wrap{max-height:55vh;overflow:auto;padding:12px;text-align:center;min-height:250px}#protocol-canvas{display:block;max-width:100%;margin:auto;background:white}#protocol-render-error{padding:20px;color:var(--muted);font-size:13px}
+
+/* Current agent cycle: remaining stock plus unsettled gross sales, never warehouse inventory. */
+.chart-grid .agent-cycle-panel .panel-body{display:flex;flex-direction:column;align-items:stretch;gap:18px}
+.agent-cycle-panel .donut{width:200px;height:200px;margin:0 auto}
+.agent-cycle-panel .donut-text small{font-size:11px;line-height:1.3;white-space:nowrap}
+.agent-cycle-panel .donut-text strong{font-size:25px}
+.agent-cycle-legend{display:grid;gap:16px}.agent-cycle-legend>div{display:grid;grid-template-columns:7px minmax(0,1fr) auto;align-items:center;gap:10px;font-size:13px}.agent-cycle-legend strong{font-variant-numeric:tabular-nums;white-space:nowrap}.agent-cycle-panel .table-footer{justify-content:flex-end}
+@media(max-width:700px){.agent-cycle-panel .donut{width:180px;height:180px}.agent-cycle-panel .donut-text strong{font-size:23px}.agent-cycle-panel .panel-body{padding:16px}.agent-cycle-legend>div{font-size:13px}}
+
+.agent-cycle-legend i{display:block;width:7px;height:7px;border-radius:50%}.agent-cycle-legend .blue-dot{background:var(--blue)}.agent-cycle-legend .purple-dot{background:var(--purple)}

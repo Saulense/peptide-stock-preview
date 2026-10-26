@@ -1,13 +1,13 @@
 {
-  "builtAt": "2026-10-26T12:43:49.753755+00:00",
+  "builtAt": "2026-10-26T12:48:43.922771+00:00",
   "files": {
-    "index.html": "45fddbb80597dbef4bf54106dbddf451bd033b87e696aad03600e7a719d1525f",
-    "styles.css": "0daa7974c0e43e6a252c5fe3ab2ec4a220a49302070298c9b7ffb66c9e977c73",
-    "app.js": "68d7da4da6340b0240a11f64fe5036812b15e8a49d0df230867549f0d7ea9a59",
+    "index.html": "7ef7069762cc66bdf352967122aee94c4ed53284930f7891928a7a62d733881e",
+    "styles.css": "b2c34acba8b914a51318c648c92ad2afb1bca7ea10fbedfbc317753092c05cd5",
+    "app.js": "cbca080bfb9df9672972bdd293da6525002f55bb21d79ebe55dd48df7a38012f",
     "workflows.js": "1322c489181b493499e6312b682bfa8a8d216e353d54c3ab578c55673f88c5c8",
     "progress.js": "666ff06af4d44225ac6d3c70a641141adbc0ad2943462b9cc74d91d93c169ec0",
     "requests.js": "6e0af36b9eedd3deea7bad08bf4ef1934de1e0d88d20c4f337dca25349a383a8",
-    "remittances.js": "91b2d6899e03dfc66a0317759a4a0f8910a72d12c0fdf7fa37a4193bbb165a97",
+    "remittances.js": "7a8b3b8e53cbb8aa9fa3c2c1e179e7cc2c3c04910dc11ea654cfa7d568610d39",
     "protocols.js": "e2ef3936c8a2b0bf5f9d319d9df04c925a83f51ec913683de466e1710dcb9e7f",
     "reporting.js": "b349d0cfe1d49d4dda572ebf6e08c207692c2b20c348f7f4433cf293ce18fb4f",
     "trend.js": "8e07a4d7cbb4acea23cc8d616292420be514bab37a8dc8df421e2e46785cf4be",
