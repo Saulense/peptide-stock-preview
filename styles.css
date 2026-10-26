@@ -402,3 +402,34 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .supply-metrics .metric-label{display:block;line-height:1.5}
 .supply-metrics .measure-info{display:inline-flex;vertical-align:middle;margin-left:3px}
 @media(max-width:700px){.supply-orders>.panel-head{flex-direction:column;align-items:flex-start;gap:8px}.supply-metrics .metric-top{align-items:flex-start}}
+
+/* Mobile dialog audit: fixed shell, one vertical scroller, contained table panning. */
+html.dialog-open { overflow: hidden; overscroll-behavior: none; }
+.modal-overlay { overflow: hidden; overscroll-behavior: none; padding: 12px; }
+.modal { display: flex; flex-direction: column; min-width: 0; max-width: min(500px,100%); max-height: calc(100dvh - 24px); overflow: hidden; }
+.modal.wide { max-width: min(750px,100%); }
+.modal-head { flex: 0 0 auto; gap: 12px; min-width: 0; }
+.modal-head h2 { min-width: 0; overflow-wrap: anywhere; }
+.modal-head .icon-btn { flex: 0 0 auto; }
+.modal-body { min-width: 0; min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; scrollbar-gutter: stable; }
+.modal-body > *, .modal .form-grid > *, .modal .field, .modal .grow { min-width: 0; max-width: 100%; }
+.modal .form-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.modal .field input, .modal .field select, .modal .field textarea { min-width: 0; max-width: 100%; }
+.modal .table-wrap { max-width: 100%; overscroll-behavior: contain; }
+.modal .form-actions { flex-wrap: wrap; }
+.modal .key-row > *, .modal .cost-total > *, .modal .sale-total > * { min-width: 0; overflow-wrap: anywhere; }
+.modal .key-row strong { text-align: right; }
+.modal .modal-product { min-width: 0; }
+.modal .modal-product h3 { overflow-wrap: anywhere; }
+.modal .protocol-canvas-wrap { overflow-x: hidden; overscroll-behavior: contain; }
+@media(max-width:700px){
+ .modal-overlay { padding: max(10px,env(safe-area-inset-top)) 10px max(10px,env(safe-area-inset-bottom)); }
+ .modal { max-height: calc(100dvh - 20px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
+ .modal-head { padding: 16px; }
+ .modal-head h2 { font-size: 18px; line-height: 1.35; }
+ .modal-body { padding: 16px; scrollbar-gutter: auto; }
+ .modal .form-grid { grid-template-columns: minmax(0,1fr); }
+ .modal input:not([type=checkbox]):not([type=radio]), .modal select, .modal textarea { font-size: 16px; }
+ .modal .form-actions .btn { white-space: normal; min-height: 42px; text-align: center; }
+ .modal .cost-total, .modal .sale-total { flex-wrap: wrap; gap: 8px 16px; }
+}
