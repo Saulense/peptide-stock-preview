@@ -1,0 +1,16 @@
+{
+  "builtAt": "2026-10-26T11:45:01.303642+00:00",
+  "files": {
+    "index.html": "dad8286a7471c2b5127d9d79e632b077acebaa93b198999f1be4d871dcfda7bd",
+    "styles.css": "cfd9648751a45b77878d2f4aedf4df08587378e66b9109ad5c88992d9942795f",
+    "app.js": "321aa964f010007e4d1c1a977f83abc97347978e968e11e9c44482d21833979e",
+    "workflows.js": "334ce78253ed9fd0478a03480eb50034c5bff0aedc5abed51616e1d80799b555",
+    "progress.js": "ac03ff0a0755688fcc86d61f05c76a8665cadc23b984fe594f9e23f9cbf2c7f3",
+    "requests.js": "ff4e01a3072f4f6fb381d5bdee7b82a3a2e37e9dc85d1627a1ce66d5f2242606",
+    "remittances.js": "7fe291285ef554c46f2e02d51257e61e8fdfa38dead1558bc5e3c0bbccd23b01",
+    "reporting.js": "439be054b4e314c1e5969c46432668aa7e8f1c15688c3508545311fe7dd051bf",
+    "trend.js": "8e07a4d7cbb4acea23cc8d616292420be514bab37a8dc8df421e2e46785cf4be",
+    "assets/lucide.min.js": "3411692820cb8d47543f69496aa25fd603a358f4498046f41c508a5a3342210e",
+    "assets/LUCIDE-LICENSE.txt": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+  }
+}
