@@ -13,7 +13,6 @@ function shopAccountIndex(){return agents.findIndex(a=>a.kind==='shop')}
 function isShopAccount(index){return agents[index]?.kind==='shop'}
 function flowProfile(index){return agents[index]?.profile||['commission','partner','wholesale','commission'][index]||'commission'}
 function financeAccountIndices(){return agents.map((_,i)=>i).filter(i=>flowProfile(i)!=='wholesale')}
-if(workflow.shop)workflow.type=flowProfile(shopAccountIndex());
 function commissionFor(p,q=1){return isWholesale()?0:Math.round((workflow.type==='partner'?p.price:Math.max(0,p.price-p.cost))*q*accountType().rate)/100}
 function personalStock(){return progressStock()}
 function stockSum(){return personalStock().reduce((n,p)=>n+p.qty,0)}
