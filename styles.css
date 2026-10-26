@@ -792,3 +792,51 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .agent-overview-panel>.table-footer>span{font-size:12px;line-height:1.5}
 }
 @media(prefers-reduced-motion:reduce){.agent-overview-card{transition:none}}
+
+/* Compact dashboard analytics: one metric strip, chart and date control. */
+.dashboard-trend{overflow:hidden}
+.dashboard-metric-strip{display:flex;gap:8px;padding:16px 16px 12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.dashboard-metric{flex:1 0 140px;min-width:0;scroll-snap-align:start;text-align:left;padding:12px;border:1px solid transparent;border-radius:12px;background:transparent;transition:background .15s ease,border-color .15s ease}
+.dashboard-metric.active{background:color-mix(in srgb,var(--purple) 10%,var(--panel));border-color:color-mix(in srgb,var(--purple) 30%,var(--line))}
+.dashboard-metric>span{display:block;font-size:12px;color:var(--muted)}
+.dashboard-metric>strong{display:block;font-size:23px;font-weight:700;line-height:1.35;letter-spacing:-.5px;margin-top:4px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.dashboard-metric>small{display:block;font-size:11px;margin-top:4px}.dashboard-metric>small.up{color:var(--green)}.dashboard-metric>small.down{color:var(--red)}
+.dashboard-trend .trend-body{padding:0 16px 14px}
+.dashboard-trend .trend-legend{margin:2px 0 8px;font-size:10px;gap:5px 14px}
+.dashboard-trend .trend-plot{margin:0}
+.dashboard-trend #trend-svg{touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.dashboard-trend .trend-tooltip{position:absolute;top:8px;left:4px;margin:0;width:205px;max-width:calc(100% - 8px);padding:10px 12px;background:var(--panel);box-shadow:0 8px 24px #0002;font-size:11px;animation:none;transition:none;transform:none}
+.dashboard-trend .trend-tooltip .trend-tip-date{font-size:11px;margin-bottom:6px}
+.dashboard-trend .trend-tooltip>div:not(.trend-tip-date):not(.trend-tip-versus){margin-top:5px;gap:8px}.dashboard-trend .trend-tooltip .trend-tip-versus{margin-top:7px;padding-top:6px;font-size:10px}.dashboard-trend .trend-tooltip p{font-size:10px;margin-top:5px}
+.dashboard-chart-actions{display:flex;justify-content:center;align-items:center;gap:8px;padding-top:10px}
+.dashboard-chart-actions>.btn{min-height:40px;font-size:12px;gap:6px;padding:8px 11px}
+.dashboard-chart-actions .icon{width:16px;height:16px}
+.dashboard-chart-actions>.info-btn{flex:0 0 24px}
+.dashboard-date-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.dashboard-date-options>.range-chip{min-height:44px;justify-content:center;white-space:normal;text-align:center}
+.chart-grid .agent-cycle-panel .panel-body{display:grid;grid-template-columns:128px minmax(0,1fr);align-items:center;gap:12px;padding:8px 16px 16px}
+.agent-cycle-panel .donut{width:128px;height:128px;margin:0}
+.agent-cycle-panel .donut-text small{font-size:10px}
+.agent-cycle-legend{gap:14px}
+.agent-cycle-legend>div{grid-template-columns:6px minmax(0,1fr);gap:4px 7px;font-size:12px}
+.agent-cycle-legend strong{grid-column:2;font-size:14px;white-space:normal;overflow-wrap:anywhere}
+.agent-cycle-panel .table-footer{padding:10px 16px}
+@media(max-width:760px){
+ .dashboard-metric-strip{padding:10px 10px 8px;gap:6px}
+ .dashboard-metric{flex:0 0 132px;padding:10px}
+ .dashboard-metric>strong{font-size:21px;letter-spacing:-.4px}
+ .dashboard-trend .trend-body{padding:0 12px 12px}
+ .dashboard-trend .trend-legend{display:flex;flex-wrap:wrap;gap:3px 12px;font-size:10px;padding-inline:2px}
+ .dashboard-trend #trend-svg text{font-size:10px}
+ .dashboard-chart-actions{gap:6px}.dashboard-chart-actions>.btn{font-size:11px;padding:8px 9px}
+ .chart-grid .agent-cycle-panel .panel-body{grid-template-columns:116px minmax(0,1fr);gap:12px;padding:0 14px 12px}
+ .agent-cycle-panel .donut{width:116px;height:116px}
+ .agent-cycle-panel .panel-head{padding:14px 16px 10px}
+ .agent-cycle-panel .table-footer{padding:8px 14px}
+}
+@media(min-width:701px) and (max-width:1150px){.chart-grid{grid-template-columns:minmax(0,1.6fr) minmax(290px,1fr)}}
+@media(prefers-reduced-motion:reduce){.dashboard-metric{transition:none}}
+
+.dashboard-trend .trend-tooltip{left:var(--tip-left,4px)!important}
+
+.chart-grid:has(.dashboard-trend){align-items:start}
