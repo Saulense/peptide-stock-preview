@@ -1,9 +1,10 @@
 {
-  "builtAt": "2026-10-26T15:39:44.450857+00:00",
+  "builtAt": "2026-10-26T15:47:52.148445+00:00",
   "files": {
-    "index.html": "0cf48d589864b807064d313abf7759854f794fda8f68197e63a392d3dbfcee02",
-    "styles.css": "5a035f0f777f00010f0c67c82f26f40ab7f8852dfd4f4baa663f28aad05b7948",
-    "app.js": "ca86d7bcd46cde152dc94be3fab1f18fae03af2661f4c7543c9723cb15254f09",
+    "index.html": "c655daa24c7892a92fe7138d5ccc21533fec6c215637cc8c203efc9a2ed3c50e",
+    "styles.css": "3fc4cca0e4f1a8e0551c1e034613f112f05d0156d3adfae93c53fcb28e1dffaf",
+    "app.js": "d49cb2e68b0bd7be44ebe7254076f9bcf732c0e8db0f4fb5b546b2f0d23a4bf9",
+    "admin-team.js": "28dbb01a03f86a296e978a03b272b7bf9772ed352fa8256d7ec9a82c401f4d44",
     "workflows.js": "11b390716b617b09584c58f493a66a05aeffa955ca257ac52c625006fa1cc221",
     "progress.js": "df592cdcab845e8dc70dee8287a7694ea24f919559558e58d76ec241920c24d2",
     "pricing.js": "a60d74be09fc8ede5442b520d716ef99c173a865e2aa6e9c12dde12b0934ed9c",
