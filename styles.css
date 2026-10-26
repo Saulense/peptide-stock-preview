@@ -234,3 +234,7 @@ thead th+th,tbody td+td{border-left:1px solid color-mix(in srgb,var(--line) 55%,
 .btn.primary,.nav-item.active,.range-chip.active,.range-month.selected,.tabs button.active,.trend-group button.active,.theme-switch button.active,.preview-role-switch button[aria-pressed=true],.mobile-nav button.active{background:var(--selected-fill);color:#fff;border-color:var(--selected-border);box-shadow:inset 0 1px 0 #ffffff20,0 3px 10px #603ce21a}
 .mobile-nav button.active{border-radius:10px}
 .switch.on{background:var(--selected-fill)}
+
+/* Two appearance choices; mobile workspace header is notification-only. */
+.setting-row .theme-switch button{display:flex;align-items:center;justify-content:center;gap:7px;width:auto;min-width:76px;min-height:40px;padding:8px 12px;font-size:13px}
+@media(max-width:700px){.topbar .theme-switch,.topbar .top-actions>.avatar,.login-form>.theme-switch{display:none}.setting-row:has(.theme-switch){flex-wrap:wrap;gap:12px}}
