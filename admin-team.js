@@ -1,6 +1,6 @@
 /* Admin team design preview. Tab-memory only; never sends invitations or grants real access. */
 const teamAreas=[
- {id:'messages',label:'Messages',icon:'messages-square',help:'View all agent conversations, or reply, attach files and resolve conversations. Read state is personal to each admin. Protocol sharing also requires Protocols access.'},
+ {id:'messages',label:'Messages',icon:'messages-square',help:'View shared agent conversations, or reply and attach files. Admin-to-admin chats are private to their participants; this permission does not expose other admins’ private chats. Read state is personal. Protocol sharing also requires Protocols access.'},
  {id:'dashboard',label:'Dashboard',icon:'layout-dashboard',readOnly:true,help:'View business totals and sales trends.'},
  {id:'agents',label:'Agents',icon:'users-round',help:'View agent profiles, or manage their accounts and agreements. This does not grant access to the admin team.'},
  {id:'catalogue',label:'Catalogue & pricing',icon:'dna',help:'View products and landed costs, or edit categories, default costs and selling prices.'},

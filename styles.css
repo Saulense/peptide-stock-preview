@@ -1044,3 +1044,17 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .stock-account-actions{width:100%;margin:0;justify-content:flex-end}
  .stock-account-actions .btn{flex:1;justify-content:center}
 }
+
+/* Messages occupies the workspace; only the composer reserves device safe area. */
+#view:has(.chat-shell){padding:0!important;max-width:none;width:100%}
+.chat-shell,.chat-shell.agent-chat{width:100%;max-width:none;max-height:none;margin:0;border:0;border-radius:0;min-height:120px}
+.chat-inbox-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.chat-inbox-title strong{font-size:15px}.chat-inbox-title .icon-btn{width:36px;height:36px}
+.chat-private-label{display:block;font-size:11px;color:var(--muted);margin-top:4px}
+.chat-messages{background-color:var(--bg);background-image:radial-gradient(ellipse at 15% 20%,#7957ff18,transparent 55%),radial-gradient(ellipse at 90% 80%,#589cff14,transparent 55%),linear-gradient(#9584ef08 1px,transparent 1px),linear-gradient(90deg,#9584ef08 1px,transparent 1px);background-size:auto,auto,38px 38px,38px 38px}
+.chat-compose{padding:12px 16px max(14px,env(safe-area-inset-bottom));background:color-mix(in srgb,var(--purple) 10%,var(--panel));border-top:1px solid color-mix(in srgb,var(--purple) 28%,var(--line));box-shadow:0 -5px 20px #0000000a}
+.chat-attach-menu summary{background:var(--purple);color:#fff;border-color:color-mix(in srgb,var(--purple) 70%,white)}
+.chat-attach-menu>div{background:color-mix(in srgb,var(--purple) 16%,var(--panel));border-color:color-mix(in srgb,var(--purple) 40%,var(--line));box-shadow:0 8px 28px #0004;bottom:54px}
+.chat-attach-menu>div .btn{background:transparent;color:var(--text)}.chat-attach-menu>div .btn:hover{background:color-mix(in srgb,var(--purple) 15%,var(--panel))}
+@media(max-width:760px){.chat-shell{border-radius:0}.chat-compose{padding:10px 12px max(20px,env(safe-area-inset-bottom))}.chat-header{padding:12px}.chat-messages{padding:12px}.chat-compose .icon-btn,.chat-attach-menu summary{width:40px;min-width:40px;height:42px}.chat-compose-row{gap:6px}}
+
+.chat-compose .chat-mic{background:var(--purple);color:#fff;border-color:var(--purple)}
