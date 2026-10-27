@@ -776,8 +776,10 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 /* Compact dashboard analytics: one metric strip, chart and date control. */
 .dashboard-trend{overflow:hidden}
 .dashboard-metric-strip{display:flex;gap:8px;padding:16px 16px 12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
-.dashboard-metric{flex:1 0 140px;min-width:0;scroll-snap-align:start;text-align:left;padding:12px;border:1px solid transparent;border-radius:12px;background:transparent;transition:background .15s ease,border-color .15s ease}
-.dashboard-metric.active{background:color-mix(in srgb,var(--purple) 10%,var(--panel));border-color:color-mix(in srgb,var(--purple) 30%,var(--line))}
+.dashboard-metric{flex:1 0 140px;min-width:0;scroll-snap-align:start;text-align:left;padding:12px;border:1px solid var(--line);border-radius:10px;background:transparent;transition:border-color .15s ease}
+.dashboard-metric.active{background:transparent;border-color:color-mix(in srgb,var(--purple) 65%,var(--line))}
+.dashboard-metric:hover{background:transparent;border-color:var(--purple)}
+.dashboard-metric:focus-visible{outline:2px solid var(--purple);outline-offset:2px}
 .dashboard-metric>span{display:block;font-size:12px;color:var(--muted)}
 .dashboard-metric>strong{display:block;font-size:23px;font-weight:700;line-height:1.35;letter-spacing:-.5px;margin-top:4px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
 .dashboard-metric>small{display:block;font-size:11px;margin-top:4px}.dashboard-metric>small.up{color:var(--green)}.dashboard-metric>small.down{color:var(--red)}
@@ -852,8 +854,10 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 .dashboard-overview-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px 0}
 .dashboard-overview-head h2{font-size:16px;letter-spacing:-.3px}
 .dashboard-overview-head .dashboard-chart-actions{padding:0;justify-content:flex-end}
-.dashboard-unified .dashboard-metric-strip{padding:14px 20px;gap:12px;border-bottom:1px solid var(--line)}
-.dashboard-unified .dashboard-metric{flex:1 0 140px;padding:12px 14px}
+.dashboard-unified .dashboard-metric-strip{padding:8px 20px 12px;gap:10px;border-bottom:1px solid var(--line)}
+.dashboard-unified .dashboard-metric{flex:1 0 140px;padding:8px 12px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.dashboard-unified .dashboard-metric>strong{font-size:20px;line-height:1.25;margin-top:3px}
+.dashboard-unified .dashboard-metric>small{font-size:10px;margin-top:3px}
 .dashboard-transfer-metric{border-left-color:var(--line)}
 .dashboard-transfer-metric:hover{background:var(--hover)}
 .dashboard-transfer-metric small{display:flex;align-items:center;gap:5px;color:var(--purple)}
