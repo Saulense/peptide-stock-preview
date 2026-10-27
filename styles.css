@@ -1283,3 +1283,37 @@ html.messages-workspace .main>.topbar{display:none!important}
 .shipment-documents{padding:14px;border:1px solid color-mix(in srgb,var(--purple) 28%,var(--line));border-radius:12px;background:var(--panel2);min-width:0}.shipment-documents-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px}.shipment-upload{position:relative;cursor:pointer}.shipment-upload input[hidden]{display:none!important}.shipment-help{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-top:10px}.shipment-file-list{display:grid;gap:8px}.shipment-file{display:flex;gap:8px;align-items:center;border-top:1px solid var(--line);padding-top:10px;margin-top:10px;min-width:0}.shipment-file>button:first-child{display:flex;gap:10px;align-items:center;min-width:0;flex:1;border:0;background:none;text-align:left;color:var(--text);cursor:pointer}.shipment-file>button>span{flex:1;min-width:0;overflow-wrap:anywhere;font-size:12px}.shipment-file small{display:block;color:var(--muted);margin-top:3px}.shipment-file svg{width:18px;height:18px;flex-shrink:0}.shipment-file>.icon-btn{width:30px;height:30px;min-width:30px}
 .shipment-remainder-row{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.shipment-remainder-row>div{min-width:0}.shipment-remainder-row>div:last-child{text-align:right;flex-shrink:0}.shipment-remainder-row small{display:block;margin-top:4px;color:var(--muted)}.shipment-related{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 @media(max-width:700px){.request-detail-meta{gap:8px;margin-bottom:16px}.shipment-documents{padding:12px}.shipment-family .panel-head{gap:8px;flex-wrap:wrap}.shipment-more>div>.btn{flex:1}.form-actions.request-actions{gap:8px}.shipment-remainder-row .product-cell{min-width:0}}
+
+/* Compact controls, clear shipment issues and batch count corrections. */
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.icon-btn svg,.btn svg{flex-shrink:0;display:block}
+.chat-top-unread{box-sizing:border-box;min-width:20px;height:20px;line-height:1;padding:0 4px;display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-size:10px;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;pointer-events:none}
+.catalogue-panel .catalogue-toolbar{display:flex;flex-wrap:nowrap;gap:10px}
+.catalogue-toolbar .search{flex:1;max-width:none;min-width:0}
+.catalogue-filter-button{position:relative;width:42px;height:42px;padding:0}
+.filter-active-dot{position:absolute;top:3px;right:3px;width:7px;height:7px;border-radius:50%;background:var(--purple);box-shadow:0 0 0 2px var(--panel)}
+.catalogue-filter-import{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}
+.shipment-issue{padding:14px;margin:14px 0;border:1px solid #ef444477;border-radius:12px;background:color-mix(in srgb,#ef4444 8%,var(--panel))}
+.shipment-issue>strong{display:flex;align-items:center;gap:8px;color:#e54b60}
+.shipment-issue-counts{display:flex;gap:16px;margin-top:10px;font-weight:600}
+.shipment-issue p{margin:8px 0 0;overflow-wrap:anywhere}
+.stock-product-identity{display:flex;align-items:center;gap:10px;min-width:0}
+.stock-product-identity>span{min-width:0;overflow-wrap:anywhere}
+.stock-product-identity small{display:inline!important;white-space:nowrap;margin-left:4px;color:var(--muted)}
+.stock-product-identity .product-glyph{display:inline-flex!important;flex-shrink:0}
+.stock-correction-heading{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.stock-correction-heading small,.stock-correction-lot small{display:block;color:var(--muted);margin-top:5px}
+.stock-correction-lots{display:grid;gap:12px}
+.stock-correction-lot{display:grid;grid-template-columns:minmax(0,1fr) 112px;gap:14px;align-items:center;padding:14px;border:1px solid color-mix(in srgb,var(--purple) 32%,var(--line));border-radius:12px;background:color-mix(in srgb,var(--purple) 5%,var(--panel))}
+.stock-correction-lot strong{overflow-wrap:anywhere}
+.stock-correction-lot input{width:100%;min-width:0}
+@media(max-width:700px){
+ .account-stock-panel .mobile-records>table>tbody>tr:has(.stock-price-pencil)>.record-actions{right:10px;top:12px;padding:0!important}
+ .account-stock-panel .stock-price-pencil{width:36px;height:36px}
+ .account-stock-panel .stock-product-identity strong{font-size:13px}
+ .account-stock-panel .stock-product-identity small{font-size:12px}
+ .account-stock-panel .stock-product-identity .product-glyph{width:30px;height:30px}
+ .dashboard-stock-summary .panel-body{grid-template-columns:132px minmax(0,1fr);gap:12px}
+ .dashboard-stock-summary .donut{width:132px;height:132px}
+}
+@media(max-width:359px){.dashboard-stock-summary .panel-body{grid-template-columns:116px minmax(0,1fr);gap:10px}.dashboard-stock-summary .donut{width:116px;height:116px}}

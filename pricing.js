@@ -30,3 +30,30 @@ function priceNewDispatch(selectedAgent=null){if(!requestAdmin())return;openModa
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-new-dispatch'))priceNewDispatch(b.dataset.dispatchAgent===undefined?null:Number(b.dataset.dispatchAgent));if(b.hasAttribute('data-dispatch-create')&&requestAdmin()){const r={id:'SHP-'+String(requestDesk.serial++).padStart(3,'0'),agent:Number($('#dispatch-agent').value),date:'26 Oct 2026',status:'approved',source:'supplier',supplier:'',note:'',lines:[priceRequestLine({product:0,requested:0,qty:1})],log:[]};requestRecords().unshift(r);requestEvent(r,'Admin created dispatch draft');render();requestOpen(r.id)}if(b.dataset.priceEdit!==undefined)priceEdit(Number(b.dataset.priceAccount),Number(b.dataset.priceEdit));if((b.hasAttribute('data-rq-add')||b.dataset.rqRemove!==undefined)&&requestAdmin()){const r=requestDesk.editor;if(!r||['dispatched','received','difference'].includes(r.status))return;const draft=requestDraft(r);r.lines=draft.lines;if(b.hasAttribute('data-rq-add')){const p=products.find(p=>!r.lines.some(l=>l.product===p.id));if(p)r.lines.push(priceRequestLine({product:p.id,qty:1,requested:0}))}else if(r.lines.length>1)r.lines.splice(Number(b.dataset.rqRemove),1);Object.assign(r,{...draft,lines:r.lines});requestOpen(r.id,r)}});
 document.addEventListener('change',e=>{if(e.target.dataset.rqProduct!==undefined){const i=e.target.dataset.rqProduct,p=products[Number(e.target.value)];$(`[data-rq-cost="${i}"]`).value=p.cost;$(`[data-rq-price="${i}"]`).value=p.price;if(typeof supplyBatchFields==='function'){const r=requestDesk.editor;const draft=requestDraft(r);delete draft.lines[i].warehouseLot;Object.assign(r,draft);requestOpen(r.id,r)}else priceDispatchSummary()}});
 document.addEventListener('input',e=>{if(e.target.matches('[data-rq-cost],[data-rq-price],[data-rq-qty]'))priceDispatchSummary()});
+
+// Count corrections change remaining units only; received batch prices and past sales stay fixed.
+function stockCorrectionOpen(index,product){
+ if(!requestAdmin()||!agents[index]||!products[product])return;
+ const lots=priceLots(index).filter(l=>l.product===product);
+ if(!lots.length){toast('Use Create shipment to add this product.');return}
+ pricing.stockCorrection={index,product,lots:lots.map(l=>({id:l.id,qty:l.qty}))};
+ openModal('Adjust stock',`<div class="stock-correction-heading">${productGlyph(products[product])}<div><strong>${esc(products[product].name)} · ${esc(products[product].dose)}</strong><small>${esc(agents[index].name)}</small></div></div><div class="stock-correction-lots">${lots.map((l,i)=>`<section class="stock-correction-lot"><div><strong>${esc(l.source)}</strong><small>${euro(l.price,2)} / unit · cost ${euro(l.cost,2)}</small></div><div class="field"><label for="stock-count-${i}">Counted units</label><input id="stock-count-${i}" type="number" min="0" max="1000000" step="1" inputmode="numeric" value="${l.qty}"></div></section>`).join('')}</div><div class="field mt"><label for="stock-correction-reason">Reason</label><textarea id="stock-correction-reason" placeholder="Explain the count correction…" required></textarea></div><div id="stock-correction-error" class="error" role="alert"></div><div class="form-actions">${btn('Cancel','','data-close')}${btn('Save correction','check','data-stock-correction-save','primary')}</div>`,true)
+}
+function stockCorrectionApply(context,counts,reason){
+ if(!requestAdmin())return 'Only an admin can adjust stock.';
+ if(!context||!agents[context.index]||!products[context.product])return 'Select an account and product.';
+ if(!reason.trim())return 'Add a reason for the correction.';
+ if(counts.length!==context.lots.length||counts.some(n=>!Number.isSafeInteger(n)||n<0||n>1000000))return 'Enter whole quantities between 0 and 1,000,000.';
+ const lots=priceLots(context.index).filter(l=>l.product===context.product);
+ if(lots.length!==context.lots.length||lots.some((l,i)=>l.id!==context.lots[i].id||l.qty!==context.lots[i].qty))return 'Stock changed while this form was open. Reopen it to use the latest counts.';
+ const before=lots.reduce((n,l)=>n+l.qty,0),after=counts.reduce((n,q)=>n+q,0);
+ if(lots.every((l,i)=>l.qty===counts[i]))return 'Change a quantity before saving.';
+ const data=progressData(context.index),changes=lots.map((l,i)=>({batch:l.id,before:l.qty,after:counts[i],cost:l.cost,price:l.price}));
+ lots.forEach((l,i)=>{l.qty=counts[i]});data.quantities[context.product]=after;
+ const message=`${products[context.product].name} ${products[context.product].dose}: ${before} → ${after} units · ${reason.trim()}`;
+ const id='STK-'+String(requestDesk.serial++).padStart(3,'0');
+ requestDesk.events.unshift({id,kind:'stock',agent:context.index,date:reportingToday,message,actorRole:'admin',notify:true,changes});
+ if(typeof supply!=='undefined')supply.movements.unshift({date:reportingToday,reference:id,message:agents[context.index].name+' · '+message,changes});
+ return null;
+}
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.hasAttribute('data-stock-correct')){stockCorrectionOpen(Number(b.dataset.stockAccount),Number(b.dataset.stockCorrect));return}if(b.hasAttribute('data-stock-correction-save')){const ctx=pricing.stockCorrection;const values=ctx.lots.map((_,i)=>{const v=$('#stock-count-'+i).value;return v.trim()===''?NaN:Number(v)});const error=stockCorrectionApply(ctx,values,$('#stock-correction-reason').value);if(error){$('#stock-correction-error').textContent=error;return}pricing.stockCorrection=null;closeModal();render();toast('Stock corrected. The account has been notified.')}});
