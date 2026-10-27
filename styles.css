@@ -1145,3 +1145,36 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 /* Login uses the same mark as workspace navigation. */
 .login-scene .login-wordmark{display:flex;align-items:center;justify-content:center;gap:12px}
 .login-scene .login-wordmark .brand-mark{flex:none;color:#fff}
+
+/* Messenger viewport and compact, separated conversation rows. */
+.chat-inbox-search{display:flex;gap:10px;align-items:center;min-width:0}
+.chat-inbox-search .search{flex:1;min-width:0;width:auto}
+.chat-inbox-search>.icon-btn{flex:none}
+.chat-thread-list{display:flex;flex-direction:column;gap:8px;padding:10px 12px}
+.chat-thread{flex-shrink:0;margin:0;padding:11px 10px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 94%,#8057ff 6%)}
+.chat-thread-copy{gap:3px}.chat-thread-copy small{font-size:10px}.chat-thread-meta{flex-shrink:0}
+.chat-attach-menu>div{max-height:min(290px,45dvh);overflow-y:auto;overscroll-behavior:contain}
+.chat-header .grow{min-width:0}.chat-header .grow>strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chat-archive{flex-shrink:0}
+@media(max-width:700px),(pointer:coarse){
+ html.message-viewport,html.message-viewport body{height:100%;overflow:hidden;overscroll-behavior:none}
+ html.message-viewport .preview-bar{top:var(--message-view-offset,0px)}
+ html.message-viewport .main{position:fixed;top:var(--message-view-top);left:0;right:0;width:100%;height:var(--message-view-height);min-height:0;margin:0;display:flex;flex-direction:column;overflow:hidden;border-radius:0}
+ html.message-viewport .main>.topbar{position:relative;top:auto;flex:none}
+ html.message-viewport #view{flex:1;min-height:0;overflow:hidden;animation:none;transform:none}
+ html.message-viewport .chat-shell{height:100%;min-height:0;max-height:100%}
+ html.message-viewport .chat-messages{min-height:0}
+ html.message-keyboard .chat-compose{padding-bottom:8px}
+ html.message-keyboard .chat-attach-menu>div{max-height:min(220px,calc(var(--message-view-height) - 180px))}
+ .chat-inbox-tools .tabs button{padding-inline:10px}
+}
+
+@media(max-width:700px),(pointer:coarse){
+ html.message-keyboard .preview-bar{visibility:hidden}
+ html.message-keyboard .main>.topbar{display:none}
+ html.message-keyboard .chat-header{padding-block:6px;min-height:44px}
+ html.message-keyboard .chat-compose{max-height:calc(100% - 50px);overflow-y:auto;overscroll-behavior:contain}
+ html.message-keyboard .chat-compose textarea{max-height:clamp(42px,20vh,112px);max-height:clamp(42px,calc(var(--message-view-height) * .2),112px)}
+ html.message-keyboard #chat-attachments{max-height:calc(var(--message-view-height) * .22);overflow-y:auto}
+ html.message-keyboard .chat-attach-menu>div{position:fixed;left:12px;bottom:calc(100dvh - var(--message-view-top) - var(--message-view-height) + 66px);max-height:calc(var(--message-view-height) - 100px);z-index:100}
+}
