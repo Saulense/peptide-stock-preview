@@ -1141,3 +1141,7 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 @media(max-width:700px){.catalogue-detail-main>.panel-body{padding:16px}}
 
 .catalogue-detail-main .key-row{border-bottom:0}
+
+/* Login uses the same mark as workspace navigation. */
+.login-scene .login-wordmark{display:flex;align-items:center;justify-content:center;gap:12px}
+.login-scene .login-wordmark .brand-mark{flex:none;color:#fff}
