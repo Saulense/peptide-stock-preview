@@ -1178,3 +1178,24 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  html.message-keyboard #chat-attachments{max-height:calc(var(--message-view-height) * .22);overflow-y:auto}
  html.message-keyboard .chat-attach-menu>div{position:fixed;left:12px;bottom:calc(100dvh - var(--message-view-top) - var(--message-view-height) + 66px);max-height:calc(var(--message-view-height) - 100px);z-index:100}
 }
+
+/* Sale review: compact quantities and distinct surfaces in either theme. */
+#sale-adjustment-review .sale-review-items{gap:12px}
+#sale-adjustment-review .sale-review-item{padding:12px;border:1px solid color-mix(in srgb,var(--purple) 38%,var(--line));background:color-mix(in srgb,var(--purple) 8%,var(--panel));box-shadow:0 2px 8px #0000000a}
+.sale-review-identity{display:flex;align-items:center;gap:10px;min-width:0}
+.sale-review-identity>div{min-width:0;flex:1}
+.sale-review-identity .product-glyph{flex:0 0 32px;width:32px;height:32px;border-radius:9px}
+.sale-review-identity .product-title{font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+.sale-review-pricing{display:flex;align-items:center;gap:8px;margin-top:10px;min-width:0}
+.sale-review-quantity{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px;flex-shrink:0}
+#sale-adjustment-review .sale-review-quantity input{width:54px;min-width:0;height:36px;min-height:36px;padding:5px;text-align:center;font-size:16px;appearance:textfield;-moz-appearance:textfield}
+.sale-review-quantity input::-webkit-inner-spin-button,.sale-review-quantity input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.sale-review-unit{font-size:11px;color:var(--muted);min-width:0}
+.sale-review-pricing>strong{margin-left:auto;font-size:14px;text-align:right;overflow-wrap:anywhere;white-space:normal}
+#sale-adjustment-review .sale-adjustment-controls{margin-top:10px;padding-top:9px;border-color:color-mix(in srgb,var(--purple) 24%,var(--line))}
+#sale-adjustment-review input,#sale-adjustment-review select,#sale-adjustment-review textarea{border-color:color-mix(in srgb,var(--purple) 34%,var(--line));background:var(--bg)}
+#sale-adjustment-review input:focus,#sale-adjustment-review select:focus,#sale-adjustment-review textarea:focus{border-color:var(--purple)}
+#sale-adjustment-review .sale-gift-section{border:1px solid color-mix(in srgb,var(--purple) 55%,var(--line));background:color-mix(in srgb,var(--purple) 13%,var(--panel));padding:13px;margin-top:16px}
+#sale-adjustment-review .sale-gift-section>summary{font-weight:600;min-height:22px}
+#sale-adjustment-review .sale-gift-section>summary>.icon{color:var(--purple);width:20px;height:20px}
+#sale-adjustment-review>.form-grid{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
