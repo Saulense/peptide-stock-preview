@@ -1317,3 +1317,16 @@ html.messages-workspace .main>.topbar{display:none!important}
  .dashboard-stock-summary .donut{width:132px;height:132px}
 }
 @media(max-width:359px){.dashboard-stock-summary .panel-body{grid-template-columns:116px minmax(0,1fr);gap:10px}.dashboard-stock-summary .donut{width:116px;height:116px}}
+
+/* Keep product ordering out of the everyday sale flow. */
+.sale-picker .sale-search-toolbar{display:flex;flex-wrap:nowrap;align-items:center;gap:10px}
+.sale-search-toolbar .search{flex:1;min-width:0;max-width:none;width:auto}
+.sale-sort-toggle{width:44px;height:44px;flex:0 0 44px;padding:0}
+.sale-sort-options{display:grid;gap:8px}
+.sale-sort-option{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:46px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);text-align:left;font:inherit;cursor:pointer}
+.sale-sort-option.active{background:#7147e8;border-color:#9272f3;color:#fff}
+.sale-sort-option:hover{border-color:#9272f3}
+.sale-sort-arrange{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.sale-sort-arrange .btn{width:100%;justify-content:center}
+
+.sale-search-toolbar .sale-sort-toggle svg{color:#fff}
