@@ -11,7 +11,7 @@ function requestRecords(){if(!requestDesk.records)requestDesk.records=[
  ];requestDesk.records.forEach(r=>r.lines=r.lines.map(priceRequestLine));return requestDesk.records}
 function requestCanView(r){return state.role==='admin'||r.agent===progressIndex()}
 function requestAdmin(){return state.role==='admin'&&!workflow.support}
-function requestEvent(r,message){const date=reportingToday;r.log.unshift({date,message,actor:state.role==='admin'?'Admin':accountPerson().name});requestDesk.events.unshift({id:r.id,agent:r.agent,date,message})}
+function requestEvent(r,message){const date=reportingToday;r.log.unshift({date,message,actor:state.role==='admin'?'Admin':accountPerson().name});requestDesk.events.unshift({id:r.id,agent:r.agent,date,message,actorRole:state.role,notify:!message.toLowerCase().includes('draft')})}
 function requestStatus(r){return badge(...requestStatuses[r.status])}
 function requestsPage(){
  const admin=state.role==='admin',records=requestRecords().filter(requestCanView).filter(r=>(requestDesk.filter==='all'||r.status===requestDesk.filter)&&(!requestDesk.search||(r.id+' '+agents[r.agent].name+' '+r.lines.map(l=>products[l.product].name+' '+products[l.product].dose).join(' ')).toLowerCase().includes(requestDesk.search)));
