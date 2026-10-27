@@ -1097,3 +1097,47 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 @media(max-width:700px){.order-detail-card .panel-head{padding:16px}.order-date-row{padding:0 16px 16px;gap:10px}.order-detail-card .panel-body{padding:16px}.order-detail-product>.product-glyph{display:inline-flex!important}.order-detail-lines article{padding:12px}.order-detail-grid{gap:16px}.order-detail-controls{margin-bottom:12px}.order-identity>strong{font-size:17px}.order-number{font-size:16px}}
 
 .order-detail-lines{gap:12px}.order-detail-lines>article{margin-bottom:0}.order-items-heading{margin-bottom:0}
+
+/* Catalogue: distinct product records and a focused detail page. */
+.catalogue-panel tr[data-catalogue-row]{cursor:pointer;transition:background .16s ease}
+.catalogue-panel tr[data-catalogue-row]:hover{background:color-mix(in srgb,var(--purple) 7%,var(--panel))}
+.catalogue-product-link{display:flex;align-items:center;gap:12px;border:0;background:none;color:inherit;text-align:left;padding:0;min-width:0;font:inherit;cursor:pointer;width:100%}
+.catalogue-product-link:focus-visible{outline:2px solid var(--purple);outline-offset:5px;border-radius:8px}
+.catalogue-row-arrow{display:flex;justify-content:flex-end;color:var(--muted)}
+.catalogue-detail-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:18px;align-items:start}
+.catalogue-detail-grid>.panel{min-width:0}
+.catalogue-detail-identity{display:flex;align-items:center;gap:14px}
+.catalogue-detail-identity h1{font-size:22px;line-height:1.25;margin:0 0 5px;overflow-wrap:anywhere}
+.catalogue-detail-identity .product-glyph{width:46px;height:46px;flex-shrink:0}
+.catalogue-detail-category{margin:18px 0}
+.catalogue-prices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0}
+.catalogue-prices>div{padding:16px;border:1px solid color-mix(in srgb,var(--purple) 28%,var(--line));border-radius:12px;background:color-mix(in srgb,var(--purple) 7%,var(--panel));min-width:0}
+.catalogue-prices span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:8px}
+.catalogue-prices strong{display:block;font-size:24px;overflow-wrap:anywhere}
+.catalogue-pdf{display:flex;align-items:center;gap:12px;min-width:0;padding:14px;border:1px solid var(--line);border-radius:12px}
+.catalogue-pdf>.icon{color:var(--purple);width:28px;height:28px;flex-shrink:0}
+.catalogue-pdf strong{display:block;overflow-wrap:anywhere}
+.catalogue-pdf small{display:block;color:var(--muted);margin-top:5px}
+.catalogue-protocol-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.catalogue-action-list{display:grid;gap:10px}
+.catalogue-action-list .btn{justify-content:flex-start;min-height:46px}
+@media(max-width:700px){
+ .catalogue-panel .mobile-records{background:transparent;padding:12px!important}
+ .catalogue-panel .mobile-records>table.mobile-catalogue-records>tbody{display:grid;gap:12px}
+ .catalogue-panel .mobile-records>table.mobile-catalogue-records>tbody>tr{margin:0;padding:14px!important;border:1px solid color-mix(in srgb,var(--purple) 33%,var(--line))!important;border-radius:14px;background:color-mix(in srgb,var(--purple) 6%,var(--panel));grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+ .catalogue-panel .mobile-records>table.mobile-catalogue-records>tbody>tr>.record-identity{padding-right:20px}
+ .catalogue-panel .mobile-records>table.mobile-catalogue-records>tbody>tr>.record-actions{right:12px;top:20px;padding:0}
+ .catalogue-panel .mobile-catalogue-records td[data-column="Landed cost"],.catalogue-panel .mobile-catalogue-records td[data-column="Default selling price"]{padding:10px!important;background:color-mix(in srgb,var(--purple) 7%,var(--panel));border:1px solid var(--line)!important;border-radius:9px;min-width:0}
+ .catalogue-panel .mobile-catalogue-records td[data-column="Landed cost"] strong,.catalogue-panel .mobile-catalogue-records td[data-column="Default selling price"] strong{font-size:16px;overflow-wrap:anywhere}
+ .catalogue-panel .mobile-catalogue-records .product-glyph{display:flex!important}
+ .catalogue-panel .mobile-catalogue-records .product-title{font-size:14px}
+ .catalogue-detail-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+ .catalogue-detail-identity h1{font-size:21px}
+ .catalogue-prices{gap:10px}
+ .catalogue-prices>div{padding:12px}
+ .catalogue-prices strong{font-size:21px}
+}
+.catalogue-detail-main>.panel-body{padding:22px}.catalogue-prices>div{display:flex;flex-direction:column}.catalogue-prices strong{margin-top:auto}.catalogue-detail-grid .form-actions{margin-top:20px;padding-top:18px}.order-detail-toolbar:has([data-catalogue-actions]){justify-content:space-between}
+@media(max-width:700px){.catalogue-detail-main>.panel-body{padding:16px}}
+
+.catalogue-detail-main .key-row{border-bottom:0}
