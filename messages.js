@@ -102,7 +102,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)r
  if(b.hasAttribute('data-chat-cancel-reply')){messageDraft().replyTo=null;messageRefreshDraft()}
  if(b.dataset.chatForward!==undefined)messageForwardPicker(+b.dataset.chatForward);
  if(b.dataset.chatForwardTarget!==undefined)messageForwardConfirm(/^(direct|welcome):/.test(b.dataset.chatForwardTarget)?b.dataset.chatForwardTarget:+b.dataset.chatForwardTarget);
- if(b.hasAttribute('data-chat-forward-confirm')){const f=messaging.forward;if(!f||f.actor!==messageActor().id)return;const error=messageForward(f.source,f.id,f.target);if(error)return toast(error);messaging.forward=null;closeModal();messageOpen(f.target);toast('Message forwarded')}
+ if(b.hasAttribute('data-chat-forward-confirm')){const f=messaging.forward;if(!f||f.actor!==messageActor().id)return;const error=messageForward(f.source,f.id,f.target);if(error)return toast(error);messaging.forward=null;closeModal();messageOpen(f.target);toast('Message forwarded','success')}
  if(b.dataset.chatJump!==undefined){const id=+b.dataset.chatJump,t=messageThread(),i=t?.messages.findIndex(m=>m.id===id);if(i>=0){messaging.visible=Math.max(messaging.visible,t.messages.length-i);messageRefreshConversation(false);const el=$('#chat-message-'+id);el?.scrollIntoView({block:'center',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});el?.classList.add('chat-highlight')}}
  if(b.hasAttribute('data-chat-archive'))messageArchive();
  if(b.hasAttribute('data-chat-new'))messageNewChat();
