@@ -898,6 +898,7 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
  .dashboard-stock-summary{order:2;border-left:0;border-top:1px solid var(--line)}
  .dashboard-stock-summary .panel-head{padding:14px 16px 4px}
  .dashboard-stock-summary .panel-body{padding:8px 16px 12px;grid-template-columns:112px minmax(0,1fr)}
+ .dashboard-stock-summary .agent-cycle-legend{justify-self:end;width:min(100%,156px);min-width:0}
  .dashboard-stock-summary .table-footer{padding:8px 16px 12px}
 }
 
