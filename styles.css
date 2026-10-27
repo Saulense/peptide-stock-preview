@@ -1194,7 +1194,7 @@ input:is([type="date"],[type="datetime-local"])::-webkit-calendar-picker-indicat
 .sale-review-unit{font-size:11px;color:var(--muted);min-width:0}
 .sale-review-pricing>strong{margin-left:auto;font-size:14px;text-align:right;overflow-wrap:anywhere;white-space:normal}
 #sale-adjustment-review .sale-adjustment-controls{margin-top:10px;padding-top:9px;border-color:color-mix(in srgb,var(--purple) 24%,var(--line))}
-#sale-adjustment-review input,#sale-adjustment-review select,#sale-adjustment-review textarea{border-color:color-mix(in srgb,var(--purple) 34%,var(--line));background:var(--bg)}
+#sale-adjustment-review input,#sale-adjustment-review select,#sale-adjustment-review textarea{border-color:color-mix(in srgb,var(--purple) 34%,var(--line));background-color:var(--bg)}
 #sale-adjustment-review input:focus,#sale-adjustment-review select:focus,#sale-adjustment-review textarea:focus{border-color:var(--purple)}
 #sale-adjustment-review .sale-gift-section{border:1px solid color-mix(in srgb,var(--purple) 55%,var(--line));background:color-mix(in srgb,var(--purple) 13%,var(--panel));padding:13px;margin-top:16px}
 #sale-adjustment-review .sale-gift-section>summary{font-weight:600;min-height:22px}
@@ -1238,3 +1238,8 @@ html.messages-workspace .main>.topbar{display:none!important}
 .order-money-row>span{display:flex;align-items:center;gap:7px;min-width:0}.order-money-row>strong{text-align:right;overflow-wrap:anywhere;min-width:0;font-variant-numeric:tabular-nums}.order-money-row .info-btn{flex-shrink:0}
 .order-profit-result{border-bottom:0;margin-top:6px;padding:14px 12px;border-radius:10px;background:color-mix(in srgb,var(--purple) 12%,var(--panel));border:1px solid color-mix(in srgb,var(--purple) 35%,var(--line));font-weight:600}.order-profit-result>strong{font-size:19px}
 .order-transfer-explanation{margin-top:20px;padding:12px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}.order-transfer-explanation .order-money-row{border:0;padding:0}.order-transfer-explanation p{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:1.5}.order-price-adjustments{border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:4px}
+
+/* Keep wide conversations readable without narrowing the full-width chat surface. */
+@media(min-width:761px){
+ .chat-messages>.chat-message{width:100%;max-width:760px;margin-inline:auto}
+}
