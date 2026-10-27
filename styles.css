@@ -1243,3 +1243,14 @@ html.messages-workspace .main>.topbar{display:none!important}
 @media(min-width:761px){
  .chat-messages>.chat-message{width:100%;max-width:760px;margin-inline:auto}
 }
+
+/* Agent detail: agreements belong to the account, not a separate destination. */
+.agent-detail-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.agent-name-link{font:inherit;color:inherit;background:none;border:0;padding:0;text-align:left;cursor:pointer}.agent-name-link:hover{color:var(--purple)}
+.agent-profile-identity{display:flex;align-items:center;gap:14px;min-width:0}.agent-profile-identity .grow{min-width:0}.agent-profile-identity h2{font-size:20px;overflow-wrap:anywhere}.agent-profile-identity small{color:var(--muted)}
+.agent-detail-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:20px 0;padding:18px 0;border-block:1px solid var(--line)}.agent-detail-stats>div{min-width:0}.agent-detail-stats small{display:block;color:var(--muted);font-size:12px}.agent-detail-stats strong{display:block;font-size:20px;margin-top:6px;overflow-wrap:anywhere}.agent-detail-stats strong small{display:inline;font-size:12px;font-weight:400}
+.agent-detail-quick{display:flex;flex-wrap:wrap;gap:10px}.agent-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}.agent-detail-grid .panel{min-width:0}.agent-detail-grid .key-row{gap:16px}.agent-detail-grid .key-row>*{overflow-wrap:anywhere;min-width:0}
+.agent-detail-performance{max-width:100%;margin-top:16px}.agent-action-list{display:grid;gap:10px}.agent-action-list>.btn{justify-content:flex-start;min-height:44px}.agent-access-status{margin-bottom:16px}.agent-terms-preview{margin-top:18px;padding:14px;border:1px solid var(--purple);border-radius:12px;background:color-mix(in srgb,var(--purple) 8%,var(--panel))}.agent-terms-preview p{margin:6px 0}.agent-terms-preview small{color:var(--muted)}.agent-history-entry{padding:12px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere;font-size:13px}.agent-history-entry:last-child{border:0}
+@media(max-width:700px){.agent-detail-grid{grid-template-columns:minmax(0,1fr);gap:12px}.agent-detail-stats{gap:10px}.agent-detail-stats strong{font-size:16px}.agent-profile-identity{gap:10px}.agent-profile-identity h2{font-size:17px}.agent-detail-quick .btn{flex:1 1 auto;font-size:12px}.agent-detail-grid .panel-head{flex-wrap:wrap;gap:10px}.agent-profile-panel>.panel-body{padding:16px}}
+
+.agent-recent-orders{padding:0 16px 12px}.agent-recent-orders>button{display:flex;align-items:center;gap:12px;width:100%;padding:14px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);text-align:left;cursor:pointer}.agent-recent-orders>button>span{flex:1;min-width:0}.agent-recent-orders small{display:block;margin-top:4px;color:var(--muted)}.agent-recent-orders svg{width:16px;height:16px;flex:none}.agent-recent-orders>button:hover{color:var(--purple)}
