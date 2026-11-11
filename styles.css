@@ -1479,3 +1479,13 @@ html.messages-workspace .main>.topbar{display:none!important}
 /* Keep the drawer trigger mobile-only; generic icon-button display rules must not reveal it. */
 .topbar>.mobile-menu{display:none}
 @media(max-width:700px){.topbar>.mobile-menu{display:inline-grid}}
+
+/* Agents share the same inbox/conversation surfaces as administrators. */
+.agent-inbox-shell .ai-pinned{display:inline-flex;justify-content:flex-end;color:var(--muted)}
+.agent-inbox-shell .ai-pinned .icon{width:13px;height:13px}
+.agent-inbox-shell .avatar>.icon{width:18px;height:18px}
+.agent-inbox-shell .ai-load-more{padding:10px 0;display:flex;justify-content:center}
+.agent-inbox-shell .chat-file-link{overflow-wrap:anywhere}
+.agent-inbox-shell .chat-thread-copy{min-width:0}
+.agent-inbox-shell .chat-inbox-search>.search{flex:1}
+.agent-inbox-shell .chat-header .grow{min-width:0}
