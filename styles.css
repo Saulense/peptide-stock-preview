@@ -1475,3 +1475,7 @@ html.messages-workspace .main>.topbar{display:none!important}
 [data-theme=light] :is(.earnings-hero,.big-value) .info-btn{color:#e5dcfa}
 [data-theme=light] :is(.earnings-hero,.big-value) .info-btn:hover{color:#fff}
 [data-theme=light] :is(.earnings-hero,.big-value) .info-btn:is(:hover,[aria-expanded=true]){background:#ffffff20;color:#fff;border-color:#cbb8fa}
+
+/* Keep the drawer trigger mobile-only; generic icon-button display rules must not reveal it. */
+.topbar>.mobile-menu{display:none}
+@media(max-width:700px){.topbar>.mobile-menu{display:inline-grid}}
