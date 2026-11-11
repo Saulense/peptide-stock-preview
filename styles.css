@@ -1489,3 +1489,13 @@ html.messages-workspace .main>.topbar{display:none!important}
 .agent-inbox-shell .chat-thread-copy{min-width:0}
 .agent-inbox-shell .chat-inbox-search>.search{flex:1}
 .agent-inbox-shell .chat-header .grow{min-width:0}
+
+/* Keep every composer in the same readable central lane as wide-screen messages.
+   The background remains edge-to-edge; inputs, replies and attachment drafts do not. */
+:root{--message-lane:760px}
+.chat-compose>:is(.chat-compose-row,#chat-reply,#chat-attachments,#chat-error,#chat-recording,#su-chat-attachment),
+.su-chat form>:is(.su-compose,#su-chat-attachment,.su-design-note){width:100%;max-width:var(--message-lane);margin-inline:auto}
+@media(min-width:761px){
+ .chat-messages>.chat-message{max-width:var(--message-lane)}
+ #app .su-chat #su-chat-log{padding-inline:max(16px,calc((100% - var(--message-lane))/2))}
+}
