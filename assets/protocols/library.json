@@ -1,0 +1,4386 @@
+{
+  "templateVersion": 1,
+  "documents": [
+    {
+      "id": "selank-semax",
+      "title": "Selank & Semax",
+      "sourceName": "Selank & Semax.docx",
+      "sourceHash": "f6954d824f4a2a2c25fc1fc74fb111d6fab8b6b50429cd6bd83b339348b806ec",
+      "suggestedProduct": 8,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "Combined guide: Selank mixing instructions refer to a 5 mg vial, while the catalogue Selank is 10 mg. Semax refers to 10 mg. Do not reuse the Selank instructions for a different strength."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "SELANK- A HUG IN A BOTTLE",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Selank can help calm the brain and reduce anxiety, but it works differently from anti anxiety medications like benzodiazepines. Instead of directly activating GABA receptors, Selank helps your brain regulate its own calming systems. Because of this, it is not associated with the same type of dependence and withdrawal seen with benzodiazepines."
+        },
+        {
+          "type": "paragraph",
+          "text": "In simple terms, Selank may:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Help balance serotonin, which plays an important role in mood and emotional wellbeing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Help your body's natural feel good and calming peptides called enkephalins stay active longer."
+        },
+        {
+          "type": "paragraph",
+          "text": "Influence inflammatory signals such as IL 6, potentially helping regulate inflammation that can affect the brain and mood."
+        },
+        {
+          "type": "paragraph",
+          "text": "Influence BDNF, a protein involved in learning, memory and the brain's ability to adapt and form new connections."
+        },
+        {
+          "type": "paragraph",
+          "text": "One of the most interesting effects involves enkephalins. These are natural peptides produced by your body that are involved in stress, mood and pain regulation. Selank appears to slow their breakdown, allowing their effects to last longer."
+        },
+        {
+          "type": "paragraph",
+          "text": "The simplest way to think about it: Selank may help your brain make better use of its own natural calming and mood regulating systems rather than simply sedating you."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dose — 250-600 mcg SubQ Men: 1mg, 10 units on 1ml syringe; Women: 250-600mcg"
+        },
+        {
+          "type": "paragraph",
+          "text": "Frequency — 2-3 days per week in the AM for men, and as needed or daily in the AM for women"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cycle — 8 weeks on, 8 weeks off for men; 4 weeks on, 4 weeks off for women"
+        },
+        {
+          "type": "emphasis",
+          "text": "SELANK 5 mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Add 0.5 mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "10 units = 1 mg on a U-100 insulin syringe"
+        },
+        {
+          "type": "emphasis",
+          "text": "Take in the morning"
+        },
+        {
+          "type": "emphasis",
+          "text": "2–3 days per week"
+        },
+        {
+          "type": "emphasis",
+          "text": "8 weeks on / 8 weeks off"
+        },
+        {
+          "type": "paragraph",
+          "text": "That means each 5 mg vial contains 5 × 1 mg doses, so at 2–3 doses per week, one vial lasts roughly 1.7–2.5 weeks."
+        },
+        {
+          "type": "heading",
+          "text": "How Semax Works",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Semax is designed to support brain health, focus, mood, and mental performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "It may work by:"
+        },
+        {
+          "type": "emphasis",
+          "text": "Increasing BDNF, a protein that helps your brain build, repair, and strengthen connections."
+        },
+        {
+          "type": "emphasis",
+          "text": "Supporting dopamine, which is involved in motivation, focus, and drive."
+        },
+        {
+          "type": "emphasis",
+          "text": "Helping protect brain cells from oxidative stress and inflammation."
+        },
+        {
+          "type": "emphasis",
+          "text": "Supporting NGF, another protein involved in the growth and health of nerve cells."
+        },
+        {
+          "type": "emphasis",
+          "text": "Influencing serotonin pathways, which play a role in mood and emotional balance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Think of BDNF as fertilizer for your brain. It helps your brain adapt, learn, recover, and create stronger connections."
+        },
+        {
+          "type": "paragraph",
+          "text": "Simply put: Semax may help support a healthier, more adaptable brain while promoting focus, mental clarity, motivation, and cognitive resilience."
+        },
+        {
+          "type": "paragraph",
+          "text": "Most mechanistic evidence for Semax comes from animal and laboratory research, so these effects should not be presented as proven clinical benefits in humans."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dose — 250-600 mcg SubQ (Men:) 1mg, 10 units on 1ml syringe; (Women): 250-600mcg)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Frequency — Men: 2-3 days per week in the AM for men; as needed or daily in the AM for women"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cycle: 8 weeks on, 8 weeks off for men; 4 weeks on, 4 weeks off for women"
+        },
+        {
+          "type": "emphasis",
+          "text": "Semax 10mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Reconstitute with 1 mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose: 1 mg = 10 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Take in the morning"
+        },
+        {
+          "type": "emphasis",
+          "text": "2–3 times per week"
+        },
+        {
+          "type": "emphasis",
+          "text": "8 weeks on / 8 weeks off"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption. Disclaimer & Usage Guidance"
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds"
+        },
+        {
+          "type": "paragraph",
+          "text": "referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, mitochondrial health, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Cycling peptides is commonly used as a precautionary measure, although requirements may vary depending on the individual and protocol."
+        }
+      ],
+      "pdf": "assets/protocols/documents/selank-semax.pdf",
+      "docx": "assets/protocols/documents/selank-semax.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "1113c19537facc139032b6f29180a2e426c129645c0b185a6050ffd90cff66e8",
+      "docxHash": "0c3306c105eac868f4abeff4cbbeb569e228555793c96655249f88a0192b7e15"
+    },
+    {
+      "id": "ss31",
+      "title": "SS31 10mg",
+      "sourceName": "SS31.docx",
+      "sourceHash": "c9dd50277b60061f5c7a2ed08c4d585360c40cd8f922d4f6b0e5376f366b8c26",
+      "suggestedProduct": 26,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If you use this protocol, you will need four vials to complete the cycle."
+        },
+        {
+          "type": "paragraph",
+          "text": "Add 2ml of bac water"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recommended dosage:"
+        },
+        {
+          "type": "paragraph",
+          "text": "First two weeks= .5mg (10 units)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Then 1mg (20 units)"
+        },
+        {
+          "type": "paragraph",
+          "text": "5 days on /2 days off"
+        },
+        {
+          "type": "paragraph",
+          "text": "Take in the MORNING"
+        },
+        {
+          "type": "paragraph",
+          "text": "8 weeks on/8 weeks off"
+        },
+        {
+          "type": "paragraph",
+          "text": "SS-31 + MOTS-c Synergy:"
+        },
+        {
+          "type": "paragraph",
+          "text": "* Weeks 1–4: SS-31 alone (stabilize mitochondria)"
+        },
+        {
+          "type": "paragraph",
+          "text": "* Weeks 5–12: Add MOTS-c at 1–2mg/day (overlap 4–8 weeks)"
+        },
+        {
+          "type": "paragraph",
+          "text": "* Discontinue SS-31, finish out MOTS-c cycle, or alternate thereafter"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tracking results:"
+        },
+        {
+          "type": "paragraph",
+          "text": "* Subjective: Energy, workout capacity, recovery, sleep quality."
+        },
+        {
+          "type": "paragraph",
+          "text": "* Biomarkers: Fasting glucose, fasting insulin, HOMA-IR, A1C, lipid panel, liver enzymes."
+        },
+        {
+          "type": "paragraph",
+          "text": "* Performance: HRV, resting HR, VO₂ max, body composition."
+        }
+      ],
+      "pdf": "assets/protocols/documents/ss31.pdf",
+      "docx": "assets/protocols/documents/ss31.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "330ef1aaaa0431ed0eeca2a5a13c60fb43b4c6060939414b89a393f82c948450",
+      "docxHash": "ac2a4b90d473ad796170ea5854fec8f7881247571d6a295a03170d7f8d2c3ff9"
+    },
+    {
+      "id": "pinealon-10mg",
+      "title": "Pinealon 10mg",
+      "sourceName": "Pinealon 10mg.docx",
+      "sourceHash": "508e124e8add1e25fcff3ae01b217f898e5c1263ec3f0cc9a340782cc6084995",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "No exact Pinealon 10 mg product exists in the current catalogue."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "emphasis",
+          "text": "For a 10 mg vial"
+        },
+        {
+          "type": "emphasis",
+          "text": "Add 2 mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "Concentration = 5 mg/mL"
+        },
+        {
+          "type": "emphasis",
+          "text": "1 mg = 20 units on a U-100 syringe"
+        },
+        {
+          "type": "emphasis",
+          "text": "2 mg = 40 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "At 1 mg/day, one vial lasts 10 days"
+        },
+        {
+          "type": "emphasis",
+          "text": "Use for 10 days then 3-6 months off"
+        }
+      ],
+      "pdf": "assets/protocols/documents/pinealon-10mg.pdf",
+      "docx": "assets/protocols/documents/pinealon-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "c67c4cfe6a027595525d40703b9a47dff17020252f5b79457b74863bb44146bc",
+      "docxHash": "85a75ee44ec6dbaef3bd9b7497a342c64ed4db3993fafa87e409e69c25add71a"
+    },
+    {
+      "id": "bloodwork-recommendations",
+      "title": "Recommended Baseline Bloodwork Before Starting a Peptide Protocol",
+      "sourceName": "Bloodwork Recommendations.docx",
+      "sourceHash": "350ebac89d97092bd0819720cbfcfb8428004637b03f17238ab1c4e2457bb9c0",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "General guide covering multiple compounds; no single product assignment."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before beginning any peptide, GLP-1, longevity, recovery, or performance-enhancement protocol, we recommend obtaining baseline bloodwork. This allows you to monitor progress, identify potential deficiencies, and make informed decisions about your health."
+        },
+        {
+          "type": "heading",
+          "text": "Essential Bloodwork (Men & Women)",
+          "level": 1
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Panel",
+              "Tests"
+            ],
+            [
+              "Complete Blood Count (CBC)",
+              "White Blood Cells (WBC); Red Blood Cells (RBC); Hemoglobin; Hematocrit; Platelets"
+            ],
+            [
+              "Comprehensive Metabolic Panel (CMP)",
+              "Glucose; Kidney Function (Creatinine, BUN, eGFR); Liver Function (ALT, AST, GGT); Electrolytes (Sodium, Potassium, Chloride)"
+            ],
+            [
+              "Lipid Panel",
+              "Total Cholesterol; LDL Cholesterol; HDL Cholesterol; Triglycerides"
+            ],
+            [
+              "Blood Sugar & Metabolic Health",
+              "Fasting Glucose; Fasting Insulin; HbA1c"
+            ],
+            [
+              "Inflammation Markers",
+              "High-Sensitivity C-Reactive Protein (hs-CRP); Homocysteine"
+            ],
+            [
+              "Thyroid Function",
+              "TSH; Free T3; Free T4"
+            ],
+            [
+              "Nutrient Status",
+              "Vitamin D (25-OH); Vitamin B12; Ferritin; Iron Panel"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Men’s Hormone Panel",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Hormones; Total Testosterone; Free Testosterone; SHBG; Estradiol (Sensitive); DHEA-S; PSA; IGF-1; Cortisol (AM)"
+        },
+        {
+          "type": "heading",
+          "text": "Women’s Hormone Panel",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Hormones; Estradiol; Progesterone; Testosterone; DHEA-S; FSH; LH; Cortisol (AM); For cycling women:; Blood should ideally be collected during days 19-21 of the menstrual cycle for progesterone assessment."
+        },
+        {
+          "type": "heading",
+          "text": "Advanced Longevity Testing (Optional)",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "For clients seeking deeper optimization:; ApoB; Lipoprotein(a); Fasting Insulin; Omega-3 Index; Uric Acid; Magnesium (RBC); Zinc; Selenium; Biological Age Testing; Continuous Glucose Monitoring (CGM)"
+        },
+        {
+          "type": "heading",
+          "text": "When to Retest",
+          "level": 1
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Protocol",
+              "Retest"
+            ],
+            [
+              "Fat Loss Protocols",
+              "(Retatrutide, Tirzepatide, MOTS-C); Baseline; 8-12 weeks; 6 months"
+            ],
+            [
+              "Recovery & Longevity Protocols",
+              "(BPC-157, TB500, GHK-Cu, NAD+, SS-31); Baseline; 3-6 months"
+            ],
+            [
+              "Growth Hormone Protocols",
+              "(CJC-1295, Ipamorelin, Sermorelin, Tesamorelin, IGF-1 LR3); Baseline; 8-12 weeks; Every 6 months thereafter"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Important Disclaimer",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Peptides are intended for research and educational purposes. This bloodwork guide is not medical advice and should not replace consultation with a qualified healthcare professional. Always discuss laboratory findings and treatment decisions with your physician."
+        }
+      ],
+      "pdf": "assets/protocols/documents/bloodwork-recommendations.pdf",
+      "docx": "assets/protocols/documents/bloodwork-recommendations.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "79551eb0fa55cc8b4f3bb9e62facaba8aa55b2f012e1dbf41a238882b3d5a948",
+      "docxHash": "a4a10a217f6cd580f94145ca4339ef68592e57ccbe4b2111188e1cd669a8bc1c"
+    },
+    {
+      "id": "mt-2-melanotan-ii",
+      "title": "MT-2 (Melanotan II)",
+      "sourceName": "MT-2 (Melanotan II).docx",
+      "sourceHash": "f95d89a9a4965cf70ac44203df636ad68da64ce780475b27c4f7d3084e971000",
+      "suggestedProduct": 22,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "Confirm vial strength before assigning this unit-based source to the catalogue Melanotan II 10 mg."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/519946c3d5d70576f00d.png",
+          "width": 310,
+          "height": 634,
+          "alt": "MT-2 (Melanotan II) original illustration",
+          "sourceHash": "519946c3d5d70576f00d631aee118b60b5360e381db13d335ac50a7866dfe486",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MT-2 is a synthetic peptide designed to stimulate melanin production, helping the skin tan more easily with less UV exposure. Many users also report increased libido and reduced appetite. Think of it as a tool for achieving a darker, longer-lasting tan while potentially supporting confidence and body composition goals."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MT-2 mimics alpha-MSH (melanocyte stimulating hormone), which signals melanocytes in the skin to produce melanin. More melanin means a greater tanning response when exposed to sunlight or UV light. It also interacts with receptors involved in appetite regulation and sexual function."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Within the first few doses, some people notice facial flushing, increased warmth, mild nausea, or increased libido. Over 1-2 weeks, freckles and moles often become darker and the skin begins developing a tan much more easily. Over several weeks, most users achieve a deeper tan while requiring less sun exposure than normal."
+        },
+        {
+          "type": "image",
+          "src": "assets/protocols/media/04d66bf16ef0474ec95f.png",
+          "width": 1236,
+          "height": 2048,
+          "alt": "MT-2 (Melanotan II) original illustration",
+          "sourceHash": "04d66bf16ef0474ec95f8c9edcc7acbb12fa257cd1160f9b455787f42a7d599e",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for fair-skinned individuals who struggle to tan, people seeking a year-round bronzed appearance, and those wanting to reduce the amount of sun exposure needed to maintain a tan."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with a history of melanoma or active skin cancer should avoid use unless advised by their healthcare provider. Anyone unwilling to monitor skin changes should not use MT-2."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Add 2.5ml (250 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 0.025ml (2.5 units) on an insulin syringe"
+        },
+        {
+          "type": "list",
+          "text": "Inject into belly fat before bed"
+        },
+        {
+          "type": "list",
+          "text": "Repeat daily until desired tanning level is achieved"
+        },
+        {
+          "type": "list",
+          "text": "Once desired tan is reached, reduce to 1-2 injections per week for maintenance"
+        },
+        {
+          "type": "list",
+          "text": "Less is more with MT-2"
+        },
+        {
+          "type": "heading",
+          "text": "IMPORTANT",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "This is 2.5 units, NOT 25 units"
+        },
+        {
+          "type": "list",
+          "text": "The dose is extremely small"
+        },
+        {
+          "type": "list",
+          "text": "Many people accidentally overdose because they misread the syringe"
+        },
+        {
+          "type": "list",
+          "text": "If unsure, err on the side of less"
+        },
+        {
+          "type": "heading",
+          "text": "COMMON SIDE EFFECTS",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Mild nausea"
+        },
+        {
+          "type": "list",
+          "text": "Facial flushing"
+        },
+        {
+          "type": "list",
+          "text": "Increased libido"
+        },
+        {
+          "type": "list",
+          "text": "Darkening of freckles and moles"
+        },
+        {
+          "type": "list",
+          "text": "Temporary fatigue"
+        },
+        {
+          "type": "list",
+          "text": "Increased skin pigmentation"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Disclaimer & Usage Guidance: This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, lifestyle, sun exposure, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/mt-2-melanotan-ii.pdf",
+      "docx": "assets/protocols/documents/mt-2-melanotan-ii.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "6e8c5a1e1d201e0ab591b73891d8b8b363da6deee6ac156717d3597e94909450",
+      "docxHash": "5567ba7ae0b93f6270b7324c715e71130970ca993f7b2352d98b44f6a0b66ffe"
+    },
+    {
+      "id": "ahkcu-hair-growth",
+      "title": "AHK-Cu Hair Growth Protocol",
+      "sourceName": "AHKCU hair growth.docx",
+      "sourceHash": "321a3628afd2930b930c9db292a0cafea38af50a5e292183212bcc426a3dd9a7",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "No exact AHK-Cu product exists in the current catalogue."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "What it is",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "AHK-Cu (Alanine-Histidine-Lysine Copper) is a copper peptide often used for hair restoration. It may help stimulate hair follicles, improve blood flow to the scalp, reduce inflammation, and support thicker, healthier hair growth."
+        },
+        {
+          "type": "heading",
+          "text": "Typical Course",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Minimum: 12 weeks"
+        },
+        {
+          "type": "emphasis",
+          "text": "Ideal: 4–6 months"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hair follicles grow slowly, so most people don’t notice significant changes until around 8–12 weeks."
+        },
+        {
+          "type": "heading",
+          "text": "Injectable Protocol",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "AHK-Cu 50mg vial"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reconstitute with:"
+        },
+        {
+          "type": "paragraph",
+          "text": "5mL bacteriostatic water"
+        },
+        {
+          "type": "paragraph",
+          "text": "This gives:"
+        },
+        {
+          "type": "paragraph",
+          "text": "10mg/mL concentration"
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose:"
+        },
+        {
+          "type": "paragraph",
+          "text": "1mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "10 units on a U100 insulin syringe"
+        },
+        {
+          "type": "paragraph",
+          "text": "Subcutaneous injection"
+        },
+        {
+          "type": "emphasis",
+          "text": "One 50mg vial lasts approximately 50 days."
+        },
+        {
+          "type": "heading",
+          "text": "Alternative Higher-Dose Protocol",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "For aggressive hair restoration:"
+        },
+        {
+          "type": "paragraph",
+          "text": "2mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "20 units daily"
+        },
+        {
+          "type": "emphasis",
+          "text": "One vial lasts approximately 25 days."
+        },
+        {
+          "type": "heading",
+          "text": "Stack for Best Results",
+          "level": 1
+        },
+        {
+          "type": "heading",
+          "text": "Hair Regrowth Stack",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "AHK-Cu 1–2mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "GHK-Cu 2mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "Collagen peptides"
+        },
+        {
+          "type": "paragraph",
+          "text": "Adequate protein intake (100g+ daily)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Iron, zinc, vitamin D optimization"
+        },
+        {
+          "type": "paragraph",
+          "text": "Optional topical minoxidil if tolerated"
+        },
+        {
+          "type": "heading",
+          "text": "What People Typically Notice",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 1–4"
+        },
+        {
+          "type": "paragraph",
+          "text": "Less shedding"
+        },
+        {
+          "type": "paragraph",
+          "text": "Healthier scalp"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 4–8"
+        },
+        {
+          "type": "paragraph",
+          "text": "Reduced hair loss"
+        },
+        {
+          "type": "paragraph",
+          "text": "Improved hair texture"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 8–16"
+        },
+        {
+          "type": "paragraph",
+          "text": "Baby hairs appearing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Increased density"
+        },
+        {
+          "type": "emphasis",
+          "text": "Months 4–6"
+        },
+        {
+          "type": "paragraph",
+          "text": "More noticeable thickening and fullness"
+        },
+        {
+          "type": "heading",
+          "text": "Decode Recommendation",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "For someone serious about hair restoration:"
+        },
+        {
+          "type": "emphasis",
+          "text": "2 boxes AHK-Cu 50mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "2 boxes GHK-Cu 50mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Run for 90–120 days"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prioritize protein intake, sleep, and mineral status"
+        },
+        {
+          "type": "paragraph",
+          "text": "This tends to produce better results than using AHK-Cu alone because AHK-Cu focuses more on follicle stimulation, while GHK-Cu supports tissue repair, scalp health, and collagen production."
+        }
+      ],
+      "pdf": "assets/protocols/documents/ahkcu-hair-growth.pdf",
+      "docx": "assets/protocols/documents/ahkcu-hair-growth.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "eb5d339fcfc150e28c73bfa1a25c2aa673be744fc404ec3a79a2d77197c04cd0",
+      "docxHash": "234805062ca527cb16eb4d21437f02bce4feec3f7fcae7cf1773e9f79bcb3cf1"
+    },
+    {
+      "id": "lyme-protocol",
+      "title": "LYMES PEPTIDE PROTOCOL",
+      "sourceName": "Lyme protocol.docx",
+      "sourceHash": "d2ae8375f8560470381cc10e290430fab5fb94507a4f88e842219c9abbb4cfe7",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "Multi-compound guide; no single product assignment."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Foundation"
+        },
+        {
+          "type": "paragraph",
+          "text": "TA1 → 1-1.5mg 3x per week"
+        },
+        {
+          "type": "paragraph",
+          "text": "KPV → 250–500 mcg 2x daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "VIP → 100–200 mcg (5 days on / 2 off)"
+        },
+        {
+          "type": "paragraph",
+          "text": "LL37 → 125 mcg  Daily"
+        },
+        {
+          "type": "heading",
+          "text": "ADD ON:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Tissue Repair:"
+        },
+        {
+          "type": "paragraph",
+          "text": "BPC → 0.5mg dailly"
+        },
+        {
+          "type": "paragraph",
+          "text": "TB4 → 0.5mg dailly"
+        },
+        {
+          "type": "heading",
+          "text": "ADD ON:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Cognitive & Energy:"
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTS-C → 5-10mg weekly"
+        },
+        {
+          "type": "paragraph",
+          "text": "Semax → 0.25mg dailly"
+        }
+      ],
+      "pdf": "assets/protocols/documents/lyme-protocol.pdf",
+      "docx": "assets/protocols/documents/lyme-protocol.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "2e6cddf2038dff2fd416cae75f2ebb97c893b79324fc0216a44ebd97ec24e6d0",
+      "docxHash": "0b7e9d89696c0956b52f6467f3e1447afa2c00db68998e835bdbb1b92f13114a"
+    },
+    {
+      "id": "nad-500mg",
+      "title": "NAD+ 500mg Protocol",
+      "sourceName": "NAD+ 500mg.docx",
+      "sourceHash": "efe5d58071e7e6f0878037a41ebbd7ea9496a159cf1bdba2e485b8a28f81a646",
+      "suggestedProduct": 14,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Master regulator of cellular energy production but also plays a vital role in DNA repair and longevity signaling. NAD+ production declines with age in human tissue, and by your mid-40s you have typically lost +50% of what you carried in your 20s."
+        },
+        {
+          "type": "paragraph",
+          "text": "This has been shown by extensive research to be one of the central mechanisms driving accelerated aging, metabolic dysfunction, neurodegeneration, and collapsing resilience."
+        },
+        {
+          "type": "heading",
+          "text": "Reconstitution",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Vial: NAD+ 500mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Add: 3mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "Storage: Refrigerate after mixing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a U100 insulin syringe (0.5mL or 1mL)"
+        },
+        {
+          "type": "emphasis",
+          "text": "Protocol Options"
+        },
+        {
+          "type": "emphasis",
+          "text": "⭐ Longevity / Maintenance"
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose: 50mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Draw: 30 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Frequency: 3 times weekly (Mon/Wed/Fri)"
+        },
+        {
+          "type": "emphasis",
+          "text": "Timing: Morning, ideally fasted"
+        },
+        {
+          "type": "emphasis",
+          "text": "Cycle: 4–8 weeks or ongoing. WOMEN: 3 months on and one month off"
+        },
+        {
+          "type": "emphasis",
+          "text": "One vial provides:"
+        },
+        {
+          "type": "paragraph",
+          "text": "10 doses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Approximately 3 weeks at 3 injections/week"
+        },
+        {
+          "type": "heading",
+          "text": "Recovery / Burnout / Low Energy Support",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose: 100mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Draw: 60 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Frequency: 3 times weekly"
+        },
+        {
+          "type": "emphasis",
+          "text": "Timing: Morning, preferably fasted"
+        },
+        {
+          "type": "emphasis",
+          "text": "Cycle: 4–8 weeks"
+        },
+        {
+          "type": "emphasis",
+          "text": "One vial provides:"
+        },
+        {
+          "type": "paragraph",
+          "text": "5 doses"
+        },
+        {
+          "type": "paragraph",
+          "text": "About 1.5 weeks at 3 injections/week"
+        },
+        {
+          "type": "emphasis",
+          "text": "Administration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Subcutaneous injection."
+        },
+        {
+          "type": "paragraph",
+          "text": "Morning administration is preferred."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wait ~30 minutes before eating if taken fasted."
+        },
+        {
+          "type": "emphasis",
+          "text": "Suggested Stacks"
+        },
+        {
+          "type": "emphasis",
+          "text": "Energy + Mitochondrial Support"
+        },
+        {
+          "type": "emphasis",
+          "text": "NAD+ 50–100mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "+"
+        },
+        {
+          "type": "emphasis",
+          "text": "MOTS-c 10mg"
+        },
+        {
+          "type": "paragraph",
+          "text": "5mg (50 units) Monday, Wednesday, Friday"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cycle 4–6 weeks"
+        },
+        {
+          "type": "emphasis",
+          "text": "Longevity Stack"
+        },
+        {
+          "type": "emphasis",
+          "text": "NAD+ 50mg 3× weekly"
+        },
+        {
+          "type": "emphasis",
+          "text": "+"
+        },
+        {
+          "type": "emphasis",
+          "text": "SS-31 5–10mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "4–8 week cycle"
+        },
+        {
+          "type": "emphasis",
+          "text": "Performance & Recovery Stack"
+        },
+        {
+          "type": "paragraph",
+          "text": "NAD+ 100mg three times weekly"
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTS-c 5mg three times weekly"
+        },
+        {
+          "type": "paragraph",
+          "text": "CJC-1295/Ipamorelin before bed"
+        },
+        {
+          "type": "paragraph",
+          "text": "Creatine 5g daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "Electrolytes and high protein intake"
+        },
+        {
+          "type": "emphasis",
+          "text": "Example Weekly Schedule"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Day",
+              "Morning"
+            ],
+            [
+              "Monday",
+              "NAD+ 50-100mg"
+            ],
+            [
+              "Tuesday",
+              "—"
+            ],
+            [
+              "Wednesday",
+              "NAD+ 50-100mg"
+            ],
+            [
+              "Thursday",
+              "—"
+            ],
+            [
+              "Friday",
+              "NAD+ 50-100mg"
+            ],
+            [
+              "Saturday",
+              "—"
+            ],
+            [
+              "Sunday",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "emphasis",
+          "text": "Key Benefits"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cellular energy production"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mitochondrial support"
+        },
+        {
+          "type": "paragraph",
+          "text": "Mental clarity and focus"
+        },
+        {
+          "type": "paragraph",
+          "text": "Healthy aging and longevity"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recovery from stress and burnout"
+        },
+        {
+          "type": "paragraph",
+          "text": "Supports overall metabolic function"
+        },
+        {
+          "type": "paragraph",
+          "text": "Educational purposes only. Individual dosing should always be personalized."
+        },
+        {
+          "type": "heading",
+          "text": "Source links",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "https://pubmed.ncbi.nlm.nih.gov/22848760/"
+        }
+      ],
+      "pdf": "assets/protocols/documents/nad-500mg.pdf",
+      "docx": "assets/protocols/documents/nad-500mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "e6c300a3900a90d81ffc752740113e9bcd53626344b16e1756c379ce7ebbf4d3",
+      "docxHash": "8c2bd672e5e64b264b902916c3b4fb42402ad03df145903590c825ece5dce66b"
+    },
+    {
+      "id": "bpc157-tb500-10-10mg",
+      "title": "BPC157/TB500 10/10mg AKA The Wolverine Stack",
+      "sourceName": "BPC157_TB500 10_10mg.docx",
+      "sourceHash": "9fedefe4ceeace485689b1d20f04b815ffd079ac47f5adf94911a2f2f7a842db",
+      "suggestedProduct": 2,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The supplier/disclaimer text names individual BPC-157 and KPV rather than the blend, and ends mid-word at “appr”. Original text preserved."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/b23159b24d323cdec2ea.png",
+          "width": 326,
+          "height": 638,
+          "alt": "BPC157_TB500 10_10mg original illustration",
+          "sourceHash": "b23159b24d323cdec2ea1cab7a02d1737e33b586ee56154e9ee74af8b8ba5e5e",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT’S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "BPC-157 + TB-500 is a popular regenerative peptide combination researched for tissue repair, injury recovery, inflammation, tendons, ligaments, muscles, and connective tissue. The idea behind combining them is that they may influence different aspects of the repair process."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "BPC-157 is a synthetic peptide derived from a protective gastric protein fragment. Preclinical research suggests effects on tissue repair, blood-vessel formation, inflammatory signaling, and tendon and ligament healing."
+        },
+        {
+          "type": "paragraph",
+          "text": "TB-500 is a synthetic peptide related to thymosin beta-4. Thymosin beta-4 has been studied for roles in cell migration, tissue remodeling, angiogenesis, and wound repair."
+        },
+        {
+          "type": "heading",
+          "text": "EXAMPLE RESEARCH PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "BPC-157 10mg + TB-500 10mg combined vial"
+        },
+        {
+          "type": "emphasis",
+          "text": "If reconstituted with 2mL (200 units) bacteriostatic water:"
+        },
+        {
+          "type": "list",
+          "text": "5 units = 250 mcg"
+        },
+        {
+          "type": "list",
+          "text": "10 units = .5mg"
+        },
+        {
+          "type": "list",
+          "text": "20 units = 1mg"
+        },
+        {
+          "type": "paragraph",
+          "text": "A commonly discussed experimental approach uses 500 mcg of each peptide once daily, which would equal 10 units with this reconstitution."
+        },
+        {
+          "type": "heading",
+          "text": "SIMPLE BREAKDOWN",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "10mg BPC-157 + 10mg TB-500"
+        },
+        {
+          "type": "emphasis",
+          "text": "Add 2mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "250/250 mcg = 5 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "500/500 mcg = 10 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "1mg/1mg = 20 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "At 10 units per day, one combined vial provides approximately 20 daily doses."
+        },
+        {
+          "type": "heading",
+          "text": "INJECTION LOCATION",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Subcutaneous administration is commonly discussed in experimental protocols. There isn’t good human evidence showing that injecting directly beside an injury produces better results than another subcutaneous location, so injections should not be placed into an injured tendon, ligament, joint, or muscle without medical supervision."
+        },
+        {
+          "type": "heading",
+          "text": "COMMONLY DISCUSSED RESEARCH COMBINATIONS",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "With KPV"
+        },
+        {
+          "type": "paragraph",
+          "text": "Studied or discussed in regenerative research contexts involving inflammation, tissue repair, and recovery. Human evidence for the combination remains limited."
+        },
+        {
+          "type": "emphasis",
+          "text": "With GHK-Cu"
+        },
+        {
+          "type": "paragraph",
+          "text": "A regenerative research combination focused on tissue remodeling, inflammatory signaling, and repair."
+        },
+        {
+          "type": "emphasis",
+          "text": "With NAD+"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sometimes explored alongside metabolic and cellular-energy protocols, although evidence supporting the combination specifically with KPV is limited."
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks BPC157 10mg. Third-party tested. Comes with a full reconstitution guide and injection tutorial."
+        },
+        {
+          "type": "paragraph",
+          "text": "WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "emphasis",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. KPV is an investigational peptide and is not FDA-approved for treating inflammatory, gastrointestinal, or other medical conditions. The dosing information above reflects illustrative research practices and should not be interpreted as medical advice, diagnosis, or treatment. Human safety, efficacy, optimal dosing, and long-term risks have not been established. Any therapeutic consideration involving an investigational compound should be discussed with an appr"
+        },
+        {
+          "type": "heading",
+          "text": "Source links",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "http://decodepeptides.com"
+        }
+      ],
+      "pdf": "assets/protocols/documents/bpc157-tb500-10-10mg.pdf",
+      "docx": "assets/protocols/documents/bpc157-tb500-10-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "32621014624d67a8cdc5651a1616d136f109508c05ac4c5e2b840b5c61635e0e",
+      "docxHash": "c3beb3b90fa6525d94bdbc4abf731ce0d51d6ca330923e31ea6e2d0c44658cac"
+    },
+    {
+      "id": "glow-bpc-157-tb-500-ghk-cu",
+      "title": "GLOW (BPC-157 + TB-500 + GHK-Cu)",
+      "sourceName": "GLOW (BPC-157 + TB-500 + GHK-Cu).docx",
+      "sourceHash": "98357879dd263c15cebd25a3f2a72a2850b58b9a8e9884354c8fff4f7e44ba7f",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The supplier paragraph refers to Retatrutide, although this is a GLOW blend guide. The stated 1 mg dose needs reconciliation with the listed blend and volume. Its picture gives a different schedule and 2.3 mg dose. No matching GLOW variant exists in the catalogue."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/0c8e26f668e5eace4e40.png",
+          "width": 338,
+          "height": 646,
+          "alt": "GLOW (BPC-157 + TB-500 + GHK-Cu) original illustration",
+          "sourceHash": "0c8e26f668e5eace4e4093a03ba411374db05134cc5144f76266d93826569577",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a premium recovery and rejuvenation blend. It's designed for deep tissue repair, accelerated healing from injuries, and significant skin anti-aging effects. Think of it as a triple-action tool for fixing damage from the inside out and turning back the clock on your skin."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "It combines three powerful peptides. BPC-157 promotes healing in tendons, ligaments, and the gut. TB-500 (Thymosin Beta-4) reduces inflammation and builds new blood vessels for repair. GHK-Cu is the superstar for skin—it remodels collagen, reduces wrinkles, and improves elasticity by activating skin stem cells."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Within 1-2 weeks, you'll notice reduced joint stiffness and faster recovery from workouts. By week 3-4, skin starts feeling tighter and more hydrated. By week 8, significant improvements in skin texture, firmness, and a visible reduction in fine lines are commonly reported. The overall feeling is one of enhanced resilience."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for athletes managing chronic joint pain, individuals recovering from soft tissue injuries, or anyone over 30 looking for a serious, injectable anti-aging protocol for skin and connective tissue health."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Anyone with active cancer, pregnant or nursing women, or individuals with a known copper allergy (due to GHK-Cu). Not for those seeking purely muscle-building effects."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Dose: 1mg (10 units)"
+        },
+        {
+          "type": "list",
+          "text": "Frequency: 2 times per day"
+        },
+        {
+          "type": "list",
+          "text": "Cycle length: 8-12 weeks"
+        },
+        {
+          "type": "list",
+          "text": "Method: Subcutaneous injection"
+        },
+        {
+          "type": "list",
+          "text": "Timing: Morning and evening, at least 8 hours apart"
+        },
+        {
+          "type": "heading",
+          "text": "RECONSTITUTION GUIDE",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Vial size: 3ml vial containing BPC-157 10mg + TB-500 10mg + GHK-Cu 50mg"
+        },
+        {
+          "type": "list",
+          "text": "Add: 3ml bacteriostatic water"
+        },
+        {
+          "type": "list",
+          "text": "Concentration: Each 0.1ml (10 units) delivers the full blend dose."
+        },
+        {
+          "type": "list",
+          "text": "Example: One dose = draw to the 10 unit mark on an insulin syringe."
+        },
+        {
+          "type": "image",
+          "src": "assets/protocols/media/9749adbf683a556a4459.jpg",
+          "width": 1179,
+          "height": 1070,
+          "alt": "GLOW (BPC-157 + TB-500 + GHK-Cu) original illustration",
+          "sourceHash": "9749adbf683a556a4459754eb799cf135b95d12f14eeab9f644b81db957f8251",
+          "imageRole": "diagram"
+        },
+        {
+          "type": "heading",
+          "text": "BEST STACKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "1.  With CJC-1295/Ipamorelin: For amplified anti-aging and recovery. Increases your body's own GH pulse, synergizing with the repair and collagen synthesis of GLOW."
+        },
+        {
+          "type": "paragraph",
+          "text": "2.  With AOD-9604: For targeted fat loss in stubborn areas while the skin is being tightened and remodeled by GLOW."
+        },
+        {
+          "type": "paragraph",
+          "text": "3.  With NAD+ (injectable or nasal): For cellular energy and mitochondrial support, creating a comprehensive longevity and rejuvenation stack."
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Decodepeptides.com stocks the highest quality Retatrutide. Third-party tested. Comes with full reconstitution guide and injection tutorial. We can walk her through the first injection if needed. Whatsapp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption. Disclaimer & Usage Guidance"
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds"
+        },
+        {
+          "type": "paragraph",
+          "text": "referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, mitochondrial health, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Cycling peptides is commonly used as a precautionary measure, although requirements may vary depending on the individual and protocol. General Administration Guidance: Morning injections are typically performed in a fasted state; wait approximately 30 minutes before eating. Evening injections are best administered 2 hours after the last meal to optimise absorption. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/glow-bpc-157-tb-500-ghk-cu.pdf",
+      "docx": "assets/protocols/documents/glow-bpc-157-tb-500-ghk-cu.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "1fe9bd1d7dcc6a25f65a8f9764ac560f79e2095962981f70dd636f026f44f14a",
+      "docxHash": "22fe9d9ef5b7f3a40081d55f9e05b0ebd035acb42e1203d0820a7ab3428f1742"
+    },
+    {
+      "id": "retatrutide-20mg",
+      "title": "Retatrutide (RETA) 20mg",
+      "sourceName": "Retatrutide 20mg.docx",
+      "sourceHash": "c7ea6f0320e2f5c4487adba1590cec51b8e200bc66bf35edb4be49af02ac0534",
+      "suggestedProduct": 1,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The file is labelled 20 mg, but the mixing section explicitly describes a 10 mg vial and its conversions. Resolve this before assigning it to 20 mg stock."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/59a72753dd9ae9457596.png",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Retatrutide 20mg original illustration",
+          "sourceHash": "59a72753dd9ae94575963195af344ccb0682a1cd8f367258e9d2f9da14ae81c4",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "What it is",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Triple agonist peptide — hits GIP, GLP-1, and glucagon receptors. Think of it as the next-gen fat loss peptide. Clinical trials showed average 24% body weight loss over 48 weeks. It's powerful."
+        },
+        {
+          "type": "heading",
+          "text": "Mechanism of action",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Works on three pathways: reduces appetite (GLP-1), improves insulin sensitivity and fat metabolism (GIP), and increases energy expenditure (glucagon). Basically tells your body to burn fat, feel full, and stop storing excess energy."
+        },
+        {
+          "type": "heading",
+          "text": "Primary applications",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Significant fat loss (especially stubborn areas)"
+        },
+        {
+          "type": "list",
+          "text": "Appetite suppression"
+        },
+        {
+          "type": "list",
+          "text": "Improved metabolic health and insulin sensitivity"
+        },
+        {
+          "type": "list",
+          "text": "Improves Fatty liver disease"
+        },
+        {
+          "type": "list",
+          "text": "Improves blood pressure and cholesterol"
+        },
+        {
+          "type": "heading",
+          "text": "Dosing",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "The amount is increased gradually over time rather than starting at a higher amount."
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 1–4: 1–1.5 mg = 20–30 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 5–8: 2–3.5 mg = 40–70 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Week 9 onward: 3.5–5 mg = 70–100 units (if tolerated and needed)"
+        },
+        {
+          "type": "heading",
+          "text": "Reconstitution (Mixing)",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "10 mg vial + 2 mL BAC water"
+        },
+        {
+          "type": "emphasis",
+          "text": "2 mL = 200 units on a U-100 syringe"
+        },
+        {
+          "type": "emphasis",
+          "text": "= 5 mg/mL (50 mcg per unit)"
+        },
+        {
+          "type": "emphasis",
+          "text": "So if the syringe only holds 100 units/1 mL, 2 mL is two full syringe volumes."
+        },
+        {
+          "type": "emphasis",
+          "text": "Adding water changes the concentration, not the total 10 mg."
+        },
+        {
+          "type": "paragraph",
+          "text": "For 1mg dose = draw 20 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 2mg dose = draw 40 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 4mg dose = draw 80 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 6mg dose = draw 120 units"
+        },
+        {
+          "type": "heading",
+          "text": "Where to Inject",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Under the skin (SC) — usually into fatty tissue such as the abdomen or side of the waist."
+        },
+        {
+          "type": "emphasis",
+          "text": "Watch video tutorial https://youtube.com/shorts/r93r0rfPHmQ?si=tsWB3576Nz39FBln"
+        },
+        {
+          "type": "paragraph",
+          "text": "Refrigerate the vial after mixing - you will draw from the same vial everytime"
+        },
+        {
+          "type": "paragraph",
+          "text": "you don’t need the water anymore at this point, you can store it in the fridge for your next powder vial round."
+        },
+        {
+          "type": "heading",
+          "text": "What to expect",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 1–2: Appetite drops noticeably. Some nausea possible (usually mild)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 4+: Fat loss becomes visible. Energy improves. Cravings basically disappear."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 8+: Significant body composition changes. Most people lose 1–2% body weight per week."
+        },
+        {
+          "type": "heading",
+          "text": "Stacks well with",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTSC (5-9mg per week) — energy and mitochondria health"
+        },
+        {
+          "type": "paragraph",
+          "text": "CJC-1295/Ipamorelin — adds muscle-building signal while losing fat"
+        },
+        {
+          "type": "paragraph",
+          "text": "NAD+ for longevity"
+        },
+        {
+          "type": "heading",
+          "text": "Watch out for",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Nausea (especially first 2 weeks — eat small meals, avoid greasy food). Fatigue if you drop calories too hard. Constipation (drink more water, add fibre). Don't rush the dose — titrate slowly."
+        },
+        {
+          "type": "heading",
+          "text": "On the injection fear:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Totally normal to be nervous! But here's the thing — insulin syringes are tiny (29–31 gauge). You pinch belly fat, insert at 45°, and it's over in 2 seconds. Most people say it's easier than they thought. Once weekly is super manageable."
+        },
+        {
+          "type": "heading",
+          "text": "On consistency:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "RETA will make consistency WAY easier. The appetite suppression is real — you won't be fighting cravings. That said, she still needs to eat enough protein (aim for 100g+/day) to preserve muscle. Clean eating + RETA = results."
+        },
+        {
+          "type": "heading",
+          "text": "Practical advice:",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Start at 1.3mg/week(26 units)  for the first month"
+        },
+        {
+          "type": "list",
+          "text": "Inject same day/time each week (Sunday night works for most people)"
+        },
+        {
+          "type": "list",
+          "text": "Keep protein high, hydration high"
+        },
+        {
+          "type": "list",
+          "text": "Don't drop calories too aggressively — let the peptide do the work"
+        },
+        {
+          "type": "list",
+          "text": "Bloodwork at 8 weeks (glucose, lipids, liver enzymes)"
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Decodepeptides.com stocks the highest quality Retatrutide. Third-party tested. Comes with full reconstitution guide and injection tutorial. We can walk her through the first injection if needed. Whatsapp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption. Disclaimer & Usage Guidance"
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds"
+        },
+        {
+          "type": "paragraph",
+          "text": "referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, mitochondrial health, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Cycling peptides is commonly used as a precautionary measure, although requirements may vary depending on the individual and protocol. General Administration Guidance: Morning injections are typically performed in a fasted state; wait approximately 30 minutes before eating. Evening injections are best administered 2 hours after the last meal to optimise absorption. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/retatrutide-20mg.pdf",
+      "docx": "assets/protocols/documents/retatrutide-20mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "65fa227370c72d21148a43394e1f6199ced90e96f50ebc42cf31e67821e58326",
+      "docxHash": "224564711383263adbe6435aea2606f622a59e12d588016434dde1ca9f5f9088"
+    },
+    {
+      "id": "dsip-delta-sleep-inducing-peptide",
+      "title": "DSIP (Delta Sleep-Inducing Peptide) 2mg and 5mg",
+      "sourceName": "DSIP (Delta Sleep-Inducing Peptide).docx",
+      "sourceHash": "4c3e11de6b9833c6aa55540f6fe7eec8dbb379bbd9b3083b5e8ba8e9cd96db56",
+      "suggestedProduct": 28,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The 2 mg section states 2 mL water and 12.5 units = 250 mcg. Those figures do not agree on a U-100 syringe. The 5 mg section is separate.",
+        "The appended study claims and dosage schedule have not been verified. Keep the original text for review."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/acfaa30c7a5127fd6154.png",
+          "width": 312,
+          "height": 620,
+          "alt": "DSIP (Delta Sleep-Inducing Peptide) original illustration",
+          "sourceHash": "acfaa30c7a5127fd615415d3b98a59b7c4deb018271542954c6a0e9ca93f0827",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DSIP is a peptide primarily used to improve sleep quality, recovery, nervous system regulation, and stress resilience. Unlike sleeping pills that force sedation, DSIP works by helping regulate the body's natural sleep processes. Think of it as a tool for deeper, more restorative sleep and improved recovery."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DSIP interacts with neurotransmitters and pathways involved in sleep regulation, stress response, and circadian rhythm balance. Many users report improved sleep efficiency, fewer nighttime awakenings, enhanced recovery, and a calmer nervous system. It may also help reduce elevated cortisol levels in some individuals."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Many users notice improved sleep quality within the first few nights. Sleep often feels deeper and more restorative, with fewer overnight awakenings. Over several weeks, recovery improves, energy levels become more consistent, and stress feels easier to manage."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for individuals struggling with poor sleep quality, frequent waking, elevated stress, recovery issues, shift work, travel-related sleep disruption, or nervous system dysregulation."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with untreated sleep disorders or serious medical conditions should consult their healthcare provider before use. Not intended to replace healthy sleep habits."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "for 2mg"
+        },
+        {
+          "type": "list",
+          "text": "Add 2ml (200 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 12.5 units per injection (250mcg)"
+        },
+        {
+          "type": "list",
+          "text": "Best taken 30-60 minutes before bed"
+        },
+        {
+          "type": "paragraph",
+          "text": "DSIP DOSING PROTOCOL for 5mg"
+        },
+        {
+          "type": "list",
+          "text": "Add 2ml (200 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units per injection"
+        },
+        {
+          "type": "list",
+          "text": "Best taken 30-60 minutes before bed"
+        },
+        {
+          "type": "list",
+          "text": "Use consistently for best results"
+        },
+        {
+          "type": "list",
+          "text": "Typical cycle length: 4-12 weeks"
+        },
+        {
+          "type": "paragraph",
+          "text": "a U-100 insulin syringe:"
+        },
+        {
+          "type": "emphasis",
+          "text": "1 unit = 25 mcg"
+        },
+        {
+          "type": "emphasis",
+          "text": "4 units = 100 mcg"
+        },
+        {
+          "type": "emphasis",
+          "text": "8 units = 200 mcg"
+        },
+        {
+          "type": "emphasis",
+          "text": "10 units = 250 mcg"
+        },
+        {
+          "type": "emphasis",
+          "text": "12 units = 300 mcg"
+        },
+        {
+          "type": "emphasis",
+          "text": "20 units = 500 mcg"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many users combine DSIP with good sleep hygiene, magnesium, and consistent bedtime routines for optimal results."
+        },
+        {
+          "type": "heading",
+          "text": "IMPORTANT",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "DSIP is not a sedative"
+        },
+        {
+          "type": "list",
+          "text": "Results often improve with consistent use"
+        },
+        {
+          "type": "list",
+          "text": "Sleep quality is usually a better marker than sleep duration"
+        },
+        {
+          "type": "list",
+          "text": "Focus on creating a healthy sleep environment"
+        },
+        {
+          "type": "heading",
+          "text": "BEST STACKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "With Selank"
+        },
+        {
+          "type": "paragraph",
+          "text": "Popular combination for reducing stress, calming the nervous system, and improving sleep quality."
+        },
+        {
+          "type": "paragraph",
+          "text": "With Semax"
+        },
+        {
+          "type": "paragraph",
+          "text": "Provides daytime focus and cognitive support while DSIP supports nighttime recovery and sleep."
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, sleep habits, stress levels, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        },
+        {
+          "type": "heading",
+          "text": "Notes from Dr. Trevor Bachmeyor",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Longevity Enhancement and Multi-System Biological Repair in an Aged Murine Model Using Exact Specified Dosages of DSIP, Glutathione, BPC-157, ARA290, and Targeted Nutritional Support"
+        },
+        {
+          "type": "paragraph",
+          "text": "This study evaluates the exact specified protocol for promoting longevity markers and complete biological repair in aged male C57BL/6 mice (18–24 months). After confirmation of age-related decline in sleep architecture, elevated oxidative stress, reduced tissue repair capacity, and multi-organ functional deterioration, animals received the precise protocol for 16 weeks without any dosage extrapolation or alteration: DSIP 200 mcg nightly; subq Glutathione 500 mg 3x per week; subq BPC157 500 mcg 2x daily; ARA290 4 mg daily; ubiquinol 400 mg; Omega 3 4 g daily; selenium 200 mcg; Methyl B; D3 5000 IU; K2 200 mcg; zinc 30 mg; magnesium glycinate 400 mg nightly; Vitamin C 2000 mg; 4 L water daily with electrolytes. Primary outcomes included sleep quality metrics, oxidative stress markers, tissue repair indices, inflammatory cytokines, mitochondrial function, and overall frailty scores. The exact protocol achieved significant improvements in sleep architecture, reduction of oxidative stress (−74%), enhanced tissue repair capacity, lowered systemic inflammation, and improved frailty indices (all p<0.001 vs. aged controls). Survival was 100% with no toxicity. All procedures complied with IACUC protocol #2026-MUR-169 and ARRIVE 2.0 guidelines."
+        },
+        {
+          "type": "emphasis",
+          "text": "Introduction"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aging involves progressive decline in sleep regulation, accumulation of oxidative damage, impaired tissue repair, chronic low-grade inflammation, and mitochondrial dysfunction. The aged C57BL/6 mouse model recapitulates these features. This protocol combines sleep optimization (DSIP), redox support (Glutathione, Ubiquinol, Vitamin C, Selenium), tissue repair (BPC-157, ARA290), and foundational nutritional cofactors to drive multi-system restoration. Every dosage and timing is followed exactly as specified."
+        },
+        {
+          "type": "emphasis",
+          "text": "Materials and Methods"
+        },
+        {
+          "type": "emphasis",
+          "text": "Ethical Statement"
+        },
+        {
+          "type": "paragraph",
+          "text": "Approved by the Institutional Animal Care and Use Committee (IACUC #2026-MUR-169) in full compliance with the Guide for the Care and Use of Laboratory Animals and ARRIVE 2.0 guidelines. Humane endpoints were strictly enforced."
+        },
+        {
+          "type": "emphasis",
+          "text": "Animals and Model"
+        },
+        {
+          "type": "paragraph",
+          "text": "Eighty aged male C57BL/6 mice (18–24 months) exhibiting confirmed age-related decline were randomized into aged control or exact protocol groups (n=40/group). Power analysis ensured 80% power at α=0.05."
+        },
+        {
+          "type": "emphasis",
+          "text": "Compound Administration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Compounds (>98% purity, certified https://elitebiogenix.com/)"
+        },
+        {
+          "type": "paragraph",
+          "text": "DSIP: 200 mcg nightly"
+        },
+        {
+          "type": "paragraph",
+          "text": "subq Glutathione: 500 mg 3x per week"
+        },
+        {
+          "type": "paragraph",
+          "text": "subq BPC157: 500 mcg 2x daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "ARA290: 4 mg daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "ubiquinol: 400 mg"
+        },
+        {
+          "type": "paragraph",
+          "text": "Omega 3: 4 g daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "selenium: 200 mcg"
+        },
+        {
+          "type": "paragraph",
+          "text": "Methyl B"
+        },
+        {
+          "type": "paragraph",
+          "text": "D3: 5000 IU"
+        },
+        {
+          "type": "paragraph",
+          "text": "K2: 200 mcg"
+        },
+        {
+          "type": "paragraph",
+          "text": "zinc: 30 mg"
+        },
+        {
+          "type": "paragraph",
+          "text": "magnesium glycinate: 400 mg nightly"
+        },
+        {
+          "type": "paragraph",
+          "text": "Vitamin C: 2000 mg"
+        },
+        {
+          "type": "paragraph",
+          "text": "4 L water daily with electrolytes"
+        },
+        {
+          "type": "emphasis",
+          "text": "Outcome Measures"
+        },
+        {
+          "type": "paragraph",
+          "text": "Sleep architecture and activity patterns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Oxidative stress and inflammatory markers."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tissue repair and frailty indices."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mitochondrial function."
+        },
+        {
+          "type": "emphasis",
+          "text": "Statistical Analysis"
+        },
+        {
+          "type": "paragraph",
+          "text": "GraphPad Prism v9.0. Two-way repeated-measures ANOVA with Tukey’s post-hoc. Data as mean ± SEM; p<0.05 significant."
+        },
+        {
+          "type": "heading",
+          "text": "Results",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "The exact specified protocol produced significant multi-system repair and improvements in longevity-associated markers."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Outcome",
+              "Aged Control",
+              "Treatment Group",
+              "% Improvement",
+              "p-value"
+            ],
+            [
+              "Sleep Quality Metrics",
+              "Disrupted",
+              "Normalized",
+              "Significant restoration",
+              "<0.001"
+            ],
+            [
+              "Oxidative Stress Markers",
+              "Elevated",
+              "−74%",
+              "Marked reduction",
+              "<0.001"
+            ],
+            [
+              "Tissue Repair Capacity",
+              "Reduced",
+              "Enhanced",
+              "+68%",
+              "<0.001"
+            ],
+            [
+              "Systemic Inflammation",
+              "Elevated",
+              "Normalized",
+              "−71 to −79%",
+              "<0.001"
+            ],
+            [
+              "Frailty Index",
+              "Elevated",
+              "Improved",
+              "Substantial reduction",
+              "<0.001"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Survival was 100% with no toxicity."
+        },
+        {
+          "type": "heading",
+          "text": "Discussion",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "The exact specified combination of DSIP for sleep optimization, Glutathione and antioxidant support, BPC-157 and ARA290 for tissue repair, and precise nutritional cofactors produced broad improvements in sleep, redox status, repair capacity, inflammation, and frailty in aged mice. The protocol succeeded when every dosage was followed precisely."
+        },
+        {
+          "type": "heading",
+          "text": "Instructions and Guidance for Protocol Implementation",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Obtain baseline inflammatory markers, oxidative stress panel, sleep assessment, and nutrient status before starting. Retest at 8 and 16 weeks."
+        },
+        {
+          "type": "heading",
+          "text": "Exact Protocol Schedule",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Nightly: DSIP 200 mcg, magnesium glycinate 400 mg."
+        },
+        {
+          "type": "heading",
+          "text": "Monitoring",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Track daily sleep quality, energy, recovery, and overall function. Monitor oxidative stress, inflammatory markers, and frailty indicators at intervals. Goal: Measurable multi-system repair and improved longevity-associated parameters."
+        }
+      ],
+      "pdf": "assets/protocols/documents/dsip-delta-sleep-inducing-peptide.pdf",
+      "docx": "assets/protocols/documents/dsip-delta-sleep-inducing-peptide.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "8e2fac585dda0983d927ef103cdb934827b9a9b59f0b9e28d4f43ca072348f89",
+      "docxHash": "710898ed067d6ca05ed06702b59bc5f72f8e7945d25d948252115e15d9ae8a43"
+    },
+    {
+      "id": "cjc-1295-no-dac",
+      "title": "CJC-1295 (NO DAC)",
+      "sourceName": "CJC-1295 (NO DAC).docx",
+      "sourceHash": "1482dddf9916cb28cd5c34db20f9040a1da649884207406a90b61815c8ad6eef",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The source does not state the vial strength alongside its unit-based dosing. Confirm both strength and No DAC variant before linking the catalogue product."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/33653e8ae03c4f4d9aac.png",
+          "width": 314,
+          "height": 630,
+          "alt": "CJC-1295 (NO DAC) original illustration",
+          "sourceHash": "33653e8ae03c4f4d9aacb2fa4c883f9e3c896a5cdce7e95fd7ca347516f47f69",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "CJC-1295 (No DAC) is a growth hormone-releasing peptide (GHRH) analogue designed to stimulate your body's natural production of growth hormone. Unlike synthetic growth hormone, it works by signaling your pituitary gland to release more of your own GH in a natural pulse-like pattern. Think of it as a tool for recovery, fat loss, muscle preservation, sleep optimization, and healthy aging."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "CJC-1295 (No DAC) binds to GHRH receptors in the pituitary gland, stimulating natural growth hormone release. This leads to increased IGF-1 production, enhanced recovery, improved fat metabolism, deeper sleep, and better tissue repair. Because it has a shorter half-life than DAC versions, it more closely mimics the body's natural GH rhythms."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Within the first few days, many users report deeper sleep, vivid dreams, and improved recovery from training. Over several weeks, body composition improvements become more noticeable, including increased muscle fullness, reduced body fat, improved skin quality, and better overall recovery capacity."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for individuals focused on fat loss, recovery, performance, healthy aging, muscle preservation, sleep optimization, and body recomposition."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with active cancer or untreated serious medical conditions should consult their healthcare provider before use. Not intended as a substitute for proper nutrition, sleep, or exercise."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Add 2ml (200 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 12 units per injection"
+        },
+        {
+          "type": "list",
+          "text": "Inject subcutaneously once daily"
+        },
+        {
+          "type": "list",
+          "text": "Best taken before bed"
+        },
+        {
+          "type": "list",
+          "text": "Avoid food for approximately 2 hours before injection"
+        },
+        {
+          "type": "list",
+          "text": "Wait approximately 30 minutes before eating after administration"
+        },
+        {
+          "type": "list",
+          "text": "Typical cycle length: 8-16 weeks"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many users combine CJC-1295 (No DAC) with Ipamorelin for a stronger GH pulse."
+        },
+        {
+          "type": "heading",
+          "text": "IMPORTANT",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Consistency matters more than increasing the dose"
+        },
+        {
+          "type": "list",
+          "text": "Sleep quality plays a major role in results"
+        },
+        {
+          "type": "list",
+          "text": "Best results occur when combined with strength training and adequate protein intake"
+        },
+        {
+          "type": "list",
+          "text": "More is not always better"
+        },
+        {
+          "type": "heading",
+          "text": "SIMPLE BREAKDOWN",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Daily Protocol"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every Evening"
+        },
+        {
+          "type": "list",
+          "text": "Draw 12 units"
+        },
+        {
+          "type": "list",
+          "text": "Inject before bed"
+        },
+        {
+          "type": "list",
+          "text": "Remain fasted for approximately 2 hours beforehand"
+        },
+        {
+          "type": "paragraph",
+          "text": "Typical Cycle"
+        },
+        {
+          "type": "paragraph",
+          "text": "Weeks 1-8"
+        },
+        {
+          "type": "list",
+          "text": "Improved sleep quality"
+        },
+        {
+          "type": "list",
+          "text": "Enhanced recovery"
+        },
+        {
+          "type": "paragraph",
+          "text": "Weeks 8-16"
+        },
+        {
+          "type": "list",
+          "text": "Body composition improvements"
+        },
+        {
+          "type": "list",
+          "text": "Increased muscle retention"
+        },
+        {
+          "type": "list",
+          "text": "Improved fat loss"
+        },
+        {
+          "type": "list",
+          "text": "Enhanced recovery capacity"
+        },
+        {
+          "type": "heading",
+          "text": "COMMON SIDE EFFECTS",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Mild water retention"
+        },
+        {
+          "type": "list",
+          "text": "Headaches"
+        },
+        {
+          "type": "list",
+          "text": "Temporary tingling sensations"
+        },
+        {
+          "type": "list",
+          "text": "Increased hunger"
+        },
+        {
+          "type": "list",
+          "text": "Mild injection site irritation"
+        },
+        {
+          "type": "heading",
+          "text": "BEST STACKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "With Ipamorelin"
+        },
+        {
+          "type": "paragraph",
+          "text": "The classic pairing. CJC stimulates growth hormone release while Ipamorelin amplifies the pulse for greater recovery and body composition benefits."
+        },
+        {
+          "type": "paragraph",
+          "text": "With MOTS-C"
+        },
+        {
+          "type": "paragraph",
+          "text": "Combines mitochondrial support and metabolic optimization with recovery and growth hormone support."
+        },
+        {
+          "type": "paragraph",
+          "text": "With Retatrutide"
+        },
+        {
+          "type": "paragraph",
+          "text": "Popular body recomposition stack combining fat loss, appetite control, recovery, and muscle preservation."
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks the highest quality CJC-1295 (No DAC). Third-party tested. Comes with a full reconstitution guide and injection tutorial. We can walk you through your first injection if needed. WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Disclaimer & Usage Guidance: This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, sleep quality, training status, nutrition, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/cjc-1295-no-dac.pdf",
+      "docx": "assets/protocols/documents/cjc-1295-no-dac.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "1192df8522d26644b65bb1a0b9fa18bf3a52b7eea7353cc57aabe603ffaf2d7c",
+      "docxHash": "47a7e62c00d56656ec0d9bafc01564dedbcaa1cd93b6fdb15f44e99c0964fe91"
+    },
+    {
+      "id": "glutathione-1500mg",
+      "title": "Glutathione 1500mg",
+      "sourceName": "Glutathione 1500mg.docx",
+      "sourceHash": "8f4784c5754f57051ee4edf8555778183c301166b24b5084b84ce4982b1f1cc3",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "Most instructions are embedded in two pictures. Both pictures are preserved. Catalogue Glutathione is 600 mg, not this 1500 mg source."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/bae298f19fc306599c5d.png",
+          "width": 1654,
+          "height": 656,
+          "alt": "Glutathione 1500mg original illustration",
+          "sourceHash": "bae298f19fc306599c5d6ecb024a3cbbc64dc1ad38e0a5373d391154a69c1062",
+          "imageRole": "diagram"
+        },
+        {
+          "type": "image",
+          "src": "assets/protocols/media/2c47a478038667ac7871.png",
+          "width": 1568,
+          "height": 778,
+          "alt": "Glutathione 1500mg original illustration",
+          "sourceHash": "2c47a478038667ac78714a1a12a7ce839974015952142891e5cbe5ddb8fb3c18",
+          "imageRole": "diagram"
+        },
+        {
+          "type": "heading",
+          "text": "TIP:",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Make sure to keep it in the fridge!"
+        }
+      ],
+      "pdf": "assets/protocols/documents/glutathione-1500mg.pdf",
+      "docx": "assets/protocols/documents/glutathione-1500mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "fcc206816a2ac299ea72e2b05e1903dba252d125ccbb2c5f4a786be76bc6a3fe",
+      "docxHash": "d33ae55864095d5f8f5d807d488ce22c1588718df131570d91e8762979c8fdfd"
+    },
+    {
+      "id": "cjc-ipa-5-5mg",
+      "title": "CJC-IPA 5mg/5mg Process:",
+      "sourceName": "CJC_ IPA 5_5mg.docx",
+      "sourceHash": "ea2ec2e99d8f5731f537632773ed732642109eacdc9730a8cc01b8eb265efc31",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The text says two vials cover 20 days, but the cycle table lists three vials for 56 days. Check the quantities. No exact CJC/Ipamorelin blend variant exists in the catalogue."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/372af199246d8b87b6d5.png",
+          "width": 362,
+          "height": 626,
+          "alt": "CJC_ IPA 5_5mg original illustration",
+          "sourceHash": "372af199246d8b87b6d5527dde9e69e1e103d45e944403546eb6430fd71b2051",
+          "imageRole": "photo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Make 2x vials at a time which will cover 20x days"
+        },
+        {
+          "type": "paragraph",
+          "text": "Remove cap off each and clean top with alcohol swab"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a 27G syringe to draw out 100units (1ml) of sterile water"
+        },
+        {
+          "type": "paragraph",
+          "text": "Insert into the vial and let the water slowly run onto the side of the vial as if pouring a beer"
+        },
+        {
+          "type": "paragraph",
+          "text": "Draw another 100units (1ml) of water and repeat putting into the vial using same gentle water on side of vial"
+        },
+        {
+          "type": "paragraph",
+          "text": "You now have 200units (2.0ml) of sterile water in your vial which will, over 24hrs, dissolve your CJC/IPA and create a juicy wonderful solution."
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat with the second vial."
+        },
+        {
+          "type": "paragraph",
+          "text": "DO NOT SHAKE BOTTLE. Peptides are fragile and you will literally break them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep these vials in the fridge, ideally still in the box (with their non reconstituted friends) and in the cheese compartment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Each night, just before bed, you will take out your made up vial, wipe the top with an alcohol swab, turn it upside down and use your 29G syringe to draw out 20units (0.2ml) of solution = 500mcg of each"
+        },
+        {
+          "type": "paragraph",
+          "text": "Without letting the needle touch a surface, then use same alcohol swab to rub the skin you intend to inject into so it’s sterile."
+        },
+        {
+          "type": "paragraph",
+          "text": "Pinch the skin/fat together and ‘punch’ the needle through surface of skin - doesn’t have to go full depth, as long as it’s under the skin you’re done."
+        },
+        {
+          "type": "paragraph",
+          "text": "Push plunger to inject your desired amount Eg. 20units (0.2ml) and then withdraw the needle and throw this in sharps bin provided."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hop into bed and let the magic happen."
+        },
+        {
+          "type": "paragraph",
+          "text": "Remember… make two vials at a time and then when you finish the *second* vial on day 20, make the next two vials as only needs 24hrs to ‘set’."
+        },
+        {
+          "type": "paragraph",
+          "text": "Another tip - rotate sides for injection each night so left side, ride side, left side etc."
+        },
+        {
+          "type": "paragraph",
+          "text": "Must let CJC-IPA ‘set’ for 24hrs after adding water or else it will not have reconstituted and dosages will not be accurate. Think of it like allowing cordial to mix throughout the water after you pour it in."
+        },
+        {
+          "type": "paragraph",
+          "text": "Therefore:"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Cycle Length",
+              "Vials Needed"
+            ],
+            [
+              "8 weeks (56 days)",
+              "3 vials"
+            ],
+            [
+              "12 weeks (84 days)",
+              "4 vials"
+            ],
+            [
+              "16 weeks (112 days)",
+              "5 vials"
+            ],
+            [
+              "24 weeks (~6 months)",
+              "7 vials"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Timing tips",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Inject subcutaneously."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideally avoid eating for 60–90 minutes before and 30–60 minutes after the injection, particularly foods containing carbohydrates or fat, as elevated insulin may blunt the growth hormone pulse."
+        },
+        {
+          "type": "paragraph",
+          "text": "Protein alone is generally less disruptive than carbohydrate or mixed meals."
+        },
+        {
+          "type": "heading",
+          "text": "What to expect",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Effects tend to build gradually:"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 2–4: Improved sleep quality and recovery."
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 4–8: Better workout recovery, body composition changes, and increased training capacity."
+        },
+        {
+          "type": "paragraph",
+          "text": "Weeks 8–12: More noticeable improvements in lean mass, fat loss (if nutrition is appropriate), skin quality, and overall recovery."
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, sleep habits, stress levels, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/cjc-ipa-5-5mg.pdf",
+      "docx": "assets/protocols/documents/cjc-ipa-5-5mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "df37bd00ed766facaa5707c77c2cf4176165f440bfe3fa028a3bf17a3a5d2615",
+      "docxHash": "cd6995ef1aac72bb1482b73ea880fe5d48e404c7c88eadd7e5153def72f5e10a"
+    },
+    {
+      "id": "ghk-cu-50mg",
+      "title": "GHK-Cu 50mg",
+      "sourceName": "GHK-Cu 50mg.docx",
+      "sourceHash": "4ffaebe9487a5f36cf861dd3f573f8e98d27c3d398668d297f3cc4e49e0518ea",
+      "suggestedProduct": 4,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/5ee1e629d609a02b397d.png",
+          "width": 312,
+          "height": 616,
+          "alt": "GHK-Cu 50mg original illustration",
+          "sourceHash": "5ee1e629d609a02b397d821411e2a44bcbaa5371641b951cf6e733ba42089616",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "GHK-Cu is one of the most researched regenerative peptides available. It is best known for supporting skin rejuvenation, collagen production, wound healing, hair growth, tissue repair, and healthy aging. Think of it as a peptide that helps your body repair, regenerate, and restore itself from the inside out."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Add 3ml (300 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units daily (1.7mg daily)"
+        },
+        {
+          "type": "list",
+          "text": "Best to inject in the inner thigh (anywhere but your stomach)"
+        },
+        {
+          "type": "list",
+          "text": "Best taken in the morning"
+        },
+        {
+          "type": "list",
+          "text": "Typical cycle length: 8 weeks on/8 weeks off"
+        },
+        {
+          "type": "emphasis",
+          "text": "TIPS To avoid GHKCU lumps and bruises:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Keep it out the fridge for 15 mins before"
+        },
+        {
+          "type": "paragraph",
+          "text": "Inject super slow and not too close to the surface of skin. Make sure needle is in"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pinch the fat with other hand as you inject"
+        },
+        {
+          "type": "paragraph",
+          "text": "Rub firmly for 20 seconds after"
+        },
+        {
+          "type": "paragraph",
+          "text": "Top of the butt cheek is the easiest for me as more fat."
+        },
+        {
+          "type": "paragraph",
+          "text": "You can try diluting it with a bit more bacteriostatic water. A slightly weaker concentration can reduce the sting and post-injection lumps."
+        },
+        {
+          "type": "paragraph",
+          "text": "Another trick that’s worked well for some people is injecting KPV straight afterwards, it seems to calm the area down very quickly."
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, nutrition, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/ghk-cu-50mg.pdf",
+      "docx": "assets/protocols/documents/ghk-cu-50mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "df00e3ae818ca8948b83b824c35fbf303357de9a5129c91ee589f09bcd6bc145",
+      "docxHash": "69021675b554d6158ae37a41fa4de676ac7120450fc2b6d9d9baba3e1fdf12aa"
+    },
+    {
+      "id": "mots-c",
+      "title": "MOTS-C",
+      "sourceName": "MOTS-C.docx",
+      "sourceHash": "8b67c6bb3421b9fa604b571270c019a60c1de319b03f0215170197bf39f5fa37",
+      "suggestedProduct": 17,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/eae025a1314fefbe2306.png",
+          "width": 314,
+          "height": 612,
+          "alt": "MOTS-C original illustration",
+          "sourceHash": "eae025a1314fefbe230670be0032587fda607039ff0d4fc493714bc7d118efd4",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTS-C is often referred to as the \"exercise mimetic\" peptide. It is designed to improve mitochondrial function, increase energy production, enhance metabolic flexibility, and support fat loss. Think of it as a tool that helps your body become more efficient at producing and using energy."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTS-C is a mitochondrial-derived peptide that activates AMPK, often called the body's metabolic master switch. This helps cells use glucose more efficiently, improves insulin sensitivity, encourages fat burning, and supports mitochondrial health. It essentially teaches your body to create energy more effectively while reducing metabolic stress."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Within the first 1-2 weeks, many people notice improved energy, better workout performance, and increased motivation to move. By weeks 3-6, fat loss often becomes more noticeable, endurance improves, and recovery between workouts feels easier. Many users report feeling more resilient and energetic throughout the day."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for individuals looking to improve energy levels, enhance fat loss, support healthy aging, improve exercise performance, optimize metabolic health, or break through weight loss plateaus."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with uncontrolled medical conditions should consult their healthcare provider before use. Not intended as a replacement for exercise, nutrition, or healthy lifestyle habits."
+        },
+        {
+          "type": "heading",
+          "text": "RECONSTITUTION GUIDE",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Vial size: MOTS-C 10mg"
+        },
+        {
+          "type": "list",
+          "text": "Add: 1.8ml (180 units) bacteriostatic water"
+        },
+        {
+          "type": "list",
+          "text": "Dose: Draw 0.3ml (30 units)"
+        },
+        {
+          "type": "list",
+          "text": "Doses per vial: 6 injections"
+        },
+        {
+          "type": "list",
+          "text": "One vial provides approximately 2 weeks of use"
+        },
+        {
+          "type": "list",
+          "text": "Storage: Refrigerate after mixing"
+        },
+        {
+          "type": "list",
+          "text": "Use within: 30 days"
+        },
+        {
+          "type": "list",
+          "text": "Needle: 29–31g insulin syringe"
+        },
+        {
+          "type": "list",
+          "text": "Injection site: Abdominal fat (subcutaneous)"
+        },
+        {
+          "type": "heading",
+          "text": "SIMPLE BREAKDOWN",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "1 vial = 6 doses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Monday = 30 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wednesday = 30 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "Friday = 30 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat for 2 weeks until vial is complete."
+        },
+        {
+          "type": "paragraph",
+          "text": "You are your own best study. Pay attention to energy, recovery, training performance, body composition, and overall resilience during both the ON and OFF phases."
+        },
+        {
+          "type": "heading",
+          "text": "BEST STACKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "With Retatrutide"
+        },
+        {
+          "type": "paragraph",
+          "text": "For enhanced fat loss, appetite control, and metabolic optimization. Retatrutide reduces hunger while MOTS-C helps improve energy expenditure and metabolic flexibility."
+        },
+        {
+          "type": "paragraph",
+          "text": "With NAD+"
+        },
+        {
+          "type": "paragraph",
+          "text": "For mitochondrial health and cellular energy production. One of the most popular longevity combinations."
+        },
+        {
+          "type": "paragraph",
+          "text": "With CJC-1295/Ipamorelin"
+        },
+        {
+          "type": "paragraph",
+          "text": "For body recomposition, recovery, lean muscle support, and healthy aging."
+        },
+        {
+          "type": "heading",
+          "text": "PROTOCOL EXAMPLES",
+          "level": 1
+        },
+        {
+          "type": "heading",
+          "text": "BEGINNER PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "MOTS-C 5mg per week for 4-6 weeks."
+        },
+        {
+          "type": "emphasis",
+          "text": "Goal: Increase energy, improve exercise performance, and support metabolic health."
+        },
+        {
+          "type": "heading",
+          "text": "INTERMEDIATE PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "MOTS-C 10mg per week + NAD+ 100-200mg weekly for 6-8 weeks."
+        },
+        {
+          "type": "emphasis",
+          "text": "Goal: Improve mitochondrial function, fat loss, recovery, and overall vitality."
+        },
+        {
+          "type": "heading",
+          "text": "ADVANCED PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "MOTS-C 10mg per week + Retatrutide + CJC-1295/Ipamorelin for 8 weeks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Goal: Comprehensive body recomposition, improved metabolic health, enhanced recovery, and longevity support."
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks the highest quality MOTS-C. Third-party tested. Comes with a full reconstitution guide and injection tutorial. We can walk you through your first injection if needed. WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Disclaimer & Usage Guidance: This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, mitochondrial health, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Cycling peptides is commonly used as a precautionary measure, although requirements may vary depending on the individual and protocol. General Administration Guidance: Morning injections are typically performed in a fasted state; wait approximately 30 minutes before eating. Evening injections are best administered 2 hours after the last meal to optimise absorption. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/mots-c.pdf",
+      "docx": "assets/protocols/documents/mots-c.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "9f24925a8c4208a48adab701bf45712ce6bed2f10c236377769a9c212fd26aae",
+      "docxHash": "23ae619acf04ecfe8533879d5de88f804afc92ed32bf5c82e7baea5f03fefe31"
+    },
+    {
+      "id": "kpv-10mg",
+      "title": "KPV 10mg",
+      "sourceName": "KPV 10mg.docx",
+      "sourceHash": "c97c7414a4078ff9d8f66e6677cbb1825f5b76218339dac931cb60958d5a9647",
+      "suggestedProduct": 23,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "The disclaimer ends mid-word at “appr”. Complete and review the original source before applying."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/30e75093af00b911db2e.png",
+          "width": 360,
+          "height": 648,
+          "alt": "KPV 10mg original illustration",
+          "sourceHash": "30e75093af00b911db2ed30b948ae318f582b004353d4273a2ffc0ae651d0b9c",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT’S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "KPV is a small anti-inflammatory peptide best known for its potential to support gut health, intestinal inflammation, immune balance, and tissue healing. It is especially researched for its effects on inflammatory pathways in the digestive tract. Think of it as a peptide focused on calming inflammation and supporting the gut lining."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "KPV is a three-amino-acid peptide fragment derived from alpha-melanocyte-stimulating hormone (α-MSH). Research suggests KPV may influence inflammatory signaling pathways, including pathways involving NF-κB and inflammatory cytokines. Run it for at least six to eight weeks. KPV works by blocking NF-KB signaling, so it takes time to calm the inflammatory environment before you see real tissue healing - but it works!"
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU’LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "KPV is not generally associated with an immediate stimulant or noticeable energy effect. Any perceived changes would typically be gradual. People exploring KPV commonly focus on changes in digestive comfort, skin, gut-related symptoms, inflammation, and recovery, although these effects have not been established in controlled human trials."
+        },
+        {
+          "type": "heading",
+          "text": "EXAMPLE RESEARCH PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "— KPV 10MG"
+        },
+        {
+          "type": "emphasis",
+          "text": "Using the protocol you’ve been working with:"
+        },
+        {
+          "type": "list",
+          "text": "Add 2 mL (200 units) bacteriostatic water to the 10mg vial"
+        },
+        {
+          "type": "list",
+          "text": "Concentration: 50 mcg per syringe unit"
+        },
+        {
+          "type": "emphasis",
+          "text": "Week 1"
+        },
+        {
+          "type": "list",
+          "text": "250 mcg once daily"
+        },
+        {
+          "type": "list",
+          "text": "Draw 5 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 2–3"
+        },
+        {
+          "type": "list",
+          "text": "500 mcg once daily"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "If a research protocol progresses to 1,000 mcg/day:"
+        },
+        {
+          "type": "list",
+          "text": "Split into 500 mcg morning + 500 mcg evening"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units AM + 10 units PM"
+        },
+        {
+          "type": "heading",
+          "text": "SIMPLE BREAKDOWN",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "10mg KPV + 2mL water"
+        },
+        {
+          "type": "emphasis",
+          "text": "250 mcg = 5 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "500 mcg = 10 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "1,000 mcg = 20 units total"
+        },
+        {
+          "type": "emphasis",
+          "text": "At 500 mcg/day, one 10mg vial contains 20 daily doses."
+        },
+        {
+          "type": "heading",
+          "text": "KPV Protocol — Inflammatory / Itchy Skin / Gut Health",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Duration: 6–8 weeks minimum before assessing the full response."
+        },
+        {
+          "type": "emphasis",
+          "text": "Week 1: 250 mcg once daily"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 2–4: 500 mcg once daily"
+        },
+        {
+          "type": "emphasis",
+          "text": "If responding: Continue 500 mcg daily through weeks 6–8."
+        },
+        {
+          "type": "paragraph",
+          "text": "If there is little improvement after the initial period: The protocol you were given escalates to 1,000 mcg/day, split into 500 mcg AM + 500 mcg PM, for up to 4 weeks."
+        },
+        {
+          "type": "emphasis",
+          "text": "Maintenance if it works: 250–500 mcg daily was suggested, with a 4-week break every 3 months."
+        },
+        {
+          "type": "heading",
+          "text": "What you’re looking for",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "KPV is being used here primarily for its proposed anti-inflammatory effects, including inhibition/modulation of NF-κB signaling. The rationale is strongest when the skin problem appears inflammatory, immune-mediated, histamine-related, or connected with gut inflammation."
+        },
+        {
+          "type": "paragraph",
+          "text": "If there is no meaningful reduction in itching, redness, or active inflammation after several weeks, reconsider the underlying cause rather than simply increasing the dose. A persistent rash can have fungal, bacterial, allergic/contact, medication-related, hormonal, metabolic, autoimmune, or other dermatologic causes that KPV would not necessarily address."
+        },
+        {
+          "type": "paragraph",
+          "text": "LL-37 and thymosin alpha-1—have different immune effects and shouldn’t automatically be stacked onto KPV without identifying what is actually driving the rash. In particular, suspected infection is a reason to get the skin evaluated rather than empirically treating it with peptides."
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks KPV 10mg. Third-party tested. Comes with a full reconstitution guide and injection tutorial."
+        },
+        {
+          "type": "paragraph",
+          "text": "WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "emphasis",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. KPV is an investigational peptide and is not FDA-approved for treating inflammatory, gastrointestinal, or other medical conditions. The dosing information above reflects illustrative research practices and should not be interpreted as medical advice, diagnosis, or treatment. Human safety, efficacy, optimal dosing, and long-term risks have not been established. Any therapeutic consideration involving an investigational compound should be discussed with an appr"
+        },
+        {
+          "type": "heading",
+          "text": "Source links",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "http://decodepeptides.com"
+        }
+      ],
+      "pdf": "assets/protocols/documents/kpv-10mg.pdf",
+      "docx": "assets/protocols/documents/kpv-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "e356c0a1a186ca3d6ed5082f3257a75a5fd02a92d7e9b1dbaa6bea6a66b55593",
+      "docxHash": "3ec9955e60ab89688bd1f78ba8dd0d1f981a9c4f8b6f271ce8e1f22b13872b0c"
+    },
+    {
+      "id": "nad-200mg",
+      "title": "NAD+ 200mg Protocol",
+      "sourceName": "NAD+ 200mg.docx",
+      "sourceHash": "8eaa1854d9c7cdbca7cc1a40fc06e7fd27089d273f10d27425ef45d5b45230ee",
+      "suggestedProduct": 13,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Reconstitution",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Vial Size: NAD+ 200mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Add: 1mL bacteriostatic water"
+        },
+        {
+          "type": "emphasis",
+          "text": "Concentration: 200mg/mL"
+        },
+        {
+          "type": "emphasis",
+          "text": "Storage: Refrigerate after mixing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Use a U100 insulin syringe."
+        },
+        {
+          "type": "emphasis",
+          "text": "⭐ Optimal Energy & Longevity"
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose"
+        },
+        {
+          "type": "emphasis",
+          "text": "50mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Draw"
+        },
+        {
+          "type": "emphasis",
+          "text": "25 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Frequency"
+        },
+        {
+          "type": "emphasis",
+          "text": "3 times weekly"
+        },
+        {
+          "type": "heading",
+          "text": "Timing",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Morning, preferably fasted"
+        },
+        {
+          "type": "emphasis",
+          "text": "Cycle"
+        },
+        {
+          "type": "paragraph",
+          "text": "4–8 weeks or ongoing"
+        },
+        {
+          "type": "emphasis",
+          "text": "One vial provides"
+        },
+        {
+          "type": "paragraph",
+          "text": "4 doses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Approximately 1.3 weeks at 3 injections per week"
+        },
+        {
+          "type": "heading",
+          "text": "Recovery / Burnout Protocol",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Dose"
+        },
+        {
+          "type": "emphasis",
+          "text": "100mg"
+        },
+        {
+          "type": "emphasis",
+          "text": "Draw"
+        },
+        {
+          "type": "emphasis",
+          "text": "50 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Frequency"
+        },
+        {
+          "type": "emphasis",
+          "text": "3 times weekly"
+        },
+        {
+          "type": "heading",
+          "text": "Timing",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Morning, preferably fasted"
+        },
+        {
+          "type": "emphasis",
+          "text": "Cycle"
+        },
+        {
+          "type": "paragraph",
+          "text": "4–8 weeks"
+        },
+        {
+          "type": "emphasis",
+          "text": "One vial provides"
+        },
+        {
+          "type": "paragraph",
+          "text": "2 doses"
+        },
+        {
+          "type": "paragraph",
+          "text": "Approximately 1 week at 3 injections per week"
+        },
+        {
+          "type": "heading",
+          "text": "Unit Conversion Guide",
+          "level": 1
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Dose",
+              "Units"
+            ],
+            [
+              "25mg",
+              "12.5 units"
+            ],
+            [
+              "50mg",
+              "25 units"
+            ],
+            [
+              "75mg",
+              "37.5 units"
+            ],
+            [
+              "100mg",
+              "50 units"
+            ],
+            [
+              "150mg",
+              "75 units"
+            ],
+            [
+              "200mg",
+              "100 units"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Timing",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Morning administration is preferred."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fasted administration is ideal."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wait approximately 30 minutes before eating."
+        },
+        {
+          "type": "paragraph",
+          "text": "Stay well hydrated throughout the day."
+        },
+        {
+          "type": "heading",
+          "text": "Suggested Stack Options",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Cellular Energy Stack"
+        },
+        {
+          "type": "emphasis",
+          "text": "NAD+ 50mg (25 units) – 3x weekly"
+        },
+        {
+          "type": "emphasis",
+          "text": "MOTS-c – 5mg Monday, Wednesday, Friday"
+        },
+        {
+          "type": "emphasis",
+          "text": "Mitochondrial Support Stack"
+        },
+        {
+          "type": "emphasis",
+          "text": "NAD+ 50–100mg – 3x weekly"
+        },
+        {
+          "type": "emphasis",
+          "text": "SS-31 – 5–10mg daily"
+        },
+        {
+          "type": "emphasis",
+          "text": "Performance & Recovery Stack"
+        },
+        {
+          "type": "paragraph",
+          "text": "NAD+ 100mg (50 units) 3x weekly"
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTS-c 5mg 3x weekly"
+        },
+        {
+          "type": "paragraph",
+          "text": "Creatine 5g daily"
+        },
+        {
+          "type": "paragraph",
+          "text": "Electrolytes"
+        },
+        {
+          "type": "paragraph",
+          "text": "High-protein diet"
+        },
+        {
+          "type": "heading",
+          "text": "Weekly Schedule",
+          "level": 1
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Day",
+              "Morning"
+            ],
+            [
+              "Monday",
+              "NAD+"
+            ],
+            [
+              "Tuesday",
+              "—"
+            ],
+            [
+              "Wednesday",
+              "NAD+"
+            ],
+            [
+              "Thursday",
+              "—"
+            ],
+            [
+              "Friday",
+              "NAD+"
+            ],
+            [
+              "Saturday",
+              "—"
+            ],
+            [
+              "Sunday",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Benefits",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Supports cellular energy production"
+        },
+        {
+          "type": "paragraph",
+          "text": "Promotes mitochondrial health"
+        },
+        {
+          "type": "paragraph",
+          "text": "May improve mental clarity and focus"
+        },
+        {
+          "type": "paragraph",
+          "text": "Supports healthy aging and longevity"
+        },
+        {
+          "type": "paragraph",
+          "text": "Assists recovery from stress and burnout"
+        },
+        {
+          "type": "paragraph",
+          "text": "Supports overall metabolic function"
+        },
+        {
+          "type": "paragraph",
+          "text": "Educational purposes only. Individual responses vary, and protocols should be personalized when appropriate."
+        }
+      ],
+      "pdf": "assets/protocols/documents/nad-200mg.pdf",
+      "docx": "assets/protocols/documents/nad-200mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "21ca36f178771a0c9eae46171b6633b0960fd769b0fb7abc7c08bfbb5ef0fd32",
+      "docxHash": "3844e8d2f4bf23792301449bc7ca690a7d8931e84d1a8513a7d0c10e04d3619a"
+    },
+    {
+      "id": "retatrutide-10mg",
+      "title": "Retatrutide (RETA) 10mg",
+      "sourceName": "Retatrutide 10mg_.docx",
+      "sourceHash": "2425804d193d92a353c8bb751559c981b6b0e68e3b419a19dbdd07ff66d22aae",
+      "suggestedProduct": 0,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/59a72753dd9ae9457596.png",
+          "width": 1254,
+          "height": 1254,
+          "alt": "Retatrutide 10mg_ original illustration",
+          "sourceHash": "59a72753dd9ae94575963195af344ccb0682a1cd8f367258e9d2f9da14ae81c4",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "What it is",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Triple agonist peptide — hits GIP, GLP-1, and glucagon receptors. Think of it as the next-gen fat loss peptide. Clinical trials showed average 24% body weight loss over 48 weeks. It's powerful."
+        },
+        {
+          "type": "heading",
+          "text": "Mechanism of action",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Works on three pathways: reduces appetite (GLP-1), improves insulin sensitivity and fat metabolism (GIP), and increases energy expenditure (glucagon). Basically tells your body to burn fat, feel full, and stop storing excess energy."
+        },
+        {
+          "type": "heading",
+          "text": "Primary applications",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Significant fat loss (especially stubborn areas)"
+        },
+        {
+          "type": "list",
+          "text": "Appetite suppression"
+        },
+        {
+          "type": "list",
+          "text": "Improved metabolic health and insulin sensitivity"
+        },
+        {
+          "type": "list",
+          "text": "Improves Fatty liver disease"
+        },
+        {
+          "type": "list",
+          "text": "Improves blood pressure and cholesterol"
+        },
+        {
+          "type": "heading",
+          "text": "Dosing",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "The amount is increased gradually over time rather than starting at a higher amount."
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 1–4: 1–1.5 mg = 20–30 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Weeks 5–8: 2–3.5 mg = 40–70 units"
+        },
+        {
+          "type": "emphasis",
+          "text": "Week 9 onward: 3.5–5 mg = 70–100 units (if tolerated and needed)"
+        },
+        {
+          "type": "heading",
+          "text": "Reconstitution (Mixing)",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "10 mg vial + 2 mL BAC water"
+        },
+        {
+          "type": "emphasis",
+          "text": "2 mL = 200 units on a U-100 syringe"
+        },
+        {
+          "type": "emphasis",
+          "text": "= 5 mg/mL (50 mcg per unit)"
+        },
+        {
+          "type": "emphasis",
+          "text": "So if the syringe only holds 100 units/1 mL, 2 mL is two full syringe volumes."
+        },
+        {
+          "type": "emphasis",
+          "text": "Adding water changes the concentration, not the total 10 mg."
+        },
+        {
+          "type": "paragraph",
+          "text": "For 1mg dose = draw 20 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 2mg dose = draw 40 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 4mg dose = draw 80 units"
+        },
+        {
+          "type": "paragraph",
+          "text": "For 6mg dose = draw 120 units"
+        },
+        {
+          "type": "heading",
+          "text": "Where to Inject",
+          "level": 1
+        },
+        {
+          "type": "emphasis",
+          "text": "Under the skin (SC) — usually into fatty tissue such as the abdomen or side of the waist."
+        },
+        {
+          "type": "emphasis",
+          "text": "Watch video tutorial https://youtube.com/shorts/r93r0rfPHmQ?si=tsWB3576Nz39FBln"
+        },
+        {
+          "type": "paragraph",
+          "text": "Refrigerate the vial after mixing - you will draw from the same vial everytime"
+        },
+        {
+          "type": "paragraph",
+          "text": "you don’t need the water anymore at this point, you can store it in the fridge for your next powder vial round."
+        },
+        {
+          "type": "heading",
+          "text": "What to expect",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 1–2: Appetite drops noticeably. Some nausea possible (usually mild)."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 4+: Fat loss becomes visible. Energy improves. Cravings basically disappear."
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 8+: Significant body composition changes. Most people lose 1–2% body weight per week."
+        },
+        {
+          "type": "heading",
+          "text": "Stacks well with",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "MOTSC (5-9mg per week) — energy and mitochondria health"
+        },
+        {
+          "type": "paragraph",
+          "text": "CJC-1295/Ipamorelin — adds muscle-building signal while losing fat"
+        },
+        {
+          "type": "paragraph",
+          "text": "NAD+ for longevity"
+        },
+        {
+          "type": "heading",
+          "text": "Watch out for",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Nausea (especially first 2 weeks — eat small meals, avoid greasy food). Fatigue if you drop calories too hard. Constipation (drink more water, add fibre). Don't rush the dose — titrate slowly."
+        },
+        {
+          "type": "heading",
+          "text": "On the injection fear:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Totally normal to be nervous! But here's the thing — insulin syringes are tiny (29–31 gauge). You pinch belly fat, insert at 45°, and it's over in 2 seconds. Most people say it's easier than they thought. Once weekly is super manageable."
+        },
+        {
+          "type": "heading",
+          "text": "On consistency:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "RETA will make consistency WAY easier. The appetite suppression is real — you won't be fighting cravings. That said, she still needs to eat enough protein (aim for 100g+/day) to preserve muscle. Clean eating + RETA = results."
+        },
+        {
+          "type": "heading",
+          "text": "Practical advice:",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Start at 1.3mg/week(26 units)  for the first month"
+        },
+        {
+          "type": "list",
+          "text": "Inject same day/time each week (Sunday night works for most people)"
+        },
+        {
+          "type": "list",
+          "text": "Keep protein high, hydration high"
+        },
+        {
+          "type": "list",
+          "text": "Don't drop calories too aggressively — let the peptide do the work"
+        },
+        {
+          "type": "list",
+          "text": "Bloodwork at 8 weeks (glucose, lipids, liver enzymes)"
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Decodepeptides.com stocks the highest quality Retatrutide. Third-party tested. Comes with full reconstitution guide and injection tutorial. We can walk her through the first injection if needed. Whatsapp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption. Disclaimer & Usage Guidance"
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds"
+        },
+        {
+          "type": "paragraph",
+          "text": "referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, mitochondrial health, lifestyle, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Cycling peptides is commonly used as a precautionary measure, although requirements may vary depending on the individual and protocol. General Administration Guidance: Morning injections are typically performed in a fasted state; wait approximately 30 minutes before eating. Evening injections are best administered 2 hours after the last meal to optimise absorption. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/retatrutide-10mg.pdf",
+      "docx": "assets/protocols/documents/retatrutide-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "f50d2fdb8eeb1321c4800afba00f12b20a4a9b4c3fa4a42220e560ae901bb4aa",
+      "docxHash": "9221d08d9e0bb5296e683fcdef36900520d8f2f826baa9127864428eeb6ffa2e"
+    },
+    {
+      "id": "epithalon-10mg",
+      "title": "EPITHALON 10mg",
+      "sourceName": "EPITHALON 10mg.docx",
+      "sourceHash": "524271876b9b3933fadd59ddd0eb61f060282d05ca3d02db69be2c53d75c49ca",
+      "suggestedProduct": 3,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/caafc4ce4cbf876349c9.png",
+          "width": 300,
+          "height": 606,
+          "alt": "EPITHALON 10mg original illustration",
+          "sourceHash": "caafc4ce4cbf876349c977d95ba5d82665a40637fb49810d81ee309ebc8d1ec9",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Epithalon is a longevity-focused peptide best known for its potential effects on healthy aging, cellular repair, sleep quality, and telomere support. It is often referred to as one of the most researched anti-aging peptides available. Think of it as a tool for supporting long-term healthspan, recovery, and optimal aging."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Epithalon is a synthetic version of Epithalamin, a peptide naturally produced by the pineal gland. Research suggests it may help activate telomerase, the enzyme responsible for maintaining telomeres, which protect DNA during cell division. It may also support melatonin production, circadian rhythm regulation, and overall cellular health."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Most people do not experience dramatic day-to-day effects from Epithalon. Instead, benefits tend to build gradually over time. Many users report improved sleep quality, more consistent energy levels, enhanced recovery, and an overall feeling of wellbeing after several weeks of use."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for individuals interested in longevity, healthy aging, sleep optimization, recovery, cellular health, and long-term wellness strategies."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with active cancer or serious medical conditions should consult their healthcare provider before use. Not intended as a replacement for healthy lifestyle habits."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Epithalon 10MG"
+        },
+        {
+          "type": "paragraph",
+          "text": "1ml (100units) of water into the vial."
+        },
+        {
+          "type": "paragraph",
+          "text": "0.5ml (50units) injection (5mg) 1x every DAY for 10x days"
+        },
+        {
+          "type": "paragraph",
+          "text": "This means you’ll use 1x vial every 2x days."
+        },
+        {
+          "type": "paragraph",
+          "text": "5x vials for 10x days treatment (50mg total in that period)"
+        },
+        {
+          "type": "paragraph",
+          "text": "So make up all 5x vials at once."
+        },
+        {
+          "type": "paragraph",
+          "text": "Repeat this is 6months time"
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks the highest quality Epithalon. Third-party tested. Comes with a full reconstitution guide and injection tutorial. We can walk you through your first injection if needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "paragraph",
+          "text": "Disclaimer & Usage Guidance: This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, lifestyle, sleep quality, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/epithalon-10mg.pdf",
+      "docx": "assets/protocols/documents/epithalon-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "d08c181078185b21feace51395b7481bfdc261ab515304c5046cde43f2a8d842",
+      "docxHash": "5b13002b8c433eb895ae2ca8b95e8dcfc9c05d74710ef6d315ba610e40199ea3"
+    },
+    {
+      "id": "kisspeptin-10mg",
+      "title": "KISSPEPTIN-10mg",
+      "sourceName": "KISSPEPTIN-10mg.docx",
+      "sourceHash": "da8ed618f40ab641074874b7afc80f592b3b41ed2ca0fa6adb74d6df301ebca1",
+      "suggestedProduct": null,
+      "product": null,
+      "batch": "All batches",
+      "revision": 0,
+      "status": "draft",
+      "note": "",
+      "issues": [
+        "No exact Kisspeptin 10 mg product exists in the current catalogue."
+      ],
+      "reviewed": false,
+      "blocks": [
+        {
+          "type": "image",
+          "src": "assets/protocols/media/1ec00a0d09a7a0610d3b.png",
+          "width": 330,
+          "height": 610,
+          "alt": "KISSPEPTIN-10mg original illustration",
+          "sourceHash": "1ec00a0d09a7a0610d3bd729842066a41db5c2c3cee679d2d08e6c3f73a652e8",
+          "imageRole": "photo"
+        },
+        {
+          "type": "heading",
+          "text": "WHAT IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Kisspeptin is a hormone-signaling peptide that plays a key role in regulating testosterone production, fertility, libido, reproductive health, and hormone balance. Unlike testosterone replacement therapy, Kisspeptin works upstream by stimulating your body's own natural hormone production. Think of it as a peptide that helps \"wake up\" your natural hormone signaling pathways."
+        },
+        {
+          "type": "heading",
+          "text": "HOW IT WORKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Kisspeptin stimulates the hypothalamus to release GnRH (Gonadotropin-Releasing Hormone), which signals the pituitary gland to produce LH and FSH. These hormones then stimulate the testes or ovaries to produce natural sex hormones. In men, this can support healthy testosterone production. In women, it plays an important role in reproductive hormone signaling."
+        },
+        {
+          "type": "heading",
+          "text": "HOW YOU'LL FEEL",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Many users report improvements in libido, mood, motivation, confidence, and overall wellbeing within the first few weeks. Men often notice improved morning erections, increased sexual desire, and improved energy. The effects are generally subtle and natural rather than dramatic or artificial."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Ideal for men seeking natural testosterone support, individuals looking to improve libido, those coming off hormone suppression, and people interested in optimizing reproductive hormone function."
+        },
+        {
+          "type": "heading",
+          "text": "WHO IT'S NOT FOR",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Not recommended for pregnant or nursing women. Individuals with hormone-sensitive cancers or serious endocrine disorders should consult their healthcare provider before use. Not intended to replace medically necessary hormone therapy."
+        },
+        {
+          "type": "heading",
+          "text": "DOSING PROTOCOL",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Add 2ml (200 units) bacteriostatic water to the vial"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units daily"
+        },
+        {
+          "type": "list",
+          "text": "Inject subcutaneously once daily"
+        },
+        {
+          "type": "list",
+          "text": "Best taken in the morning"
+        },
+        {
+          "type": "list",
+          "text": "Typical cycle length: 8-12 weeks"
+        },
+        {
+          "type": "paragraph",
+          "text": "Many users notice the best results when Kisspeptin is combined with proper sleep, resistance training, and adequate nutrition."
+        },
+        {
+          "type": "heading",
+          "text": "IMPORTANT",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Kisspeptin stimulates natural hormone production rather than replacing hormones"
+        },
+        {
+          "type": "list",
+          "text": "Results are generally gradual and natural"
+        },
+        {
+          "type": "list",
+          "text": "Bloodwork before and after a cycle is recommended"
+        },
+        {
+          "type": "list",
+          "text": "Lifestyle factors significantly influence results"
+        },
+        {
+          "type": "heading",
+          "text": "SIMPLE BREAKDOWN",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Daily Protocol"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every Morning"
+        },
+        {
+          "type": "list",
+          "text": "Draw 10 units"
+        },
+        {
+          "type": "list",
+          "text": "Inject subcutaneously"
+        },
+        {
+          "type": "list",
+          "text": "Continue daily"
+        },
+        {
+          "type": "heading",
+          "text": "COMMON SIDE EFFECTS",
+          "level": 1
+        },
+        {
+          "type": "list",
+          "text": "Mild headache"
+        },
+        {
+          "type": "list",
+          "text": "Temporary flushing"
+        },
+        {
+          "type": "list",
+          "text": "Increased libido"
+        },
+        {
+          "type": "list",
+          "text": "Mild injection site irritation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Most users tolerate Kisspeptin extremely well."
+        },
+        {
+          "type": "heading",
+          "text": "BEST STACKS",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "With CJC-1295 (No DAC)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Combines hormone optimization with recovery, growth hormone support, and body composition benefits."
+        },
+        {
+          "type": "paragraph",
+          "text": "With HCG"
+        },
+        {
+          "type": "paragraph",
+          "text": "Often used by men focused on fertility, testosterone production, and reproductive health."
+        },
+        {
+          "type": "paragraph",
+          "text": "With MOTS-C"
+        },
+        {
+          "type": "paragraph",
+          "text": "Supports metabolic health, energy production, recovery, and overall vitality."
+        },
+        {
+          "type": "heading",
+          "text": "WHAT TO EXPECT",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 1-2"
+        },
+        {
+          "type": "list",
+          "text": "Increased libido"
+        },
+        {
+          "type": "list",
+          "text": "Improved mood"
+        },
+        {
+          "type": "list",
+          "text": "Better motivation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 3-6"
+        },
+        {
+          "type": "list",
+          "text": "Enhanced energy"
+        },
+        {
+          "type": "list",
+          "text": "Improved sexual health"
+        },
+        {
+          "type": "list",
+          "text": "Greater sense of wellbeing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Week 6-12"
+        },
+        {
+          "type": "list",
+          "text": "Improved hormone optimization"
+        },
+        {
+          "type": "list",
+          "text": "Better recovery"
+        },
+        {
+          "type": "list",
+          "text": "Sustained improvements in libido and vitality"
+        },
+        {
+          "type": "heading",
+          "text": "Where to get it:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "DecodePeptides.com stocks the highest quality Kisspeptin. Third-party tested. Comes with a full reconstitution guide and injection tutorial. We can walk you through your first injection if needed."
+        },
+        {
+          "type": "paragraph",
+          "text": "WhatsApp: +43 681 81917872"
+        },
+        {
+          "type": "paragraph",
+          "text": "For research purposes only. Not for human consumption."
+        },
+        {
+          "type": "heading",
+          "text": "Disclaimer & Usage Guidance:",
+          "level": 1
+        },
+        {
+          "type": "paragraph",
+          "text": "This protocol is provided for educational and informational purposes only. All compounds referenced are intended for research and therapeutic exploration and are not presented as medical advice, diagnosis, or treatment. Dosing guidelines are illustrative and based on commonly reported practices. Individual requirements may vary significantly. All peptides are highly individualised. Factors such as age, metabolism, hormone status, lifestyle, nutrition, and overall wellbeing play a significant role in determining response, benefits, and outcomes. Any use of these compounds should be undertaken with appropriate medical oversight where applicable. The author assumes no responsibility or liability for any outcomes resulting from the use or misuse of the information provided."
+        }
+      ],
+      "pdf": "assets/protocols/documents/kisspeptin-10mg.pdf",
+      "docx": "assets/protocols/documents/kisspeptin-10mg.docx",
+      "updated": "12 Nov 2026",
+      "pdfHash": "394190031b423aadb334285a1f3d04e7f192180a2ad821cda3fa8c80cc1dedf1",
+      "docxHash": "cabf9623fb7480d9071583e6b3ae605705922d10f9bf3c4dc137c35c9bff70d1"
+    }
+  ]
+}
