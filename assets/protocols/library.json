@@ -191,8 +191,17 @@
       "pdf": "assets/protocols/documents/selank-semax.pdf",
       "docx": "assets/protocols/documents/selank-semax.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "1113c19537facc139032b6f29180a2e426c129645c0b185a6050ffd90cff66e8",
-      "docxHash": "0c3306c105eac868f4abeff4cbbeb569e228555793c96655249f88a0192b7e15"
+      "pdfHash": "ce3c5aea9c01135b4cf11ab5e446745b392d5d2a98bcd548016033f92b569bcb",
+      "docxHash": "399911f39899c81dd1064aef45e923f41d349467295764ea0eab9e94fe012e6b",
+      "templateVersion": "premium-light-v2",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/35d325f760e67c3d62cb.png",
+        "width": 450,
+        "height": 600,
+        "imageRole": "photo",
+        "alt": "Decorative protocol vial illustration"
+      }
     },
     {
       "id": "ss31",
@@ -276,8 +285,23 @@
       "pdf": "assets/protocols/documents/ss31.pdf",
       "docx": "assets/protocols/documents/ss31.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "330ef1aaaa0431ed0eeca2a5a13c60fb43b4c6060939414b89a393f82c948450",
-      "docxHash": "ac2a4b90d473ad796170ea5854fec8f7881247571d6a295a03170d7f8d2c3ff9"
+      "pdfHash": "57df50da81e3336ae0a20ac6144948cd6593a18d133e72a52818afe110386160",
+      "docxHash": "2fc4fe2434ddc89d228be83f97a633ad5eb4aedcd690858c38e1e1da89b81053",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/3e442d8909cb94a9ea94.jpg",
+        "width": 2560,
+        "height": 2560,
+        "imageRole": "photo",
+        "alt": "SS31 10mg product image from Decode Peptides",
+        "crop": [
+          0.3432,
+          0.1817,
+          0.6648,
+          0.8042999999999999
+        ]
+      },
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "pinealon-10mg",
@@ -327,8 +351,23 @@
       "pdf": "assets/protocols/documents/pinealon-10mg.pdf",
       "docx": "assets/protocols/documents/pinealon-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "c67c4cfe6a027595525d40703b9a47dff17020252f5b79457b74863bb44146bc",
-      "docxHash": "85a75ee44ec6dbaef3bd9b7497a342c64ed4db3993fafa87e409e69c25add71a"
+      "pdfHash": "8888a0f4155747dc684fc84b3070f21c0527c6239a8d4684eb09b31a316f94bd",
+      "docxHash": "7a622a4c707adf317fc85db3f91deee63ee4f5f0a489f83b630582dcb3cff7d1",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/870100358aaa2f214602.jpg",
+        "width": 2560,
+        "height": 2560,
+        "imageRole": "photo",
+        "alt": "Pinealon 10mg product image from Decode Peptides",
+        "crop": [
+          0.3432,
+          0.1817,
+          0.6648,
+          0.8042999999999999
+        ]
+      },
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "bloodwork-recommendations",
@@ -458,8 +497,17 @@
       "pdf": "assets/protocols/documents/bloodwork-recommendations.pdf",
       "docx": "assets/protocols/documents/bloodwork-recommendations.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "79551eb0fa55cc8b4f3bb9e62facaba8aa55b2f012e1dbf41a238882b3d5a948",
-      "docxHash": "a4a10a217f6cd580f94145ca4339ef68592e57ccbe4b2111188e1cd669a8bc1c"
+      "pdfHash": "9a4b9690162aa922d3daf7251e07528850f9a2c796fb8c9a235597f8246bef07",
+      "docxHash": "de66ef1bf0fb0e6f22d5472d1799a6e311af6476e4bc27bc5dc71033b59806ed",
+      "templateVersion": "premium-light-v2",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/35d325f760e67c3d62cb.png",
+        "width": 450,
+        "height": 600,
+        "imageRole": "photo",
+        "alt": "Decorative protocol vial illustration"
+      }
     },
     {
       "id": "mt-2-melanotan-ii",
@@ -484,7 +532,13 @@
           "height": 634,
           "alt": "MT-2 (Melanotan II) original illustration",
           "sourceHash": "519946c3d5d70576f00d631aee118b60b5360e381db13d335ac50a7866dfe486",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0.014599999999999995,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -631,8 +685,9 @@
       "pdf": "assets/protocols/documents/mt-2-melanotan-ii.pdf",
       "docx": "assets/protocols/documents/mt-2-melanotan-ii.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "6e8c5a1e1d201e0ab591b73891d8b8b363da6deee6ac156717d3597e94909450",
-      "docxHash": "5567ba7ae0b93f6270b7324c715e71130970ca993f7b2352d98b44f6a0b66ffe"
+      "pdfHash": "4b7d3d9a83f793baf09521ae0c5d44c7925e9f17151dc686fcde46aafadc086c",
+      "docxHash": "15f994bb474cbb40a94203d50920f2c639c89c6615e26a444075daccd1e84f1e",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "ahkcu-hair-growth",
@@ -858,8 +913,23 @@
       "pdf": "assets/protocols/documents/ahkcu-hair-growth.pdf",
       "docx": "assets/protocols/documents/ahkcu-hair-growth.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "eb5d339fcfc150e28c73bfa1a25c2aa673be744fc404ec3a79a2d77197c04cd0",
-      "docxHash": "234805062ca527cb16eb4d21437f02bce4feec3f7fcae7cf1773e9f79bcb3cf1"
+      "pdfHash": "8d7a8de49ca0d9251a9463bf1ed52b8b505f245e4376b1fa4ec93a38543eea84",
+      "docxHash": "922526cd21645538008858b64bd9bc4fa3838bd6ac4092ee8b9e578ec79a7fd0",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/4cf885dff2c85db71a3f.jpg",
+        "width": 2560,
+        "height": 2560,
+        "imageRole": "photo",
+        "alt": "AHK-Cu Hair Growth Protocol product image from Decode Peptides",
+        "crop": [
+          0.3432,
+          0.1817,
+          0.6648,
+          0.8042999999999999
+        ]
+      },
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "lyme-protocol",
@@ -935,8 +1005,17 @@
       "pdf": "assets/protocols/documents/lyme-protocol.pdf",
       "docx": "assets/protocols/documents/lyme-protocol.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "2e6cddf2038dff2fd416cae75f2ebb97c893b79324fc0216a44ebd97ec24e6d0",
-      "docxHash": "0b7e9d89696c0956b52f6467f3e1447afa2c00db68998e835bdbb1b92f13114a"
+      "pdfHash": "b927ca0785842d5fe8da84f9fe16ebe734b4c59fb7684367c19bda16baa587f1",
+      "docxHash": "bc586cca0e669aa3ee799d9df1ddd13f1ffb092bb3a4bfb36d744a928b6c84ee",
+      "templateVersion": "premium-light-v2",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/35d325f760e67c3d62cb.png",
+        "width": 450,
+        "height": 600,
+        "imageRole": "photo",
+        "alt": "Decorative protocol vial illustration"
+      }
     },
     {
       "id": "nad-500mg",
@@ -1232,8 +1311,23 @@
       "pdf": "assets/protocols/documents/nad-500mg.pdf",
       "docx": "assets/protocols/documents/nad-500mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "e6c300a3900a90d81ffc752740113e9bcd53626344b16e1756c379ce7ebbf4d3",
-      "docxHash": "8c2bd672e5e64b264b902916c3b4fb42402ad03df145903590c825ece5dce66b"
+      "pdfHash": "01ebd9494d6c962d7567957eb5e7db9b7a812e6f124a00b976fadccebb322309",
+      "docxHash": "3f0426d16763bc069f699319a99f622cb03bcd5c1bcce200f6c2717058baf7c7",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/6f57c7f3ca67ec41843d.png",
+        "width": 1024,
+        "height": 1024,
+        "imageRole": "photo",
+        "alt": "NAD+ 500mg Protocol product image from Decode Peptides",
+        "crop": [
+          0.3236,
+          0.07219999999999999,
+          0.6884,
+          0.8598
+        ]
+      },
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "bpc157-tb500-10-10mg",
@@ -1258,7 +1352,13 @@
           "height": 638,
           "alt": "BPC157_TB500 10_10mg original illustration",
           "sourceHash": "b23159b24d323cdec2ea1cab7a02d1737e33b586ee56154e9ee74af8b8ba5e5e",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0.003,
+            0.9776470588235294,
+            0.993
+          ]
         },
         {
           "type": "heading",
@@ -1417,8 +1517,9 @@
       "pdf": "assets/protocols/documents/bpc157-tb500-10-10mg.pdf",
       "docx": "assets/protocols/documents/bpc157-tb500-10-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "32621014624d67a8cdc5651a1616d136f109508c05ac4c5e2b840b5c61635e0e",
-      "docxHash": "c3beb3b90fa6525d94bdbc4abf731ce0d51d6ca330923e31ea6e2d0c44658cac"
+      "pdfHash": "fe4aeb70590c55e00fa7556a26e3878fd0431ce8722d92e9077e60c6eaa7301c",
+      "docxHash": "00904e71d7328b2174556c0bbe32802d2433c529a7b81cc23399875b550818b9",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "glow-bpc-157-tb-500-ghk-cu",
@@ -1443,7 +1544,13 @@
           "height": 646,
           "alt": "GLOW (BPC-157 + TB-500 + GHK-Cu) original illustration",
           "sourceHash": "0c8e26f668e5eace4e4093a03ba411374db05134cc5144f76266d93826569577",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0.0254,
+            0.9664122137404579,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -1587,8 +1694,9 @@
       "pdf": "assets/protocols/documents/glow-bpc-157-tb-500-ghk-cu.pdf",
       "docx": "assets/protocols/documents/glow-bpc-157-tb-500-ghk-cu.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "1fe9bd1d7dcc6a25f65a8f9764ac560f79e2095962981f70dd636f026f44f14a",
-      "docxHash": "22fe9d9ef5b7f3a40081d55f9e05b0ebd035acb42e1203d0820a7ab3428f1742"
+      "pdfHash": "fc48c8d7aededf5764ce5165dfee5db2ef40b85f9c7e4f4c92e6c9ca50522921",
+      "docxHash": "fd27e4011028ea384a7804220fa923e5fad7b5c4522283c5c60a4947ea8d1d89",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "retatrutide-20mg",
@@ -1613,7 +1721,13 @@
           "height": 1254,
           "alt": "Retatrutide 20mg original illustration",
           "sourceHash": "59a72753dd9ae94575963195af344ccb0682a1cd8f367258e9d2f9da14ae81c4",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0.2892,
+            0.0611,
+            0.7068,
+            0.8729
+          ]
         },
         {
           "type": "heading",
@@ -1852,8 +1966,9 @@
       "pdf": "assets/protocols/documents/retatrutide-20mg.pdf",
       "docx": "assets/protocols/documents/retatrutide-20mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "65fa227370c72d21148a43394e1f6199ced90e96f50ebc42cf31e67821e58326",
-      "docxHash": "224564711383263adbe6435aea2606f622a59e12d588016434dde1ca9f5f9088"
+      "pdfHash": "9c71a2c8793d1d5ba610df0ef72610fcde383ed491caecc2d62d3ccf5c49e16a",
+      "docxHash": "646513b4fbf663819fec711f4827ef58dccaa3765b61a25610a2405bf801c27a",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "dsip-delta-sleep-inducing-peptide",
@@ -1879,7 +1994,13 @@
           "height": 620,
           "alt": "DSIP (Delta Sleep-Inducing Peptide) original illustration",
           "sourceHash": "acfaa30c7a5127fd615415d3b98a59b7c4deb018271542954c6a0e9ca93f0827",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -2291,8 +2412,9 @@
       "pdf": "assets/protocols/documents/dsip-delta-sleep-inducing-peptide.pdf",
       "docx": "assets/protocols/documents/dsip-delta-sleep-inducing-peptide.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "8e2fac585dda0983d927ef103cdb934827b9a9b59f0b9e28d4f43ca072348f89",
-      "docxHash": "710898ed067d6ca05ed06702b59bc5f72f8e7945d25d948252115e15d9ae8a43"
+      "pdfHash": "853d6496e7adad25816dcadccd6aa369308a0c875879b8c3693a158d14cc0d1c",
+      "docxHash": "d5e31b92c6be2c688e4c2b22c7b6ba4ce012efa83616cc0207cf3cbc46008d04",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "cjc-1295-no-dac",
@@ -2317,7 +2439,13 @@
           "height": 630,
           "alt": "CJC-1295 (NO DAC) original illustration",
           "sourceHash": "33653e8ae03c4f4d9aacb2fa4c883f9e3c896a5cdce7e95fd7ca347516f47f69",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0.014299999999999997,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -2558,8 +2686,9 @@
       "pdf": "assets/protocols/documents/cjc-1295-no-dac.pdf",
       "docx": "assets/protocols/documents/cjc-1295-no-dac.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "1192df8522d26644b65bb1a0b9fa18bf3a52b7eea7353cc57aabe603ffaf2d7c",
-      "docxHash": "47a7e62c00d56656ec0d9bafc01564dedbcaa1cd93b6fdb15f44e99c0964fe91"
+      "pdfHash": "34d2256e723a619d3fd28475539c915a5d23100e84b7419f9231e64600453def",
+      "docxHash": "b603f61935b6d6be2011edf54d8a3c379425a0a03ede408fa834920b6dc6714d",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "glutathione-1500mg",
@@ -2608,8 +2737,17 @@
       "pdf": "assets/protocols/documents/glutathione-1500mg.pdf",
       "docx": "assets/protocols/documents/glutathione-1500mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "fcc206816a2ac299ea72e2b05e1903dba252d125ccbb2c5f4a786be76bc6a3fe",
-      "docxHash": "d33ae55864095d5f8f5d807d488ce22c1588718df131570d91e8762979c8fdfd"
+      "pdfHash": "ca659cc2906a222d704381502049d91bb9373137122fb36b941c55e3e9e45686",
+      "docxHash": "62a5fbaf96f851fd34386848a91ac35f91e964766bda6bebfdb5b82e0aebf262",
+      "templateVersion": "premium-light-v2",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/35d325f760e67c3d62cb.png",
+        "width": 450,
+        "height": 600,
+        "imageRole": "photo",
+        "alt": "Decorative protocol vial illustration"
+      }
     },
     {
       "id": "cjc-ipa-5-5mg",
@@ -2634,7 +2772,13 @@
           "height": 626,
           "alt": "CJC_ IPA 5_5mg original illustration",
           "sourceHash": "372af199246d8b87b6d5527dde9e69e1e103d45e944403546eb6430fd71b2051",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0.0833910034602076,
+            0.0259,
+            0.9512110726643598,
+            0.9961
+          ]
         },
         {
           "type": "paragraph",
@@ -2788,8 +2932,9 @@
       "pdf": "assets/protocols/documents/cjc-ipa-5-5mg.pdf",
       "docx": "assets/protocols/documents/cjc-ipa-5-5mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "df37bd00ed766facaa5707c77c2cf4176165f440bfe3fa028a3bf17a3a5d2615",
-      "docxHash": "cd6995ef1aac72bb1482b73ea880fe5d48e404c7c88eadd7e5153def72f5e10a"
+      "pdfHash": "c031f728a1ac24d9765a758cc4b231f756acd80714e3c47bb302cae62f4f7aa7",
+      "docxHash": "3a57565ec49c00eef7887aeef622e5b5fd8bc7625c2697b1fe2ffd7abe8618e2",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "ghk-cu-50mg",
@@ -2812,7 +2957,13 @@
           "height": 616,
           "alt": "GHK-Cu 50mg original illustration",
           "sourceHash": "5ee1e629d609a02b397d821411e2a44bcbaa5371641b951cf6e733ba42089616",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -2897,8 +3048,9 @@
       "pdf": "assets/protocols/documents/ghk-cu-50mg.pdf",
       "docx": "assets/protocols/documents/ghk-cu-50mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "df00e3ae818ca8948b83b824c35fbf303357de9a5129c91ee589f09bcd6bc145",
-      "docxHash": "69021675b554d6158ae37a41fa4de676ac7120450fc2b6d9d9baba3e1fdf12aa"
+      "pdfHash": "bc6d3a35040411c4264d6f79d2a52ac55a7b335a2c488f9a60845dd4475a51f5",
+      "docxHash": "2a5759bca0934aa9f68c4dd6d8e88872b69cd914aefe2dd069699de11fd46c2d",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "mots-c",
@@ -2921,7 +3073,13 @@
           "height": 612,
           "alt": "MOTS-C original illustration",
           "sourceHash": "eae025a1314fefbe230670be0032587fda607039ff0d4fc493714bc7d118efd4",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -3132,8 +3290,9 @@
       "pdf": "assets/protocols/documents/mots-c.pdf",
       "docx": "assets/protocols/documents/mots-c.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "9f24925a8c4208a48adab701bf45712ce6bed2f10c236377769a9c212fd26aae",
-      "docxHash": "23ae619acf04ecfe8533879d5de88f804afc92ed32bf5c82e7baea5f03fefe31"
+      "pdfHash": "0ee1a5fb28db1367920be1fd8d1e670cbc376f46fda22fa4fb57744e0eca47a0",
+      "docxHash": "b34f0d9a4e80c891584325d69d5983ca8bf69fea0d8d3d4da5e3d4113d464059",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "kpv-10mg",
@@ -3158,7 +3317,13 @@
           "height": 648,
           "alt": "KPV 10mg original illustration",
           "sourceHash": "30e75093af00b911db2ed30b948ae318f582b004353d4273a2ffc0ae651d0b9c",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0.05755395683453238,
+            0.009699999999999995,
+            0.9640287769784173,
+            0.9843
+          ]
         },
         {
           "type": "heading",
@@ -3354,8 +3519,9 @@
       "pdf": "assets/protocols/documents/kpv-10mg.pdf",
       "docx": "assets/protocols/documents/kpv-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "e356c0a1a186ca3d6ed5082f3257a75a5fd02a92d7e9b1dbaa6bea6a66b55593",
-      "docxHash": "3ec9955e60ab89688bd1f78ba8dd0d1f981a9c4f8b6f271ce8e1f22b13872b0c"
+      "pdfHash": "63beccd7c8d2c6db43f885f361f63f9712ec7acd219af3a3da19dfbbb8f2abab",
+      "docxHash": "620f12caa6b2b410957077947ace8ab39fbbd336b4b93e90b7f6df66ce99bd17",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "nad-200mg",
@@ -3702,8 +3868,17 @@
       "pdf": "assets/protocols/documents/nad-200mg.pdf",
       "docx": "assets/protocols/documents/nad-200mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "21ca36f178771a0c9eae46171b6633b0960fd769b0fb7abc7c08bfbb5ef0fd32",
-      "docxHash": "3844e8d2f4bf23792301449bc7ca690a7d8931e84d1a8513a7d0c10e04d3619a"
+      "pdfHash": "483fd6b93e3abe46766b997877357e2922c0e428d2d5af5bb060678ce37afd8a",
+      "docxHash": "c81586c990ebbb7f8b34229fe11133c4a2d262df2bd9b346215aa2e5fabe1866",
+      "templateVersion": "premium-light-v2",
+      "coverImage": {
+        "type": "image",
+        "src": "assets/protocols/media/35d325f760e67c3d62cb.png",
+        "width": 450,
+        "height": 600,
+        "imageRole": "photo",
+        "alt": "Decorative protocol vial illustration"
+      }
     },
     {
       "id": "retatrutide-10mg",
@@ -3726,7 +3901,13 @@
           "height": 1254,
           "alt": "Retatrutide 10mg_ original illustration",
           "sourceHash": "59a72753dd9ae94575963195af344ccb0682a1cd8f367258e9d2f9da14ae81c4",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0.2892,
+            0.0611,
+            0.7068,
+            0.8729
+          ]
         },
         {
           "type": "heading",
@@ -3965,8 +4146,9 @@
       "pdf": "assets/protocols/documents/retatrutide-10mg.pdf",
       "docx": "assets/protocols/documents/retatrutide-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "f50d2fdb8eeb1321c4800afba00f12b20a4a9b4c3fa4a42220e560ae901bb4aa",
-      "docxHash": "9221d08d9e0bb5296e683fcdef36900520d8f2f826baa9127864428eeb6ffa2e"
+      "pdfHash": "c4b80ae2214024abe8e399465e0a55b038494932511b586f80a1b3456a1a3267",
+      "docxHash": "ecf82ecab7a7c79d02835720e2f9dbe1481f369869e28a3a30146fdf7643726f",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "epithalon-10mg",
@@ -3989,7 +4171,13 @@
           "height": 606,
           "alt": "EPITHALON 10mg original illustration",
           "sourceHash": "caafc4ce4cbf876349c977d95ba5d82665a40637fb49810d81ee309ebc8d1ec9",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0,
+            1,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -4094,8 +4282,9 @@
       "pdf": "assets/protocols/documents/epithalon-10mg.pdf",
       "docx": "assets/protocols/documents/epithalon-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "d08c181078185b21feace51395b7481bfdc261ab515304c5046cde43f2a8d842",
-      "docxHash": "5b13002b8c433eb895ae2ca8b95e8dcfc9c05d74710ef6d315ba610e40199ea3"
+      "pdfHash": "a5a27e28f634db2544dabc4e1643325a6d821ecc7f3f5680399e3ca0c2b43f03",
+      "docxHash": "7de23c43b3d6d3fd4ea549cfa5c986b71c99f8a37aea578f46f31e5ee6ffa3c1",
+      "templateVersion": "premium-light-v2"
     },
     {
       "id": "kisspeptin-10mg",
@@ -4120,7 +4309,13 @@
           "height": 610,
           "alt": "KISSPEPTIN-10mg original illustration",
           "sourceHash": "1ec00a0d09a7a0610d3bd729842066a41db5c2c3cee679d2d08e6c3f73a652e8",
-          "imageRole": "photo"
+          "imageRole": "photo",
+          "crop": [
+            0,
+            0,
+            0.9903703703703702,
+            1
+          ]
         },
         {
           "type": "heading",
@@ -4379,8 +4574,9 @@
       "pdf": "assets/protocols/documents/kisspeptin-10mg.pdf",
       "docx": "assets/protocols/documents/kisspeptin-10mg.docx",
       "updated": "12 Nov 2026",
-      "pdfHash": "394190031b423aadb334285a1f3d04e7f192180a2ad821cda3fa8c80cc1dedf1",
-      "docxHash": "cabf9623fb7480d9071583e6b3ae605705922d10f9bf3c4dc137c35c9bff70d1"
+      "pdfHash": "4c833fbbc4b33b57080305525c1aecc59f35148c2b33047f6aec3d58812a4f1e",
+      "docxHash": "6b7785ab88514f857e2f1c3f2046f0b12c5a775d07b206961cf7dcb08b6dd113",
+      "templateVersion": "premium-light-v2"
     }
   ]
 }
