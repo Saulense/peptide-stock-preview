@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-11-12T04:45:40.124519+00:00",
+  "builtAt": "2026-11-12T06:26:31.411125+00:00",
   "files": {
     "agent-inbox-ui.js": "fa14d9b01b79f8ca4f88920a96ad22351bd1f0af31e2defa115bd568b3d4e3c2",
     "chat-history-ui.js": "90905aeeccf41624bb9108a18d40c4fd4943db77b6408e9176d82f58567429b8",
@@ -8,7 +8,7 @@
     "assets/peptistock-icon.svg": "08e09f3c3a8a47981288d2527c156e097d131fe835a2be517cd777d166428d30",
     "assets/peptistock-icon-32.png": "c9d276e13eca26b59acd9b948bca312999625b37f10e5eb4ef50c4f8a6c5cca9",
     "assets/peptistock-apple-touch-icon.png": "72c8eacb3ba4b1e710cd05fcdaa7712bbd15a1ac8e47f6ea07c6066972808656",
-    "index.html": "11240667750a7aa0510d1965c72666f16792e501108f8bed7b9e7643beb39ffc",
+    "index.html": "925f85ea04e861274fa2b875db17a3331cc4d48bde6e3e842e30bafcfe65f169",
     "styles.css": "eea333bd9b02c8fddb5f399337a9227da480af9ca27652abbb8a54f2be0c7a77",
     "app.js": "f94b06aceb7e15faa7423b4bfcbf4a62257fc967293f314e04fc090877f2d93f",
     "orders.js": "3a7a41601576bb25b59039d8c63fa2240f8bd3221bfe5d5d9ec83febe6d0ca23",
@@ -28,8 +28,8 @@
     "assets/PDFJS-LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
     "assets/lucide.min.js": "3411692820cb8d47543f69496aa25fd603a358f4498046f41c508a5a3342210e",
     "assets/LUCIDE-LICENSE.txt": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
-    "protocol-studio.js": "2df0882ba11c189a65f40a20968c76a441626201868556ed22b97c0c2f4ee44e",
-    "protocol-studio.css": "372d5caf199a47b82ebb9d1f674318a13df9a6d9b55946dfc502aa3888a2830f",
+    "protocol-studio.js": "c62efb5109303bc919f6a5d40737ab31a6bbca2f1f1b538c045e2862bd6fa93b",
+    "protocol-studio.css": "9f8303b681cdee2c85e2eca404402bca1e865aa9075316c893a982b7a1f1ced9",
     "protocol-export.js": "451af10ed1883d6e26f51e7d5f5f4b8ba5e9c2ac0a526343b1e891f7781c390c",
     "assets/protocols/publish-files.json": "5258bb84b972a1a27bc8545b7af0714ef1d157c954b8a5b212466d0436967e14",
     "assets/protocols/documents/ahkcu-hair-growth.docx": "922526cd21645538008858b64bd9bc4fa3838bd6ac4092ee8b9e578ec79a7fd0",
