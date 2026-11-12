@@ -194,3 +194,6 @@ body.su-public{padding-top:0}.su-page .su-settings-grid .key-row{gap:12px}.su-pa
 /* A single compact instruction above the customer product search. */
 .su-store-title{font-size:22px;line-height:1.35;font-weight:650;letter-spacing:-.4px;margin:0 0 18px;color:var(--text)}
 @media(max-width:700px){.su-store-title{font-size:19px;margin-bottom:16px;letter-spacing:-.25px}}
+
+/* Current-agent stock corrections stay visible and require customer review. */
+.su-stock-warning{padding:13px 14px;margin:0 0 14px;border:1px solid color-mix(in srgb,var(--orange,#df9c36) 60%,var(--line));background:color-mix(in srgb,var(--orange,#df9c36) 9%,var(--panel));border-radius:11px;font-size:12px;line-height:1.6;overflow-wrap:anywhere}.su-stock-warning strong{color:var(--text)}.su-stock-warning p{margin:5px 0 10px;color:var(--muted)}.su-checkout-unavailable{max-width:560px;padding:24px;margin:20px auto}.su-checkout-unavailable h1{font-size:21px;margin-bottom:10px}.su-checkout-unavailable p{color:var(--muted);line-height:1.6;margin-bottom:18px}.su-checkout-unavailable .btn{margin:0 8px 8px 0}
