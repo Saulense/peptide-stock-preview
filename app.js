@@ -71,7 +71,7 @@ function motionDismiss(el) {
  el.inert=true;el.setAttribute('aria-hidden','true');el.classList.add('motion-exit');
  document.body.append(el);uiMotion.exits.add(el);
  const animation=el.animate([{opacity:1},{opacity:0}],{duration:190,easing:'ease-out'});
- if(dialog)dialog.animate([{transform:'translateY(0)'},{transform:'translateY(6px)'}],{duration:190,easing:'ease-out'});
+ if(dialog)dialog.animate(dialog.classList.contains('su-basket-drawer')?[{transform:'translateX(0)'},{transform:'translateX(100%)'}]:[{transform:'translateY(0)'},{transform:'translateY(6px)'}],{duration:190,easing:'ease-out'});
  const remove=()=>{el.remove();uiMotion.exits.delete(el)};
  animation.finished.then(remove,remove);
 }
