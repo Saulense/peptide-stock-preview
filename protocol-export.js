@@ -30,7 +30,7 @@ window.ProtocolExport=(()=>{
         if(y+headH+Math.max(48,Math.min(atoms[pos].height,520))+(repeated?.height||0)+18>B){page();}
         let used=0,end=pos,extra=repeated?.height||0,limit=B-y-headH-18-extra;
         while(end<atoms.length&&used+atoms[end].height<=limit){used+=atoms[end].height;end++;}
-        if(end===pos){page();continue;}
+        if(end===pos&&repeated){repeated=null;extra=0;limit=B-y-headH-18;while(end<atoms.length&&used+atoms[end].height<=limit){used+=atoms[end].height;end++;}}if(end===pos){throw Error('This section cannot fit on a page. Split the table cell or section into smaller parts.');}
         // Avoid leaving one paragraph line alone at the bottom of a card.
         if(end<atoms.length&&end>pos+1&&atoms[end-1].kind==='text'&&!atoms[end-1].last&&atoms[end-2].kind!=='text'){used-=atoms[end-1].height;end--;}
         const height=headH+used+extra+18;p.setDrawColor(...C.line);p.setFillColor(255);p.roundedRect(L,y,W,height,10,10,'FD');p.setFillColor(...C.pale);p.roundedRect(L+.5,y+.5,W-1,headH,9,9,'F');p.rect(L+.5,y+headH-8,W-1,8,'F');p.setFillColor(...C.purple);p.roundedRect(L+14,y+12,25,20,5,5,'F');font(8,true,[255,255,255]);p.text(String(gi+1).padStart(2,'0'),L+26.5,y+25,{align:'center'});font(12,true);p.text(heading,L+49,y+25,{lineHeightFactor:1.3});let ay=y+headH+8;
