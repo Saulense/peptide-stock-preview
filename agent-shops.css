@@ -190,3 +190,7 @@ body.su-public{padding-top:0}.su-page .su-settings-grid .key-row{gap:12px}.su-pa
 #su-shop-name-field[hidden]{display:none!important}
 #su-unlock button:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:700px){.su-store-brand{font-size:18px}.su-age-confirm{font-size:12px;padding:12px;gap:10px}.su-name-choice{font-size:12px}.su-name-preview{padding:12px}}
+
+/* A single compact instruction above the customer product search. */
+.su-store-title{font-size:22px;line-height:1.35;font-weight:650;letter-spacing:-.4px;margin:0 0 18px;color:var(--text)}
+@media(max-width:700px){.su-store-title{font-size:19px;margin-bottom:16px;letter-spacing:-.25px}}
