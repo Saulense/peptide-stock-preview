@@ -175,3 +175,18 @@ body.su-public{padding-top:0}.su-page .su-settings-grid .key-row{gap:12px}.su-pa
  .su-basket-summary .su-total strong{font-size:23px}
 }
 @media(prefers-reduced-motion:reduce){#modal-root .modal.su-basket-drawer,.su-basket-drawer{animation:none}}
+
+/* Optional public shop identity and explicit adult self-confirmation at access. */
+.su-store-brand{min-width:0;max-width:calc(100% - 60px);line-height:1.35;overflow-wrap:anywhere;letter-spacing:-.2px}
+.su-name-choice{padding:12px;border:1px solid color-mix(in srgb,var(--purple) 28%,var(--line));border-radius:10px;background:color-mix(in srgb,var(--purple) 5%,var(--panel));margin:0 0 18px;font-size:13px;line-height:1.6;align-items:flex-start}
+.su-name-preview{padding:12px 14px;margin:4px 0 18px;border:1px solid var(--line);border-radius:10px;background:var(--bg);min-width:0}
+.su-name-preview>span{display:block;color:var(--muted);font-size:10px;margin-bottom:6px}
+.su-name-preview>strong{display:block;font-size:14px;overflow-wrap:anywhere;line-height:1.5}
+.su-age-confirm{display:flex;align-items:flex-start;text-align:left;gap:10px;margin:18px 0 12px;padding:13px;border:1px solid color-mix(in srgb,var(--purple) 32%,var(--line));border-radius:10px;background:color-mix(in srgb,var(--purple) 6%,var(--panel));color:var(--text);font-size:12px;line-height:1.7;cursor:pointer}
+.su-age-confirm input,.su-name-choice input{flex:none;accent-color:var(--purple);width:18px;height:18px;min-height:18px;margin:2px 0 0}
+.su-age-confirm strong{font-weight:600}
+.su-age-confirm:has(input:checked){border-color:var(--purple);background:color-mix(in srgb,var(--purple) 10%,var(--panel))}
+.su-age-confirm:has(input:focus-visible){outline:2px solid var(--purple);outline-offset:2px}
+#su-shop-name-field[hidden]{display:none!important}
+#su-unlock button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:700px){.su-store-brand{font-size:18px}.su-age-confirm{font-size:12px;padding:12px;gap:10px}.su-name-choice{font-size:12px}.su-name-preview{padding:12px}}

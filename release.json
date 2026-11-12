@@ -1,14 +1,14 @@
 {
-  "builtAt": "2026-11-12T00:30:10.424224+00:00",
+  "builtAt": "2026-11-12T00:38:42.028675+00:00",
   "files": {
     "agent-inbox-ui.js": "fa14d9b01b79f8ca4f88920a96ad22351bd1f0af31e2defa115bd568b3d4e3c2",
     "chat-history-ui.js": "90905aeeccf41624bb9108a18d40c4fd4943db77b6408e9176d82f58567429b8",
-    "agent-shops.js": "a65bb3b835944d5a33dfeaa18716f8fad96d8b545a4e2bd194b128b3f650bc81",
-    "agent-shops.css": "3e8027fd61bb56c34661fde6f09db6ac402b4893df4531e1b140422c39b8f5ef",
+    "agent-shops.js": "1f9784cd98b7c81f0024738ecd7a6b3707197917e70bc07771a8f4ca85238b71",
+    "agent-shops.css": "25412a5c2ec208edcbdaad3ae38b7b4ecc767514d45bdbf56b5e47c600d0450e",
     "assets/peptistock-icon.svg": "08e09f3c3a8a47981288d2527c156e097d131fe835a2be517cd777d166428d30",
     "assets/peptistock-icon-32.png": "c9d276e13eca26b59acd9b948bca312999625b37f10e5eb4ef50c4f8a6c5cca9",
     "assets/peptistock-apple-touch-icon.png": "72c8eacb3ba4b1e710cd05fcdaa7712bbd15a1ac8e47f6ea07c6066972808656",
-    "index.html": "fe9208b3a17162cee7a8167a9fb0c5775fe4f5018ebe7ee92c11aed1474d58a1",
+    "index.html": "108cb647e3ede13d44286ec3bf46fa6eaecbf8abf5ca6f9b20ed0a8e39ba3114",
     "styles.css": "eea333bd9b02c8fddb5f399337a9227da480af9ca27652abbb8a54f2be0c7a77",
     "app.js": "2866ed1c9e51e2fb350fc6ac81e25ef6359a060df832719b1561713bac32ba77",
     "orders.js": "3a7a41601576bb25b59039d8c63fa2240f8bd3221bfe5d5d9ec83febe6d0ca23",
