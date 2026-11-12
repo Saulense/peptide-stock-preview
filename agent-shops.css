@@ -69,3 +69,60 @@ body.su-public{padding-top:0}.su-page .su-settings-grid .key-row{gap:12px}.su-pa
  .su-product-detail .su-buy-quantity{width:auto}.su-catalogue-copy input,.su-catalogue-copy textarea{font-size:16px}
 }
 @media(max-width:379px){.su-store-grid{grid-template-columns:1fr}.su-product-title{font-size:17px}.su-product-buy-row{flex-wrap:nowrap}.su-buy-quantity{width:auto}.su-add-to-cart.btn{font-size:13px}.su-product-open{padding:20px}.su-product-purchase{padding:16px 20px 10px}}
+
+/* Shop support stays in a dedicated corner dock, clear of product and checkout controls. */
+.su-public .su-store{height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.su-public .su-preview-bar,.su-public .su-store-header{flex-shrink:0}
+.su-public .su-store-header{position:relative;top:auto}
+.su-public .su-store>main{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch;padding-bottom:24px;scroll-padding-bottom:24px}
+.su-public .su-store footer{padding:30px 12px 12px;line-height:1.6}
+.su-shop-dock{display:flex;flex-shrink:0;align-items:center;gap:16px;padding:12px max(20px,env(safe-area-inset-right)) calc(14px + env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background:var(--bg);box-shadow:0 -10px 24px color-mix(in srgb,var(--bg) 85%,transparent);position:relative;z-index:15;min-width:0}
+.su-support-dock-space{flex:1}
+.su-support-launcher{appearance:none;flex:none;display:grid;place-items:center;width:60px;height:60px;min-width:60px;padding:0;border:1px solid #bba3ff70;border-radius:50%;color:#fff;background:linear-gradient(145deg,#966eff,#6539d6);box-shadow:0 6px 22px #7449e840;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.su-support-launcher .icon{width:27px;height:27px;stroke-width:1.7}
+.su-support-launcher:hover{transform:translateY(-2px);box-shadow:0 8px 26px #7449e860}
+.su-support-launcher:active{transform:scale(.96)}
+.su-support-launcher:focus-visible{outline:2px solid var(--purple);outline-offset:4px}
+.su-shop-dock .su-store-basket{position:static;flex:1;min-width:0;max-width:none;box-shadow:none;margin:0;align-items:center;border:1px solid color-mix(in srgb,var(--purple) 25%,var(--line));border-radius:12px;padding:12px 16px;background:color-mix(in srgb,var(--purple) 7%,var(--panel))}
+.su-shop-dock .su-store-basket strong{font-size:18px;overflow-wrap:anywhere}
+.su-shop-dock .su-store-basket .btn{white-space:nowrap;font-size:12px}
+#modal-root .su-support-overlay,.su-support-overlay{justify-content:flex-end;align-items:flex-end;padding:18px max(20px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:#060a1738;backdrop-filter:blur(2px)}
+#modal-root .modal.su-support-dialog,.su-support-dialog{width:min(420px,100%);height:min(620px,100%);max-height:100%;min-height:0;display:flex;flex-direction:column;border:1px solid color-mix(in srgb,var(--purple) 40%,var(--line));border-radius:18px;overflow:hidden;background:var(--panel);box-shadow:0 20px 70px #00000035;animation:su-support-open .25s cubic-bezier(.2,.75,.25,1) both;transform-origin:bottom right}
+#modal-root .su-support-dialog .modal-head{padding:16px 18px;flex-shrink:0;gap:12px;background:color-mix(in srgb,var(--purple) 8%,var(--panel))}
+#modal-root .su-support-dialog .modal-head h2{font-size:16px;line-height:1.5;min-width:0;overflow-wrap:anywhere}
+#modal-root .su-support-dialog .modal-head>.icon-btn{width:38px;height:38px;min-width:38px;display:grid;place-items:center;padding:0;flex:none}
+#modal-root .su-support-dialog .modal-body{padding:0;display:flex;flex-direction:column;min-height:0;overflow:hidden;scroll-padding-bottom:0}
+.su-support-dialog .su-contact{margin:0;max-width:none;width:100%;border:0;border-radius:0;overflow:auto;overscroll-behavior:contain;padding:0;flex:1;min-height:0}
+.su-support-dialog .su-contact>.panel-head{display:none}
+.su-support-dialog .su-contact form{padding:20px}
+.su-support-dialog .su-contact textarea{min-height:110px;max-height:180px;resize:vertical}
+.su-support-dialog .su-contact .field{margin-bottom:18px}
+.su-support-dialog .su-chat{height:100%;flex:1;min-height:0;width:100%;border:0;border-radius:0;overflow:hidden}
+.su-support-dialog .su-chat>header{display:none}
+.su-support-dialog #su-chat-log{padding:18px 14px!important;min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain;background:radial-gradient(ellipse at 15% 5%,color-mix(in srgb,var(--purple) 8%,transparent),transparent 70%),var(--bg)}
+.su-support-dialog .su-bubble{max-width:90%;font-size:13px;overflow-wrap:anywhere}
+.su-support-dialog .su-chat form{flex-shrink:0;padding:12px 12px 14px;border-top:1px solid color-mix(in srgb,var(--purple) 28%,var(--line));background:color-mix(in srgb,var(--purple) 8%,var(--panel))}
+.su-support-dialog .su-chat .su-design-note{display:none}
+.su-support-dialog .su-compose{min-width:0;gap:8px}
+.su-support-dialog .su-compose>.icon-btn{display:grid;place-items:center;flex:none;width:40px;height:40px;padding:0}
+.su-support-dialog .su-compose textarea{min-width:0;max-width:100%;font-size:16px;max-height:120px}
+.su-support-dialog .su-compose .icon{width:18px;height:18px}
+.su-keyboard-open .su-support-dialog .su-chat form{padding-bottom:8px}
+@keyframes su-support-open{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+@media(max-width:700px){
+ .su-public .su-store>main{padding:18px 14px 20px}
+ .su-shop-dock{gap:10px;padding:10px max(14px,env(safe-area-inset-right)) calc(14px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left))}
+ .su-support-launcher{width:56px;height:56px;min-width:56px}.su-support-launcher .icon{width:26px;height:26px}
+ .su-shop-dock .su-store-basket{padding:10px 12px;gap:8px;border-radius:10px}.su-shop-dock .su-store-basket strong{font-size:16px}.su-shop-dock .su-store-basket small{font-size:10px}.su-shop-dock .su-store-basket .btn{padding:9px;font-size:11px;gap:5px}.su-shop-dock .su-store-basket .btn .icon{width:14px;height:14px}
+ #modal-root .su-support-overlay,.su-support-overlay{padding:max(10px,env(safe-area-inset-top)) max(10px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(10px,env(safe-area-inset-left))}
+ #modal-root .modal.su-support-dialog,.su-support-dialog{height:min(620px,100%);width:min(420px,100%);border-radius:16px}
+ #modal-root .su-support-dialog .modal-head{padding:12px 16px}
+ .su-support-dialog .su-contact form{padding:18px 16px}
+ .su-support-dialog .su-contact textarea{min-height:100px}
+}
+@media(prefers-reduced-motion:reduce){#modal-root .modal.su-support-dialog,.su-support-dialog{animation:none}.su-support-launcher{transition:none}.su-support-launcher:hover,.su-support-launcher:active{transform:none}}
+@media(min-width:701px){
+ .su-public .su-store{max-width:none}
+ .su-public .su-store>main{padding-inline:max(32px,calc((100vw - 1376px)/2))}
+ .su-shop-dock .su-store-basket{flex:0 1 560px;margin-left:auto}
+}
